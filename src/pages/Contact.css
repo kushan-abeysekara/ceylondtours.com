@@ -1,0 +1,21 @@
+.contact {
+  min-height: 80vh;
+  padding: 2rem;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.contact p {
+  font-size: 1.2rem;
+  color: #666;
+}
