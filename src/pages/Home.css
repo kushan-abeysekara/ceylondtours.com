@@ -1,19 +1,402 @@
 .home {
-  min-height: 80vh;
+  min-height: 100vh;
 }
 
+/* Hero Section */
 .hero {
+  position: relative;
+  height: 600px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 40px 40px;
+  margin-bottom: 4rem;
+}
+
+.hero-overlay {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 2rem;
+}
+
+.hero-content {
   text-align: center;
-  padding: 4rem 2rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
 }
 
-.hero h1 {
-  font-size: 3rem;
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  opacity: 0.95;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.search-field {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.search-icon {
+  font-size: 1.5rem;
+}
+
+.search-input-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.search-input-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.search-input-group input {
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.search-input-group input::placeholder {
+  color: #999;
+}
+
+.search-divider {
+  width: 1px;
+  height: 40px;
+  background: #e0e0e0;
+}
+
+.search-button {
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search-button:hover {
+  background: #333;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.view-all-btn {
+  display: block;
+  margin: 2rem auto;
+  background: transparent;
+  border: none;
+  color: #1a1a1a;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.view-all-btn:hover {
+  color: #667eea;
+}
+
+/* Destinations Section */
+.destinations-section {
+  padding: 4rem 0;
+}
+
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+/* Top Destinations Section */
+.top-destinations-section {
+  padding: 4rem 0;
+  background: #f8f9fa;
+}
+
+.top-destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+/* Features Section */
+.features-section {
+  padding: 4rem 0;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 4rem 0;
+  background: #f8f9fa;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+  padding: 4rem 0;
+}
+
+.newsletter-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.newsletter-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.newsletter-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.newsletter-subtitle {
+  color: #666;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 1rem;
+}
+
+.newsletter-input {
+  flex: 1;
+  padding: 1rem 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.newsletter-input:focus {
+  border-color: #667eea;
+}
+
+.newsletter-button {
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.newsletter-button:hover {
+  background: #333;
+}
+
+/* Contact CTA Section */
+.contact-cta-section {
+  background: #1a1a1a;
+  color: white;
+  padding: 3rem 0;
+}
+
+.contact-cta-content {
+  text-align: center;
+}
+
+.contact-cta-text {
+  font-size: 1.1rem;
   margin-bottom: 1rem;
 }
 
-.hero p {
+.contact-cta-phone {
   font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-cta-phone:hover {
+  color: #667eea;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .destinations-grid,
+  .top-destinations-grid,
+  .features-grid,
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .newsletter-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 4rem 0;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 3rem;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .search-card {
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+  
+  .search-field {
+    width: 100%;
+  }
+  
+  .search-divider {
+    width: 100%;
+    height: 1px;
+  }
+  
+  .search-button {
+    width: 100%;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .destinations-grid,
+  .top-destinations-grid,
+  .features-grid,
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .newsletter-form {
+    flex-direction: column;
+  }
+  
+  .newsletter-button {
+    width: 100%;
+  }
+  
+  .contact-cta-text {
+    font-size: 1rem;
+  }
+  
+  .contact-cta-phone {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .hero-title {
+    font-size: 1.6rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+  }
+  
+  .search-card {
+    padding: 1rem;
+  }
 }

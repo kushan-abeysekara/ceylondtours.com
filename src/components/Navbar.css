@@ -1,38 +1,207 @@
 .navbar {
-  background-color: #1a1a1a;
+  background-color: #fff;
   padding: 1rem 2rem;
   position: sticky;
   top: 0;
   z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .navbar-container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 2rem;
 }
 
 .navbar-logo {
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: bold;
+  color: #000;
+  font-size: 1.3rem;
+  font-weight: 700;
   text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .navbar-menu {
   display: flex;
   list-style: none;
-  gap: 2rem;
+  gap: 2.5rem;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  justify-content: center;
+}
+
+.navbar-item {
+  margin: 0;
 }
 
 .navbar-link {
-  color: #fff;
+  color: #333;
   text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
   transition: color 0.3s;
+  white-space: nowrap;
 }
 
 .navbar-link:hover {
-  color: #4CAF50;
+  color: #000;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-shrink: 0;
+}
+
+.search-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s;
+}
+
+.search-icon:hover {
+  color: #000;
+}
+
+.book-now-btn {
+  background: #000;
+  color: #fff;
+  padding: 0.7rem 1.8rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background 0.3s, transform 0.2s;
+  white-space: nowrap;
+}
+
+.book-now-btn:hover {
+  background: #333;
+  transform: translateY(-1px);
+}
+
+.infinity-icon {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.mobile-menu-toggle {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  gap: 0.35rem;
+}
+
+.mobile-menu-toggle .bar {
+  width: 25px;
+  height: 2.5px;
+  background-color: #333;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+/* Tablet and Mobile Responsive */
+@media (max-width: 992px) {
+  .navbar-menu {
+    gap: 1.5rem;
+  }
+  
+  .navbar-logo {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+  
+  .navbar-container {
+    position: relative;
+  }
+  
+  .navbar-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    margin-top: 1rem;
+  }
+  
+  .navbar-menu.active {
+    max-height: 400px;
+    padding: 1rem 0;
+  }
+  
+  .navbar-item {
+    width: 100%;
+  }
+  
+  .navbar-link {
+    display: block;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .navbar-actions {
+    gap: 1rem;
+  }
+  
+  .book-now-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+  }
+  
+  .mobile-menu-toggle {
+    display: flex;
+  }
+  
+  .search-icon {
+    padding: 0.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.8rem 1rem;
+  }
+  
+  .navbar-logo {
+    font-size: 1.1rem;
+  }
+  
+  .book-now-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+  
+  .infinity-icon {
+    font-size: 1rem;
+  }
 }

@@ -1,21 +1,454 @@
 .about {
-  min-height: 80vh;
-  padding: 2rem;
+  min-height: 100vh;
 }
 
-.about-container {
-  max-width: 800px;
-  margin: 0 auto;
+/* Hero Section */
+.about-hero {
+  position: relative;
+  height: 400px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 40px 40px;
+  margin-bottom: 4rem;
+}
+
+.about-hero-overlay {
   text-align: center;
 }
 
-.about h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #333;
+.about-hero-title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: white;
+  margin: 0;
 }
 
-.about p {
-  font-size: 1.2rem;
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Explore Section */
+.explore-section {
+  padding: 4rem 0;
+}
+
+.explore-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 3rem;
+  align-items: start;
+}
+
+.explore-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.explore-description {
   color: #666;
+  line-height: 1.8;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem 4rem;
+  margin-top: 3rem;
+}
+
+/* CTA Banner */
+.cta-banner {
+  padding: 3rem 0;
+}
+
+.cta-banner-content {
+  background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
+  border-radius: 20px;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.cta-banner-left {
+  flex-shrink: 0;
+}
+
+.cta-illustration {
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-emoji {
+  font-size: 3rem;
+}
+
+.cta-banner-center {
+  flex: 1;
+}
+
+.cta-banner-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+.cta-banner-right {
+  flex-shrink: 0;
+}
+
+.cta-banner-btn {
+  background: white;
+  color: #1a1a1a;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.3s;
+  white-space: nowrap;
+}
+
+.cta-banner-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Travelers Section */
+.travelers-section {
+  padding: 4rem 0;
+  background: #f8f9fa;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+}
+
+.travelers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.traveler-photo {
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+
+.traveler-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.traveler-photo:hover img {
+  transform: scale(1.05);
+}
+
+/* Vacation Section */
+.vacation-section {
+  padding: 4rem 0;
+}
+
+.vacation-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.vacation-image {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.vacation-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.vacation-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.vacation-description {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.tour-stats-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 4rem 0;
+  background: #f8f9fa;
+}
+
+.faq-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.faq-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #1a1a1a;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-right img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* Final CTA Section */
+.final-cta-section {
+  position: relative;
+  padding: 6rem 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=1600') center/cover;
+  color: white;
+}
+
+.final-cta-overlay {
+  text-align: center;
+}
+
+.final-cta-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.stats-container {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact CTA */
+.about-contact-cta {
+  background: #1a1a1a;
+  color: white;
+  padding: 3rem 0;
+}
+
+.about-contact-content {
+  text-align: center;
+}
+
+.about-contact-text {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.about-contact-phone {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.about-contact-phone:hover {
+  color: #4ade80;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .about-hero-title {
+    font-size: 3rem;
+  }
+  
+  .explore-header {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .travelers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .vacation-content,
+  .faq-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    height: 300px;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 3rem;
+  }
+  
+  .about-hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .container {
+    padding: 0 1.5rem;
+  }
+  
+  .explore-title {
+    font-size: 2rem;
+  }
+  
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .cta-banner-content {
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .cta-banner-title {
+    font-size: 1.4rem;
+  }
+  
+  .cta-illustration {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .cta-emoji {
+    font-size: 2.5rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .travelers-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .vacation-image img,
+  .faq-right img {
+    height: 300px;
+  }
+  
+  .vacation-title {
+    font-size: 1.6rem;
+  }
+  
+  .faq-title {
+    font-size: 2rem;
+  }
+  
+  .final-cta-title {
+    font-size: 1.8rem;
+  }
+  
+  .stats-container {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+  
+  .about-contact-text {
+    font-size: 1rem;
+  }
+  
+  .about-contact-phone {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero {
+    height: 250px;
+  }
+  
+  .about-hero-title {
+    font-size: 2rem;
+  }
+  
+  .explore-title {
+    font-size: 1.6rem;
+  }
+  
+  .section-title {
+    font-size: 1.6rem;
+  }
+  
+  .cta-banner-content {
+    padding: 1.5rem;
+  }
+  
+  .cta-banner-title {
+    font-size: 1.2rem;
+  }
 }

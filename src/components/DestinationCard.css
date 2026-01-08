@@ -1,0 +1,73 @@
+.destination-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  height: 220px;
+}
+
+.destination-card.large {
+  height: 300px;
+}
+
+.destination-card:hover {
+  transform: translateY(-5px);
+}
+
+.destination-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.destination-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.5));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem;
+}
+
+.destination-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.destination-title {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .destination-card {
+    height: 180px;
+  }
+  
+  .destination-card.large {
+    height: 250px;
+  }
+  
+  .destination-title {
+    font-size: 1.2rem;
+  }
+  
+  .destination-badge {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.8rem;
+  }
+}

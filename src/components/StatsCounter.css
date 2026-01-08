@@ -1,0 +1,42 @@
+.stats-counter {
+  text-align: center;
+  padding: 1.5rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stats-counter:last-child {
+  border-right: none;
+}
+
+.stats-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.stats-label {
+  color: #666;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .stats-counter {
+    padding: 1rem;
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .stats-counter:last-child {
+    border-bottom: none;
+  }
+  
+  .stats-number {
+    font-size: 2rem;
+  }
+  
+  .stats-label {
+    font-size: 0.85rem;
+  }
+}

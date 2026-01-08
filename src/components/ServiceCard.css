@@ -1,0 +1,48 @@
+.service-card {
+  text-align: left;
+  padding: 1.5rem 0;
+}
+
+.service-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.service-icon svg {
+  width: 40px;
+  height: 40px;
+  stroke: #333;
+}
+
+.service-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #1a1a1a;
+}
+
+.service-description {
+  color: #666;
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .service-card {
+    padding: 1rem 0;
+  }
+  
+  .service-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .service-title {
+    font-size: 1rem;
+  }
+}
