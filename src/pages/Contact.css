@@ -1,21 +1,383 @@
 .contact {
-  min-height: 80vh;
-  padding: 2rem;
+  min-height: 100vh;
 }
 
-.contact-container {
-  max-width: 800px;
-  margin: 0 auto;
+/* Hero Section */
+.contact-hero {
+  position: relative;
+  height: 350px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=1600') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+.contact-hero-overlay {
   text-align: center;
 }
 
-.contact h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #333;
+.contact-hero-title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: white;
+  margin: 0;
 }
 
-.contact p {
+/* Contact Info Section */
+.contact-info-section {
+  padding: 4rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.contact-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+  padding: 4rem 0;
+  background: #f8f9fa;
+}
+
+.contact-form-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 3rem;
+  align-items: stretch;
+}
+
+.contact-form-image {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800') center/cover;
+  border-radius: 16px;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+}
+
+.contact-form-image-content {
+  text-align: center;
+  color: white;
+}
+
+.airplane-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.contact-form-image-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.contact-form-image-subtitle {
   font-size: 1.2rem;
-  color: #666;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.view-details-btn {
+  background: white;
+  color: #1a1a1a;
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.view-details-btn:hover {
+  transform: translateY(-2px);
+}
+
+.contact-form-container {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+}
+
+.contact-form-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #1a1a1a;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.9rem 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #1a1a1a;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-btn {
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.submit-btn:hover {
+  background: #333;
+  transform: translateY(-2px);
+}
+
+/* CTA Banner */
+.contact-cta-banner {
+  position: relative;
+  padding: 6rem 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('https://images.unsplash.com/photo-1528127269322-539801943592?w=1600') center/cover;
+  border-radius: 24px;
+  margin: 4rem auto 2rem;
+  max-width: 1200px;
+}
+
+.contact-cta-overlay {
+  text-align: center;
+  color: white;
+}
+
+.contact-cta-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.contact-cta-subtitle {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.contact-cta-btn {
+  background: white;
+  color: #1a1a1a;
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.contact-cta-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .contact-hero {
+    height: 300px;
+  }
+  
+  .contact-hero-title {
+    font-size: 3rem;
+  }
+  
+  .contact-info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .contact-form-wrapper {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-form-image {
+    min-height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-hero {
+    height: 250px;
+    border-radius: 16px;
+    margin: 1rem;
+  }
+  
+  .contact-hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .container {
+    padding: 0 1.5rem;
+  }
+  
+  .contact-info-section {
+    padding: 3rem 0;
+  }
+  
+  .contact-info-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .contact-form-section {
+    padding: 3rem 0;
+  }
+  
+  .contact-form-wrapper {
+    gap: 2rem;
+  }
+  
+  .contact-form-image {
+    padding: 2rem;
+    min-height: 300px;
+  }
+  
+  .contact-form-image-title {
+    font-size: 1.3rem;
+  }
+  
+  .contact-form-container {
+    padding: 2rem 1.5rem;
+  }
+  
+  .contact-form-title {
+    font-size: 1.6rem;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .contact-cta-banner {
+    padding: 4rem 0;
+    border-radius: 16px;
+    margin: 3rem 1rem 1rem;
+  }
+  
+  .contact-cta-title {
+    font-size: 2rem;
+  }
+  
+  .contact-cta-subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-hero {
+    height: 200px;
+    margin: 0.5rem;
+  }
+  
+  .contact-hero-title {
+    font-size: 2rem;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .contact-form-image {
+    padding: 1.5rem;
+    min-height: 250px;
+  }
+  
+  .airplane-icon {
+    font-size: 2.5rem;
+  }
+  
+  .contact-form-image-title {
+    font-size: 1.1rem;
+  }
+  
+  .contact-form-image-subtitle {
+    font-size: 1rem;
+  }
+  
+  .contact-form-container {
+    padding: 1.5rem 1rem;
+  }
+  
+  .contact-form-title {
+    font-size: 1.4rem;
+  }
+  
+  .contact-cta-banner {
+    padding: 3rem 1rem;
+    margin: 2rem 0.5rem 0.5rem;
+  }
+  
+  .contact-cta-title {
+    font-size: 1.6rem;
+  }
+  
+  .contact-cta-subtitle {
+    font-size: 0.9rem;
+  }
 }
