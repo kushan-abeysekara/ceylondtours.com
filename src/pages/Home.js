@@ -9,10 +9,10 @@ const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const heroImages = [
-    'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1600',
-    'https://images.unsplash.com/photo-1588971550723-4c4ae923cdbb?w=1600',
-    'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1600',
-    'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600'
+    '/img/slider1.jpg',
+    '/img/slider2.webp',
+    '/img/slider3.jpg',
+    '/img/slider4.jpg'
   ];
 
   useEffect(() => {
@@ -24,18 +24,18 @@ const Home = () => {
   }, [heroImages.length]);
 
   const popularDestinations = [
-    { id: 1, image: 'https://images.unsplash.com/photo-1580549239615-367449433e06?w=500', badge: 'Belihul Ela' },
-    { id: 2, image: 'https://images.unsplash.com/photo-1588971550723-4c4ae923cdbb?w=500', badge: 'Nine Arch' },
-    { id: 3, image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=500', badge: 'Hiriketiya' },
-    { id: 4, image: 'https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=500', badge: 'Arugam Bay' },
-    { id: 5, image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=500', badge: 'Sigiriya' },
-    { id: 6, image: 'https://images.unsplash.com/photo-1571407970349-bc81e7e96a47?w=500', badge: 'Ella Balena' }
+    { id: 1, image: '/img/BoburuElla.webp', badge: 'Boburu Ella' },
+    { id: 2, image: '/img/NineArch.jpg', badge: 'Nine Arch' },
+    { id: 3, image: '/img/Hiriketiya.webp', badge: 'Hiriketiya' },
+    { id: 4, image: '/img/Arugambay.jpg', badge: 'Arugam Bay' },
+    { id: 5, image: '/img/Sigiriya.jpg', badge: 'Sigiriya' },
+    { id: 6, image: '/img/Ella.jpg', badge: 'Ella-Badulla' }
   ];
 
   const topDestinations = [
-    { id: 1, image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800', title: 'Sigiriya' },
-    { id: 2, image: 'https://images.unsplash.com/photo-1588971550723-4c4ae923cdbb?w=800', title: 'Nine Arch' },
-    { id: 3, image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800', title: 'Mirissa' }
+    { id: 1, image: '/img/sigiriya.jpg', title: 'Sigiriya' },
+    { id: 2, image: '/img/NineArch.jpg', title: 'Nine Arch' },
+    { id: 3, image: '/img/Mirissa1.jpg', title: 'Mirissa' }
   ];
 
   const testimonials = [
@@ -214,7 +214,7 @@ const Home = () => {
         <div className="container">
           <div className="newsletter-content">
             <div className="newsletter-image">
-              <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600" alt="Colonial Building" />
+              <img src="/img/HomeBottom.jpg" alt="Colonial Building" />
             </div>
             <div className="newsletter-form-wrapper">
               <h2 className="newsletter-title">Get special offers and more from Travel</h2>

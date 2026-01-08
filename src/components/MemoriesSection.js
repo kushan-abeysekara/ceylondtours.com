@@ -5,19 +5,19 @@ const MemoriesSection = () => {
   const memories = [
     {
       id: 1,
-      image: 'https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=500',
+      image: '/img/Memory1.jpg',
       category: 'Tourism & Travel',
       title: 'Family Adventure'
     },
     {
       id: 2,
-      image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=500',
+      image: '/img/Memory2.jpg',
       category: 'Tourism & Travel',
       title: 'Mountain Exploration'
     },
     {
       id: 3,
-      image: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=500',
+      image: '/img/Memory3.jpg',
       category: 'Tourism & Travel',
       title: 'Nature Journey'
     }
