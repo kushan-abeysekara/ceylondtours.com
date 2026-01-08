@@ -1,0 +1,186 @@
+.destination-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 4rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.destination-detail.reverse {
+  direction: rtl;
+}
+
+.destination-detail.reverse > * {
+  direction: ltr;
+}
+
+.destination-detail-content {
+  padding: 2rem 0;
+}
+
+.destination-detail-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.destination-detail-description {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.destination-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.destination-feature {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.destination-feature svg {
+  flex-shrink: 0;
+  stroke: #4ade80;
+}
+
+.destination-icons {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.destination-icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.destination-icon-svg {
+  font-size: 1.5rem;
+}
+
+.destination-icon-label {
+  font-size: 0.85rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.destination-detail-btn {
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  font-size: 0.95rem;
+}
+
+.destination-detail-btn:hover {
+  background: #333;
+  transform: translateY(-2px);
+}
+
+.destination-detail-image {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.destination-detail-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.destination-detail-image:hover img {
+  transform: scale(1.05);
+}
+
+@media (max-width: 992px) {
+  .destination-detail {
+    gap: 2rem;
+  }
+  
+  .destination-detail-title {
+    font-size: 1.8rem;
+  }
+  
+  .destination-detail-image img {
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .destination-detail {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .destination-detail.reverse {
+    direction: ltr;
+  }
+  
+  .destination-detail-content {
+    padding: 1rem 0;
+  }
+  
+  .destination-detail-title {
+    font-size: 1.6rem;
+  }
+  
+  .destination-icons {
+    gap: 1.5rem;
+  }
+  
+  .destination-detail-image img {
+    height: 300px;
+  }
+  
+  .destination-detail-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .destination-detail-title {
+    font-size: 1.4rem;
+  }
+  
+  .destination-detail-description {
+    font-size: 0.9rem;
+  }
+  
+  .destination-icons {
+    gap: 1rem;
+  }
+  
+  .destination-icon-label {
+    font-size: 0.75rem;
+  }
+  
+  .destination-detail-image img {
+    height: 250px;
+  }
+}

@@ -1,0 +1,90 @@
+.destinations-page {
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.destinations-hero {
+  position: relative;
+  height: 350px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+.destinations-hero-overlay {
+  text-align: center;
+  z-index: 1;
+}
+
+.destinations-hero-title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+/* Destinations List */
+.destinations-list {
+  padding: 4rem 0;
+}
+
+.destinations-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .destinations-hero {
+    height: 300px;
+  }
+  
+  .destinations-hero-title {
+    font-size: 3rem;
+  }
+  
+  .destinations-list {
+    padding: 3rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .destinations-hero {
+    height: 250px;
+    border-radius: 16px;
+    margin: 1rem;
+  }
+  
+  .destinations-hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .destinations-list {
+    padding: 2rem 0;
+  }
+  
+  .destinations-container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .destinations-hero {
+    height: 200px;
+    margin: 0.5rem;
+  }
+  
+  .destinations-hero-title {
+    font-size: 2rem;
+  }
+  
+  .destinations-container {
+    padding: 0 1rem;
+  }
+}
