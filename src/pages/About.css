@@ -5,16 +5,16 @@
 /* Hero Section */
 .about-hero {
   position: relative;
-  height: 400px;
+  height: 350px;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600') center/cover;
+    url('https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=1600') center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 0 0 40px 40px;
-  margin-bottom: 4rem;
+  border-radius: 24px;
+  margin: 2rem auto;
+  max-width: 1200px;
 }
-
 .about-hero-overlay {
   text-align: center;
 }
