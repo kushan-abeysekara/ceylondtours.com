@@ -78,12 +78,12 @@ const About = () => {
   ];
 
   const happyTravelers = [
-    'https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=400',
-    'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=400',
-    'https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=400',
-    'https://images.unsplash.com/photo-1539635278303-d4002c07eae3?w=400',
-    'https://images.unsplash.com/photo-1523906630133-f6934a1ab2b9?w=400',
-    'https://images.unsplash.com/photo-1504614992173-5d1fff6c6e12?w=400'
+    'img/happyTravelers1.jpg',
+    'img/happyTravelers2.jpg',
+    'img/happyTravelers3.jpg',
+    'img/happyTravelers4.jpg',
+    'img/happyTravelers5.jpg',
+    'img/happyTravelers6.jpg'
   ];
 
   const faqs = [
@@ -183,7 +183,7 @@ const About = () => {
         <div className="container">
           <div className="vacation-content">
             <div className="vacation-image">
-              <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600" alt="Tropical paradise" />
+              <img src="/img/Abouts2.jpg" alt="Tropical paradise" />
             </div>
             <div className="vacation-stats">
               <h2 className="vacation-title">Turn Your Vacation Dreams Into Reality.</h2>
@@ -193,7 +193,7 @@ const About = () => {
               </p>
               
               <div className="tour-stats-list">
-                <TourStats title="Super Group Tours" percentage={65} />
+                <TourStats title="Super Group Tours" percentage={95} />
                 <TourStats title="Private Tours" percentage={92} />
                 <TourStats title="Multi-day Tours" percentage={90} />
               </div>
@@ -215,7 +215,7 @@ const About = () => {
               </div>
             </div>
             <div className="faq-right">
-              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600" alt="Mountain hiking" />
+              <img src="/img/Abouts1.jpg" alt="Mountain hiking" />
             </div>
           </div>
         </div>
