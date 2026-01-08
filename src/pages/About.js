@@ -236,16 +236,6 @@ const About = () => {
           </div>
         </div>
       </section>
-
-      {/* Contact CTA */}
-      <section className="about-contact-cta">
-        <div className="container">
-          <div className="about-contact-content">
-            <p className="about-contact-text">Don't Know Where Destination To Choose?</p>
-            <a href="tel:+94858775477" className="about-contact-phone">📞 Call Us: (858) 577-3477</a>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };

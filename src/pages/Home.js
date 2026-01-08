@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Home.css';
 import DestinationCard from '../components/DestinationCard';
 import TestimonialCard from '../components/TestimonialCard';
@@ -6,6 +6,23 @@ import FeatureCard from '../components/FeatureCard';
 import MemoriesSection from '../components/MemoriesSection';
 
 const Home = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const heroImages = [
+    'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1600',
+    'https://images.unsplash.com/photo-1588971550723-4c4ae923cdbb?w=1600',
+    'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1600',
+    'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600'
+  ];
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % heroImages.length);
+    }, 5000);
+
+    return () => clearInterval(timer);
+  }, [heroImages.length]);
+
   const popularDestinations = [
     { id: 1, image: 'https://images.unsplash.com/photo-1580549239615-367449433e06?w=500', badge: 'Belihul Ela' },
     { id: 2, image: 'https://images.unsplash.com/photo-1588971550723-4c4ae923cdbb?w=500', badge: 'Nine Arch' },
@@ -49,44 +66,72 @@ const Home = () => {
     <div className="home">
       {/* Hero Section */}
       <section className="hero">
+        <div className="hero-slideshow">
+          {heroImages.map((image, index) => (
+            <div
+              key={index}
+              className={`hero-slide ${index === currentSlide ? 'active' : ''}`}
+              style={{ backgroundImage: `url(${image})` }}
+            />
+          ))}
+        </div>
+        
         <div className="hero-overlay">
           <div className="hero-content">
-            <h1 className="hero-title">Live your dream destinations.</h1>
+            <h1 className="hero-title">Live your dream<br />destinations.</h1>
             <p className="hero-subtitle">
-              Discover unforgettable journeys designed to turn your travel dreams into reality
+              Quisq eu consqur ornare congue non enim<br />
+              pellentesque eleifend ipsum.
             </p>
-            
-            <div className="search-card">
-              <div className="search-field">
-                <span className="search-icon">📍</span>
-                <div className="search-input-group">
-                  <label>Location</label>
-                  <input type="text" placeholder="Where are you going?" />
-                </div>
+          </div>
+          
+          <div className="search-card">
+            <div className="search-field">
+              <svg className="search-icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <circle cx="12" cy="10" r="3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+              <div className="search-input-group">
+                <label>Location</label>
+                <input type="text" placeholder="Where are you going?" />
               </div>
-              
-              <div className="search-divider"></div>
-              
-              <div className="search-field">
-                <span className="search-icon">📅</span>
-                <div className="search-input-group">
-                  <label>Date</label>
-                  <input type="text" placeholder="Add dates" />
-                </div>
-              </div>
-              
-              <div className="search-divider"></div>
-              
-              <div className="search-field">
-                <span className="search-icon">✈️</span>
-                <div className="search-input-group">
-                  <label>Travel</label>
-                  <input type="text" placeholder="Add guests" />
-                </div>
-              </div>
-              
-              <button className="search-button">Search</button>
             </div>
+            
+            <div className="search-divider"></div>
+            
+            <div className="search-field">
+              <svg className="search-icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+              <div className="search-input-group">
+                <label>Date</label>
+                <input type="text" placeholder="Set date" />
+              </div>
+            </div>
+            
+            <div className="search-divider"></div>
+            
+            <div className="search-field">
+              <svg className="search-icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <circle cx="8.5" cy="7" r="4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M20 8v6M23 11h-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+              <div className="search-input-group">
+                <label>Travel</label>
+                <input type="text" placeholder="How to travel ?" />
+              </div>
+            </div>
+            
+            <button className="search-button">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16zM19 19l-4.35-4.35" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+              Search
+            </button>
           </div>
         </div>
       </section>
@@ -185,16 +230,6 @@ const Home = () => {
                 <button className="newsletter-button">Subscribe</button>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact CTA Section */}
-      <section className="contact-cta-section">
-        <div className="container">
-          <div className="contact-cta-content">
-            <p className="contact-cta-text">Don't Hesitate, Contact us for better help and services</p>
-            <a href="tel:+94858775477" className="contact-cta-phone">📞 Call Us: (858) 577-5477</a>
           </div>
         </div>
       </section>
