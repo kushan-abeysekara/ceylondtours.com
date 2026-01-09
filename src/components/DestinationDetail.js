@@ -1,7 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './DestinationDetail.css';
 
-const DestinationDetail = ({ title, description, features, image, icons, reverse }) => {
+const DestinationDetail = ({ id, title, description, features, image, icons, reverse }) => {
+  const getDestinationPath = (id) => {
+    const paths = {
+      1: '/destinations/sigiriya',
+      2: '/destinations/nine-arch-bridge',
+      3: '/destinations/arugam-bay',
+      4: '/destinations/temple-of-tooth',
+      5: '/destinations/bomburu-ella'
+    };
+    return paths[id] || '/destinations';
+  };
+
   return (
     <div className={`destination-detail ${reverse ? 'reverse' : ''}`}>
       <div className="destination-detail-content">
@@ -28,7 +40,7 @@ const DestinationDetail = ({ title, description, features, image, icons, reverse
           ))}
         </div>
         
-        <button className="destination-detail-btn">View Details</button>
+        <Link to={getDestinationPath(id)} className="destination-detail-btn">View Details</Link>
       </div>
       
       <div className="destination-detail-image">

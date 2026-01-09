@@ -142,14 +142,24 @@ const About = () => {
         <div className="container">
           <div className="cta-banner-content">
             <div className="cta-banner-left">
-              <div className="cta-illustration">
-                <span className="cta-emoji">🏢</span>
+              <div className="tripadvisor-badge">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="20" cy="20" r="18" fill="white"/>
+                  <circle cx="20" cy="20" r="12" fill="#34E0A1"/>
+                  <path d="M20 12c-2.5 0-4.5 2-4.5 4.5s2 4.5 4.5 4.5 4.5-2 4.5-4.5-2-4.5-4.5-4.5zm0 7c-1.4 0-2.5-1.1-2.5-2.5s1.1-2.5 2.5-2.5 2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5z" fill="black"/>
+                </svg>
+                <span className="tripadvisor-text">Tripadvisor</span>
+              </div>
+              <div className="city-illustration">
+                <div className="cloud cloud-1"></div>
+                <div className="cloud cloud-2"></div>
+                <div className="building building-1"></div>
+                <div className="building building-2"></div>
+                <div className="building building-3"></div>
               </div>
             </div>
-            <div className="cta-banner-center">
-              <h3 className="cta-banner-title">Book your holiday with complete confidence</h3>
-            </div>
             <div className="cta-banner-right">
+              <h3 className="cta-banner-title">Book your holiday with complete confidence</h3>
               <a href="/book" className="cta-banner-btn">
                 Book Now
                 <span className="infinity-icon">∞</span>
@@ -225,7 +235,13 @@ const About = () => {
       <section className="final-cta-section">
         <div className="final-cta-overlay">
           <div className="container">
-            <h2 className="final-cta-title">Dare to Explore with Travel</h2>
+            <div className="final-cta-icon">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="30" cy="30" r="20" fill="white"/>
+                <ellipse cx="30" cy="30" rx="35" ry="8" fill="white" opacity="0.5"/>
+              </svg>
+            </div>
+            <h2 className="final-cta-title">Dare to Explore with<br />Travel</h2>
             
             <div className="stats-container">
               <StatsCounter number="200k" label="Happy travelers" />
