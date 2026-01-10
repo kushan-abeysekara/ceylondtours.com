@@ -16,6 +16,12 @@ const Navbar = () => {
           Ceylon D Tour
         </Link>
         
+        <button className="mobile-menu-toggle" onClick={toggleMenu} aria-label="Toggle menu">
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </button>
+        
         <ul className={`navbar-menu ${isMenuOpen ? 'active' : ''}`}>
           <li className="navbar-item">
             <Link to="/" className="navbar-link" onClick={() => setIsMenuOpen(false)}>Home</Link>
@@ -45,12 +51,6 @@ const Navbar = () => {
             <span className="infinity-icon">∞</span>
           </Link>
         </div>
-
-        <button className="mobile-menu-toggle" onClick={toggleMenu} aria-label="Toggle menu">
-          <span className="bar"></span>
-          <span className="bar"></span>
-          <span className="bar"></span>
-        </button>
       </div>
     </nav>
   );
