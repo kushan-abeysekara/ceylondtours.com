@@ -189,7 +189,16 @@
   }
 
   .dest-bottom-section {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dest-bottom-left {
+    order: 2;
+  }
+
+  .dest-bottom-right {
+    order: 1;
   }
 
   .dest-bottom-left {

@@ -93,19 +93,7 @@ const TempleOfTooth = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="dest-cta">
-        <div className="dest-cta-content">
-          <div className="dest-cta-icon">
-            <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
-              <circle cx="30" cy="30" r="25" fill="white" opacity="0.2"/>
-              <path d="M30 15c-5 0-9 4-9 9s4 9 9 9 9-4 9-9-4-9-9-9z" fill="white"/>
-            </svg>
-          </div>
-          <h2 className="dest-cta-title">Don't Know Which Destination To Choose?</h2>
-          <p className="dest-cta-phone">Call Us (858) 577-3477</p>
-        </div>
-      </section>
+      
     </div>
   );
 };
