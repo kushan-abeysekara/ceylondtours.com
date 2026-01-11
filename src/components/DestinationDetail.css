@@ -136,14 +136,21 @@
     grid-template-columns: 1fr;
     gap: 2rem;
     margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
   }
   
   .destination-detail.reverse {
     direction: ltr;
   }
   
+  .destination-detail-image {
+    order: -1;
+  }
+  
   .destination-detail-content {
     padding: 1rem 0;
+    order: 1;
   }
   
   .destination-detail-title {
@@ -155,7 +162,7 @@
   }
   
   .destination-detail-image img {
-    height: 300px;
+    height: 500px;
   }
   
   .destination-detail-btn {
@@ -181,6 +188,6 @@
   }
   
   .destination-detail-image img {
-    height: 250px;
+    height: 450px;
   }
 }
