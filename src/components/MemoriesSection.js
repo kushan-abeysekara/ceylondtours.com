@@ -5,19 +5,19 @@ const MemoriesSection = () => {
   const memories = [
     {
       id: 1,
-      image: '/img/Memory1.jpg',
+      image: require('../img/Memory1.jpg'),
       category: 'Tourism & Travel',
       title: 'Family Adventure'
     },
     {
       id: 2,
-      image: '/img/Memory2.jpg',
+      image: require('../img/Memory2.jpg'),
       category: 'Tourism & Travel',
       title: 'Mountain Exploration'
     },
     {
       id: 3,
-      image: '/img/Memory3.jpg',
+      image: require('../img/Memory3.jpg'),
       category: 'Tourism & Travel',
       title: 'Nature Journey'
     }
@@ -38,7 +38,13 @@ const MemoriesSection = () => {
               <img src={memory.image} alt={memory.title} className="memory-image" />
               <div className="memory-info">
                 <p className="memory-category">{memory.category}</p>
-                <a href="#" className="memory-link">View →</a>
+                <button 
+                  className="memory-link"
+                  onClick={() => console.log('View clicked')}
+                  style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0, font: 'inherit', color: 'inherit', textDecoration: 'none' }}
+                >
+                  View →
+                </button>
               </div>
             </div>
           ))}

@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Destinations.css';
 import DestinationDetail from '../components/DestinationDetail';
 
 const Destinations = () => {
+  useEffect(() => {
+    // Scroll to top when component mounts
+    window.scrollTo(0, 0);
+  }, []);
+
   const destinations = [
     {
       id: 1,

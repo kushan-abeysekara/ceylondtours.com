@@ -7,7 +7,7 @@
   position: relative;
   height: 350px;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url('/public/img/Abouts.jpg') center/cover;
+    url('../img/Abouts.jpg') center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -383,7 +383,7 @@
   position: relative;
   padding: 6rem 0;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('/public/img/AboutsBottom.webp') center/cover;
+    url('../img/AboutsBottom.webp') center/cover;
   color: white;
   margin-bottom: 7rem;
   height: 500px;
@@ -488,9 +488,10 @@
 
 @media (max-width: 768px) {
   .about-hero {
-    height: 300px;
-    border-radius: 0 0 20px 20px;
-    margin-bottom: 3rem;
+    height: calc(100vh - 80px);
+    min-height: 300px;
+    border-radius: 16px;
+    margin: 0 1rem 4rem 1rem;
   }
   
   .about-hero-title {
@@ -550,17 +551,42 @@
     font-size: 1.6rem;
   }
   
+  .faq-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .faq-right {
+    order: -1;
+    margin-bottom: 2rem;
+  }
+  
   .faq-title {
     font-size: 2rem;
   }
   
   .final-cta-title {
     font-size: 1.8rem;
+    margin-bottom: 3rem;
+  }
+  
+  .final-cta-section {
+    height: auto;
+    padding: 3rem 0;
+    margin-bottom: 2rem;
   }
   
   .stats-container {
     grid-template-columns: 1fr;
-    padding: 1.5rem;
+    padding: 1rem;
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    max-width: calc(100% - 3rem);
   }
   
   .about-contact-text {
@@ -574,7 +600,9 @@
 
 @media (max-width: 480px) {
   .about-hero {
-    height: 250px;
+    height: calc(100vh - 70px);
+    min-height: 250px;
+    margin: 0 0.5rem 4rem 0.5rem;
   }
   
   .about-hero-title {
@@ -595,5 +623,27 @@
   
   .cta-banner-title {
     font-size: 1.2rem;
+  }
+  
+  .final-cta-section {
+    padding: 2rem 0;
+    margin-bottom: 1rem;
+  }
+  
+  .final-cta-title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .final-cta-icon svg {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .stats-container {
+    padding: 0.75rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    max-width: calc(100% - 2rem);
   }
 }

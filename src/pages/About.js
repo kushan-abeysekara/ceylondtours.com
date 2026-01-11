@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './About.css';
 import ServiceCard from '../components/ServiceCard';
 import TourStats from '../components/TourStats';
@@ -6,6 +6,11 @@ import FAQAccordion from '../components/FAQAccordion';
 import StatsCounter from '../components/StatsCounter';
 
 const About = () => {
+  useEffect(() => {
+    // Scroll to top when component mounts
+    window.scrollTo(0, 0);
+  }, []);
+
   const services = [
     {
       id: 1,
@@ -78,12 +83,12 @@ const About = () => {
   ];
 
   const happyTravelers = [
-    'img/happyTravelers1.jpg',
-    'img/happyTravelers2.jpg',
-    'img/happyTravelers3.jpg',
-    'img/happyTravelers4.jpg',
-    'img/happyTravelers5.jpg',
-    'img/happyTravelers6.jpg'
+    require('../img/happyTravelers1.jpg'),
+    require('../img/happyTravelers2.jpg'),
+    require('../img/happyTravelers3.jpg'),
+    require('../img/happyTravelers4.jpg'),
+    require('../img/happyTravelers5.jpg'),
+    require('../img/happyTravelers6.jpg')
   ];
 
   const faqs = [
@@ -193,7 +198,7 @@ const About = () => {
         <div className="container">
           <div className="vacation-content">
             <div className="vacation-image">
-              <img src="/img/Abouts2.jpg" alt="Tropical paradise" />
+              <img src={require('../img/Abouts2.jpg')} alt="Tropical paradise" />
             </div>
             <div className="vacation-stats">
               <h2 className="vacation-title">Turn Your Vacation Dreams Into Reality.</h2>
@@ -225,7 +230,7 @@ const About = () => {
               </div>
             </div>
             <div className="faq-right">
-              <img src="/img/Abouts1.jpg" alt="Mountain hiking" />
+              <img src={require('../img/Abouts1.jpg')} alt="Mountain hiking" />
             </div>
           </div>
         </div>

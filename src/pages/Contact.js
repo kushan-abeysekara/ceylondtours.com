@@ -1,8 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Contact.css';
 import ContactInfoCard from '../components/ContactInfoCard';
 
 const Contact = () => {
+  useEffect(() => {
+    // Scroll to top when component mounts
+    window.scrollTo(0, 0);
+  }, []);
+
   const [formData, setFormData] = useState({
     fullName: '',
     phone: '',
