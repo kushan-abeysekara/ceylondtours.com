@@ -1,7 +1,13 @@
 import React from 'react';
 import './ServiceCard.css';
 
-const ServiceCard = ({ icon, title, description }) => {
+interface ServiceCardProps {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}
+
+const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description }) => {
   return (
     <div className="service-card">
       <div className="service-icon">{icon}</div>

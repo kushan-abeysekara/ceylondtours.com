@@ -1,7 +1,14 @@
 import React from 'react';
 import './TestimonialCard.css';
 
-const TestimonialCard = ({ name, image, rating, text }) => {
+interface TestimonialCardProps {
+  name: string;
+  image: string;
+  rating: number | string;
+  text: string;
+}
+
+const TestimonialCard: React.FC<TestimonialCardProps> = ({ name, image, rating, text }) => {
   return (
     <div className="testimonial-card">
       <div className="testimonial-header">

@@ -51,7 +51,7 @@ import Colombo from './pages/Places/Colombo';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
-function App() {
+const App: React.FC = () => {
   return (
     <Router>
       <div className="App">
@@ -107,6 +107,6 @@ function App() {
       </div>
     </Router>
   );
-}
+};
 
 export default App;

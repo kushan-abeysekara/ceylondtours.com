@@ -1,7 +1,13 @@
 import React from 'react';
 import './ContactInfoCard.css';
 
-const ContactInfoCard = ({ icon, title, info }) => {
+interface ContactInfoCardProps {
+  icon: React.ReactNode;
+  title: string;
+  info: string[];
+}
+
+const ContactInfoCard: React.FC<ContactInfoCardProps> = ({ icon, title, info }) => {
   return (
     <div className="contact-info-card">
       <div className="contact-info-icon">{icon}</div>
