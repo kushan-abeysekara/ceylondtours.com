@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './Sigiriya.css';
 
-const Sigiriya = () => {
+const NuwaraEliya = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -10,8 +10,8 @@ const Sigiriya = () => {
     <div className="destination-page">
       {/* Hero Section */}
       <section className="dest-hero">
-        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1600" alt="Sigiriya" />
-        <div className="dest-badge">Sigiriya</div>
+        <img src="https://images.unsplash.com/photo-1580549239615-367449433e06?w=1600" alt="Nuwara Eliya" />
+        <div className="dest-badge">Nuwara Eliya</div>
       </section>
 
       {/* Main Content Section */}
@@ -19,12 +19,12 @@ const Sigiriya = () => {
         <div className="dest-container">
           <div className="dest-main-section">
             <div className="dest-left">
-              <img src="https://images.unsplash.com/photo-1588971550723-4c4ae923cdbb?w=800" alt="Sigiriya aerial view" />
+              <img src="https://images.unsplash.com/photo-1587895265520-f806d3b7e4bb?w=800" alt="Nuwara Eliya tea gardens" />
             </div>
             <div className="dest-right">
-              <h1 className="dest-title">Discover Sigiriya</h1>
+              <h1 className="dest-title">Discover Nuwara Eliya</h1>
               <p className="dest-description">
-                An ancient rock fortress and UNESCO World Heritage Site, famous for its frescoes, lion-shaped gateway, and breathtaking views from the summit.
+                A charming hill station known as "Little England" with cool weather and tea gardens.
               </p>
               
               <ul className="dest-features">
@@ -32,19 +32,19 @@ const Sigiriya = () => {
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                     <path d="M16.667 5L7.5 14.167 3.333 10" stroke="#22c55e" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
-                  Safe and reliable travel arrangements
+                  Scenic hill-country routes
                 </li>
                 <li>
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                     <path d="M16.667 5L7.5 14.167 3.333 10" stroke="#22c55e" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
-                  Flexible sightseeing plans around Ella
+                  Leisure sightseeing
                 </li>
                 <li>
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                     <path d="M16.667 5L7.5 14.167 3.333 10" stroke="#22c55e" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
-                  Relaxed and smooth travel experience
+                  Relaxing travel experience
                 </li>
               </ul>
 
@@ -81,22 +81,20 @@ const Sigiriya = () => {
           <div className="dest-bottom-section">
             <div className="dest-bottom-left">
               <p className="dest-bottom-text">
-                Sigiriya is one of Sri Lanka's most famous tourist attractions, known as the "Lion Rock." Rising high above the jungle, this ancient rock fortress was built in the 5th century and features beautiful frescoes, landscaped gardens, and impressive ruins.
+                Nuwara Eliya is famous for its colonial-era buildings, cool climate, and rolling tea plantations. The town offers a refreshing escape from tropical heat and showcases British architectural influence.
               </p>
               <p className="dest-bottom-text">
-                Visitors can climb to the top for breathtaking views and explore its rich history, art, and architecture, making Sigiriya a must-visit destination in Sri Lanka.
+                Visitors can explore tea factories, Gregory Lake, Victoria Park, and scenic viewpoints. Its peaceful environment makes it perfect for relaxation and slow-paced travel.
               </p>
             </div>
             <div className="dest-bottom-right">
-              <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800" alt="Sigiriya sunset" />
+              <img src="https://images.unsplash.com/photo-1580549239615-367449433e06?w=800" alt="Nuwara Eliya landscape" />
             </div>
           </div>
         </div>
       </section>
-
-  
     </div>
   );
 };
 
-export default Sigiriya;
+export default NuwaraEliya;
