@@ -1,98 +1,80 @@
 import React, { useEffect } from 'react';
 import './Sigiriya.css';
 
-function Jaffna() {
+const Jaffna: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
-    <div className="dest-detail-page">
-      {/* Hero Section */}
+    <div className="destination-page">
       <section className="dest-hero">
-        <div className="dest-hero-overlay">
-          <h1 className="dest-hero-title">Discover Jaffna</h1>
-          <p className="dest-hero-subtitle">
-            A cultural city showcasing rich Tamil heritage, history, and traditions.
-          </p>
-        </div>
+        <img src="https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?w=1600" alt="Jaffna" />
+        <div className="dest-badge">Jaffna</div>
       </section>
 
-      {/* Main Content Section */}
-      <section className="dest-main-section">
+      <section className="dest-content">
         <div className="dest-container">
-          <div className="dest-content-grid">
-            <div className="dest-content-left">
+          <div className="dest-main-section">
+            <div className="dest-left">
               <img
                 src="https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?w=800"
                 alt="Jaffna Temple"
-                className="dest-main-image"
               />
             </div>
-            <div className="dest-content-right">
-              <h2 className="dest-section-title">Why Visit Jaffna?</h2>
+            <div className="dest-right">
+              <h1 className="dest-title">Why Visit Jaffna?</h1>
               <p className="dest-description">
                 Jaffna is a unique city in northern Sri Lanka known for its distinct Tamil culture, ancient temples, and colonial influences. The region offers a deep cultural experience different from other parts of the island.
               </p>
-              <div className="dest-features">
-                <div className="dest-feature-item">
-                  <span className="dest-feature-icon">✓</span>
-                  <span className="dest-feature-text">Cultural and heritage-focused travel</span>
-                </div>
-                <div className="dest-feature-item">
-                  <span className="dest-feature-icon">✓</span>
-                  <span className="dest-feature-text">Guided city exploration</span>
-                </div>
-                <div className="dest-feature-item">
-                  <span className="dest-feature-icon">✓</span>
-                  <span className="dest-feature-text">Comfortable travel arrangements</span>
-                </div>
+              <ul className="dest-features">
+                <li>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M16.667 5L7.5 14.167 3.333 10" stroke="#22c55e" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  Cultural and heritage-focused travel
+                </li>
+                <li>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M16.667 5L7.5 14.167 3.333 10" stroke="#22c55e" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  Guided city exploration
+                </li>
+                <li>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M16.667 5L7.5 14.167 3.333 10" stroke="#22c55e" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  Comfortable travel arrangements
+                </li>
+              </ul>
+              <div className="dest-meta">
+                <span>🚗 Land Trip</span>
+                <span>📅 2 Days</span>
+                <span>🎯 Cultural Tour</span>
               </div>
             </div>
           </div>
 
-          <div className="dest-info-cards">
-            <div className="dest-info-card">
-              <h3>Land Trip</h3>
+          <div className="dest-bottom-section">
+            <div className="dest-bottom-left">
+              <p className="dest-bottom-text">
+                Jaffna is a unique city in northern Sri Lanka known for its distinct Tamil culture, ancient temples, and colonial influences. The region offers a deep cultural experience different from other parts of the island.
+              </p>
+              <p className="dest-bottom-text">
+                Visitors can explore historic temples, libraries, forts, and enjoy authentic Jaffna cuisine. The city reflects resilience, tradition, and a strong cultural identity, making it an enriching travel destination.
+              </p>
             </div>
-            <div className="dest-info-card">
-              <h3>2 Days</h3>
-            </div>
-            <div className="dest-info-card">
-              <h3>Cultural Tour</h3>
+            <div className="dest-bottom-right">
+              <img
+                src="https://images.unsplash.com/photo-1548013146-72479768bada?w=800"
+                alt="Jaffna Culture"
+              />
             </div>
           </div>
         </div>
       </section>
-
-      {/* Bottom Section */}
-      <section className="dest-bottom-section">
-        <div className="dest-bottom-right">
-          <h2 className="dest-section-title">Experience Jaffna</h2>
-          <p className="dest-description">
-            Jaffna is a unique city in northern Sri Lanka known for its distinct Tamil culture, ancient temples, and colonial influences. The region offers a deep cultural experience different from other parts of the island.
-          </p>
-          <p className="dest-description">
-            Visitors can explore historic temples, libraries, forts, and enjoy authentic Jaffna cuisine. The city reflects resilience, tradition, and a strong cultural identity, making it an enriching travel destination.
-          </p>
-        </div>
-        <div className="dest-bottom-left">
-          <img
-            src="https://images.unsplash.com/photo-1548013146-72479768bada?w=800"
-            alt="Jaffna Culture"
-            className="dest-bottom-image"
-          />
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="dest-cta-section">
-        <h2>Plan Your Jaffna Journey</h2>
-        <p>Let us create the perfect cultural experience for you</p>
-        <button className="dest-cta-button">Contact Us Today</button>
-      </section>
     </div>
   );
-}
+};
 
 export default Jaffna;

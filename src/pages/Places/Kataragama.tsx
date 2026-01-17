@@ -1,98 +1,80 @@
 import React, { useEffect } from 'react';
 import './Sigiriya.css';
 
-function Kataragama() {
+const Kataragama: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
-    <div className="dest-detail-page">
-      {/* Hero Section */}
+    <div className="destination-page">
       <section className="dest-hero">
-        <div className="dest-hero-overlay">
-          <h1 className="dest-hero-title">Discover Kataragama</h1>
-          <p className="dest-hero-subtitle">
-            A sacred pilgrimage town respected by multiple religions.
-          </p>
-        </div>
+        <img src="https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?w=1600" alt="Kataragama" />
+        <div className="dest-badge">Kataragama</div>
       </section>
 
-      {/* Main Content Section */}
-      <section className="dest-main-section">
+      <section className="dest-content">
         <div className="dest-container">
-          <div className="dest-content-grid">
-            <div className="dest-content-left">
+          <div className="dest-main-section">
+            <div className="dest-left">
               <img
                 src="https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?w=800"
                 alt="Kataragama Temple"
-                className="dest-main-image"
               />
             </div>
-            <div className="dest-content-right">
-              <h2 className="dest-section-title">Why Visit Kataragama?</h2>
+            <div className="dest-right">
+              <h1 className="dest-title">Why Visit Kataragama?</h1>
               <p className="dest-description">
                 Kataragama is one of Sri Lanka's most important religious sites, visited by Buddhists, Hindus, Muslims, and Christians.
               </p>
-              <div className="dest-features">
-                <div className="dest-feature-item">
-                  <span className="dest-feature-icon">✓</span>
-                  <span className="dest-feature-text">Organized pilgrimage travel</span>
-                </div>
-                <div className="dest-feature-item">
-                  <span className="dest-feature-icon">✓</span>
-                  <span className="dest-feature-text">Peaceful spiritual atmosphere</span>
-                </div>
-                <div className="dest-feature-item">
-                  <span className="dest-feature-icon">✓</span>
-                  <span className="dest-feature-text">Comfortable arrangements</span>
-                </div>
+              <ul className="dest-features">
+                <li>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M16.667 5L7.5 14.167 3.333 10" stroke="#22c55e" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  Organized pilgrimage travel
+                </li>
+                <li>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M16.667 5L7.5 14.167 3.333 10" stroke="#22c55e" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  Peaceful spiritual atmosphere
+                </li>
+                <li>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M16.667 5L7.5 14.167 3.333 10" stroke="#22c55e" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  Comfortable arrangements
+                </li>
+              </ul>
+              <div className="dest-meta">
+                <span>🚗 Land Trip</span>
+                <span>📅 2 Days</span>
+                <span>🎯 Pilgrimage</span>
               </div>
             </div>
           </div>
 
-          <div className="dest-info-cards">
-            <div className="dest-info-card">
-              <h3>Land Trip</h3>
+          <div className="dest-bottom-section">
+            <div className="dest-bottom-left">
+              <p className="dest-bottom-text">
+                Kataragama is one of Sri Lanka's most important religious sites, visited by Buddhists, Hindus, Muslims, and Christians.
+              </p>
+              <p className="dest-bottom-text">
+                The town offers a deeply spiritual experience with rituals, temples, and cultural traditions.
+              </p>
             </div>
-            <div className="dest-info-card">
-              <h3>2 Days</h3>
-            </div>
-            <div className="dest-info-card">
-              <h3>Pilgrimage</h3>
+            <div className="dest-bottom-right">
+              <img
+                src="https://images.unsplash.com/photo-1548013146-72479768bada?w=800"
+                alt="Kataragama Rituals"
+              />
             </div>
           </div>
         </div>
       </section>
-
-      {/* Bottom Section */}
-      <section className="dest-bottom-section">
-        <div className="dest-bottom-right">
-          <h2 className="dest-section-title">Experience Kataragama</h2>
-          <p className="dest-description">
-            Kataragama is one of Sri Lanka's most important religious sites, visited by Buddhists, Hindus, Muslims, and Christians.
-          </p>
-          <p className="dest-description">
-            The town offers a deeply spiritual experience with rituals, temples, and cultural traditions.
-          </p>
-        </div>
-        <div className="dest-bottom-left">
-          <img
-            src="https://images.unsplash.com/photo-1548013146-72479768bada?w=800"
-            alt="Kataragama Rituals"
-            className="dest-bottom-image"
-          />
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="dest-cta-section">
-        <h2>Plan Your Kataragama Pilgrimage</h2>
-        <p>Let us create the perfect spiritual journey for you</p>
-        <button className="dest-cta-button">Contact Us Today</button>
-      </section>
     </div>
   );
-}
+};
 
 export default Kataragama;
