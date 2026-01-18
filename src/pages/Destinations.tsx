@@ -188,7 +188,7 @@ const Destinations = () => {
         'Whale watching and beach activities',
         'Relaxing seaside experience'
       ],
-      image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
+      image: require('../img/destination_mirissa.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
@@ -205,7 +205,7 @@ const Destinations = () => {
         'Flexible activity schedules',
         'Fun and relaxing experience'
       ],
-      image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800',
+      image: require('../img/destination_bentota.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },

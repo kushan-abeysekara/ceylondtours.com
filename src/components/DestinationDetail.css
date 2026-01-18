@@ -104,6 +104,7 @@
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 
 .destination-detail-image img {
@@ -113,6 +114,7 @@
   object-position: center;
   transition: transform 0.3s;
   display: block;
+  max-width: 100%;
 }
 
 .destination-detail-image:hover img {
@@ -149,6 +151,7 @@
   .destination-detail-image {
     order: -1;
     width: 100%;
+    margin: 0;
   }
   
   .destination-detail-content {
@@ -165,9 +168,10 @@
   }
   
   .destination-detail-image img {
-    height: 300px;
+    height: 280px;
     max-height: 50vh;
-    min-height: 250px;
+    min-height: 240px;
+    object-fit: cover;
   }
   
   .destination-detail-btn {
@@ -192,9 +196,22 @@
     font-size: 0.75rem;
   }
   
+  .destination-detail-image {
+    margin: 0;
+  }
+  
   .destination-detail-image img {
-    height: 250px;
-    max-height: 40vh;
+    height: 240px;
+    max-height: 45vh;
     min-height: 200px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 360px) {
+  .destination-detail-image img {
+    height: 220px;
+    max-height: 40vh;
+    min-height: 180px;
   }
 }
