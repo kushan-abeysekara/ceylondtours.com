@@ -246,6 +246,39 @@
 .testimonials-section {
   padding: 4rem 0;
   background: #f8f9fa;
+  overflow: hidden;
+}
+
+.testimonials-carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 3rem;
+}
+
+.testimonials-track {
+  display: flex;
+  gap: 2rem;
+  will-change: transform;
+  animation: scroll-left 30s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.testimonials-track:hover {
+  animation-play-state: paused;
+}
+
+.testimonial-slide {
+  min-width: calc(33.333% - 1.35rem);
+  flex-shrink: 0;
 }
 
 .testimonials-grid {
@@ -376,9 +409,16 @@
   
   .destinations-grid,
   .top-destinations-grid,
-  .features-grid,
-  .testimonials-grid {
+  .features-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .testimonial-slide {
+    min-width: 45%;
+  }
+  
+  .testimonials-track {
+    animation: scroll-left 20s linear infinite;
   }
   
   .newsletter-content {
@@ -454,10 +494,18 @@
   
   .destinations-grid,
   .top-destinations-grid,
-  .features-grid,
-  .testimonials-grid {
+  .features-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+  
+  .testimonial-slide {
+    min-width: 100%;
+  }
+  
+  .testimonials-track {
+    gap: 1rem;
+    animation: scroll-left 15s linear infinite;
   }
   
   .newsletter-form {
