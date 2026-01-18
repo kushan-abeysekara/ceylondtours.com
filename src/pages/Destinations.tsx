@@ -511,7 +511,7 @@ const Destinations = () => {
         'Guided nature walks',
         'Calm and natural environment'
       ],
-      image: 'https://images.unsplash.com/photo-1511497584788-876760111969?w=800',
+      image: require('../img/destination_sinharaja.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
