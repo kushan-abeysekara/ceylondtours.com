@@ -171,7 +171,7 @@ const Destinations = () => {
         'Flexible safari schedules',
         'Thrilling wildlife adventure'
       ],
-      image: 'https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=800',
+      image: require('../img/destination_yala.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
