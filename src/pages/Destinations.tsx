@@ -86,7 +86,7 @@ const Destinations = () => {
         'Flexible nature tour options',
         'Calm and seamless waterfall experience'
       ],
-      image: 'https://images.unsplash.com/photo-1580549239615-367449433e06?w=800',
+      image: require('../img/destination_Boburuella.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '1 Days' },
