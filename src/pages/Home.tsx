@@ -64,6 +64,55 @@ const Home = () => {
       image: 'https://i.pravatar.cc/150?img=12',
       rating: '5.0',
       text: 'One of the best trip experiences my wife and I have had. The beauty was incomparable and provided us with more than we expected. The sites, hotels and restaurants was top class throughout.'
+    },
+    { 
+      id: 4, 
+      name: 'Sarah M', 
+      image: 'https://i.pravatar.cc/150?img=9',
+      rating: '5.0',
+      text: 'An unforgettable journey through Sri Lanka. The landscapes were breathtaking, the people were warm and welcoming, and every moment was filled with wonder and discovery.'
+    },
+    { 
+      id: 5, 
+      name: 'Michael K', 
+      image: 'https://i.pravatar.cc/150?img=13',
+      rating: '4.9',
+      text: 'Ceylon D Tour exceeded all our expectations. From the ancient temples to pristine beaches, every destination was carefully selected. Our guide made the experience truly special.'
+    },
+    { 
+      id: 6, 
+      name: 'Emma L', 
+      image: 'https://i.pravatar.cc/150?img=10',
+      rating: '5.0',
+      text: 'Perfect organization from start to finish. The itinerary was well-planned, accommodations were excellent, and we felt safe and cared for throughout our entire Sri Lankan adventure.'
+    },
+    { 
+      id: 7, 
+      name: 'David P', 
+      image: 'https://i.pravatar.cc/150?img=14',
+      rating: '5.0',
+      text: 'The wildlife safari was incredible! Saw elephants in their natural habitat. The cultural experiences and local cuisine made this trip unforgettable. Highly recommend Ceylon D Tour!'
+    },
+    { 
+      id: 8, 
+      name: 'Lisa T', 
+      image: 'https://i.pravatar.cc/150?img=20',
+      rating: '4.8',
+      text: 'Beautiful country, amazing tour! The tea plantations were stunning, the train ride through the hills was magical, and our guide was knowledgeable about every location we visited.'
+    },
+    { 
+      id: 9, 
+      name: 'James W', 
+      image: 'https://i.pravatar.cc/150?img=15',
+      rating: '5.0',
+      text: 'Best vacation ever! The combination of adventure, relaxation, and cultural immersion was perfect. Every day brought new experiences and memories that will last a lifetime.'
+    },
+    { 
+      id: 10, 
+      name: 'Sophie B', 
+      image: 'https://i.pravatar.cc/150?img=16',
+      rating: '5.0',
+      text: 'From Sigiriya Rock to the beaches of the south, every moment was magical. The attention to detail and personal service from Ceylon D Tour made all the difference.'
     }
   ];
 
@@ -192,10 +241,14 @@ const Home = () => {
         <div className="container">
           <h2 className="section-title">What our clients say about us</h2>
           
-          <div className="testimonials-grid">
-            {testimonials.map(testimonial => (
-              <TestimonialCard key={testimonial.id} {...testimonial} />
-            ))}
+          <div className="testimonials-carousel">
+            <div className="testimonials-track">
+              {[...testimonials, ...testimonials].map((testimonial, index) => (
+                <div key={`testimonial-${index}`} className="testimonial-slide">
+                  <TestimonialCard {...testimonial} />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

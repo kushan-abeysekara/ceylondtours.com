@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.72a9d43c.css",
-    "main.js": "/static/js/main.fdab2390.js",
+    "main.css": "/static/css/main.558bda42.css",
+    "main.js": "/static/js/main.3800467c.js",
     "static/media/Hiriketiya.webp": "/static/media/Hiriketiya.09a6ecb747825b4e8b9e.webp",
     "static/media/slider2.webp": "/static/media/slider2.09a6ecb747825b4e8b9e.webp",
     "static/media/NineArch.jpg": "/static/media/NineArch.b96eec3f80e18c64509a.jpg",
@@ -12,7 +12,6 @@
     "static/media/happyTravelers3.jpg": "/static/media/happyTravelers3.96df80967ff60d2fe2e1.jpg",
     "static/media/Memory1.jpg": "/static/media/Memory1.b8049165661b9c9c4139.jpg",
     "static/media/happyTravelers2.jpg": "/static/media/happyTravelers2.4757d65e6c58909a047b.jpg",
-    "static/media/HomeBottom.jpg": "/static/media/HomeBottom.81a7fb89a4c6ca6a8fed.jpg",
     "static/media/happyTravelers1.jpg": "/static/media/happyTravelers1.229064db4df42241e1d0.jpg",
     "static/media/Memory3.jpg": "/static/media/Memory3.aaa1a820cb6ab9b219c1.jpg",
     "static/media/Memory2.jpg": "/static/media/Memory2.7bfc6bf6b6fb1e0336dd.jpg",
@@ -27,14 +26,20 @@
     "static/media/Abouts.jpg": "/static/media/Abouts.fd6f5c4b2005a052b5f2.jpg",
     "static/media/slider4.jpg": "/static/media/slider4.fd6f5c4b2005a052b5f2.jpg",
     "static/media/Abouts2.jpg": "/static/media/Abouts2.7496eff84c7b48f874bb.jpg",
+    "static/media/destination.head.webp": "/static/media/destination.head.f2be509ed75353bdcbb6.webp",
     "static/media/Abouts1.jpg": "/static/media/Abouts1.49abfe1f2bbca18ae6eb.jpg",
     "static/media/Contacts.jpg": "/static/media/Contacts.9249fbaa6c6de78c6631.jpg",
+    "static/media/destination_Boburuella.webp": "/static/media/destination_Boburuella.0f1c174563621830a190.webp",
+    "static/media/destination_sigiriya.webp": "/static/media/destination_sigiriya.4d7c954207660dd8a028.webp",
+    "static/media/destination_NineArch.webp": "/static/media/destination_NineArch.df309b2d8cdb59c67d9b.webp",
+    "static/media/destination_templetoth relic.webp": "/static/media/destination_templetoth relic.aac81830cac1176b6d6e.webp",
+    "static/media/destination_Arugambay.webp": "/static/media/destination_Arugambay.efbd15e5a7eb9470d472.webp",
     "index.html": "/index.html",
-    "main.72a9d43c.css.map": "/static/css/main.72a9d43c.css.map",
-    "main.fdab2390.js.map": "/static/js/main.fdab2390.js.map"
+    "main.558bda42.css.map": "/static/css/main.558bda42.css.map",
+    "main.3800467c.js.map": "/static/js/main.3800467c.js.map"
   },
   "entrypoints": [
-    "static/css/main.72a9d43c.css",
-    "static/js/main.fdab2390.js"
+    "static/css/main.558bda42.css",
+    "static/js/main.3800467c.js"
   ]
 }
