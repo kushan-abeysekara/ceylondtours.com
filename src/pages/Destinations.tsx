@@ -443,7 +443,7 @@ const Destinations = () => {
         'Flexible short-stay plans',
         'Comfortable coastal experience'
       ],
-      image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
+      image: require('../img/destination_negombo.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '1 Day' },
