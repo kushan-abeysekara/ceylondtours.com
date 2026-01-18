@@ -392,7 +392,7 @@ const Destinations = () => {
         'Nature-focused travel plans',
         'Calm and refreshing environment'
       ],
-      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800',
+      image: require('../img/destination_knuckles.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
