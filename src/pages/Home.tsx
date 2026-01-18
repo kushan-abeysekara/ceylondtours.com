@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './Home.css';
 import DestinationCard from '../components/DestinationCard';
 import TestimonialCard from '../components/TestimonialCard';
@@ -146,8 +147,8 @@ const Home = () => {
                 <circle cx="12" cy="10" r="3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
               <div className="search-input-group">
-                <label>Location</label>
-                <input type="text" placeholder="Where are you going?" />
+                <label>120 +</label>
+                <input type="text" placeholder="Destinations" />
               </div>
             </div>
             
@@ -175,17 +176,17 @@ const Home = () => {
                 <path d="M20 8v6M23 11h-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
               <div className="search-input-group">
-                <label>Travel</label>
-                <input type="text" placeholder="How to travel ?" />
+                <label>20k + </label>
+                <input type="text" placeholder="Happy Travelers" />
               </div>
             </div>
             
-            <button className="search-button">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16zM19 19l-4.35-4.35" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-              Search
-            </button>
+            <div className="navbar-actions">
+              <Link to="/book" className="book-now-btn">
+                Book Now
+                <span className="infinity-icon">∞</span>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
