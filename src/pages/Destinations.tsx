@@ -35,7 +35,7 @@ const Destinations = () => {
         'Flexible sightseeing plans around Ella',
         'Relaxed and smooth travel experience'
       ],
-      image: 'https://images.unsplash.com/photo-1588971550723-4c4ae923cdbb?w=800',
+      image: require('../img/destination_NineArch.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
