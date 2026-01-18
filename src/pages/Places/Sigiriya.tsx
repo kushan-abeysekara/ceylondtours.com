@@ -19,7 +19,7 @@ const Sigiriya = () => {
         <div className="dest-container">
           <div className="dest-main-section">
             <div className="dest-left">
-              <img src="https://images.unsplash.com/photo-1588971550723-4c4ae923cdbb?w=800" alt="Sigiriya aerial view" />
+              <img src={require('../../img/sigiriya 1.webp')} alt="Sigiriya aerial view" />
             </div>
             <div className="dest-right">
               <h1 className="dest-title">Discover Sigiriya</h1>
@@ -88,7 +88,7 @@ const Sigiriya = () => {
               </p>
             </div>
             <div className="dest-bottom-right">
-              <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800" alt="Sigiriya sunset" />
+              <img src={require('../../img/sigiriya 2.webp')} alt="Sigiriya sunset" />
             </div>
           </div>
         </div>
