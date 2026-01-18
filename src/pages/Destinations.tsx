@@ -460,7 +460,7 @@ const Destinations = () => {
         'Guided historical visits',
         'Smooth travel experience'
       ],
-      image: 'https://images.unsplash.com/photo-1548013146-72479768bada?w=800',
+      image: require('../img/destination_mahiyanaganaya.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
