@@ -103,7 +103,7 @@ const Destinations = () => {
         'Custom trekking and nature tours',
         'Peaceful and scenic travel experience'
       ],
-      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800',
+      image: require('../img/destination_ella.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
@@ -120,7 +120,7 @@ const Destinations = () => {
         'Flexible temple and city tour options',
         'Peaceful and enriching experience'
       ],
-      image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800',
+      image: require('../img/destination_kandy.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },

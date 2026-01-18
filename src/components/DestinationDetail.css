@@ -110,7 +110,9 @@
   width: 100%;
   height: 400px;
   object-fit: cover;
+  object-position: center;
   transition: transform 0.3s;
+  display: block;
 }
 
 .destination-detail-image:hover img {
@@ -146,6 +148,7 @@
   
   .destination-detail-image {
     order: -1;
+    width: 100%;
   }
   
   .destination-detail-content {
@@ -162,7 +165,9 @@
   }
   
   .destination-detail-image img {
-    height: 500px;
+    height: 300px;
+    max-height: 50vh;
+    min-height: 250px;
   }
   
   .destination-detail-btn {
@@ -188,6 +193,8 @@
   }
   
   .destination-detail-image img {
-    height: 450px;
+    height: 250px;
+    max-height: 40vh;
+    min-height: 200px;
   }
 }
