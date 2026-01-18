@@ -249,18 +249,23 @@
   overflow: hidden;
 }
 
+.testimonials-section .container {
+  max-width: 1200px;
+}
+
 .testimonials-carousel {
   position: relative;
   width: 100%;
   overflow: hidden;
   margin-top: 3rem;
+  padding: 0 1rem;
 }
 
 .testimonials-track {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   will-change: transform;
-  animation: scroll-left 30s linear infinite;
+  animation: scroll-left 35s linear infinite;
 }
 
 @keyframes scroll-left {
@@ -268,7 +273,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(calc(-100% / 3));
   }
 }
 
@@ -277,7 +282,8 @@
 }
 
 .testimonial-slide {
-  min-width: calc(33.333% - 1.35rem);
+  min-width: calc((100% - 3rem) / 3);
+  max-width: calc((100% - 3rem) / 3);
   flex-shrink: 0;
 }
 
@@ -414,11 +420,12 @@
   }
   
   .testimonial-slide {
-    min-width: 45%;
+    min-width: calc((100% - 1.5rem) / 2);
+    max-width: calc((100% - 1.5rem) / 2);
   }
   
   .testimonials-track {
-    animation: scroll-left 20s linear infinite;
+    animation: scroll-left 25s linear infinite;
   }
   
   .newsletter-content {
@@ -500,12 +507,17 @@
   }
   
   .testimonial-slide {
-    min-width: 100%;
+    min-width: calc(100% - 2rem);
+    max-width: calc(100% - 2rem);
   }
   
   .testimonials-track {
     gap: 1rem;
-    animation: scroll-left 15s linear infinite;
+    animation: scroll-left 18s linear infinite;
+  }
+  
+  .testimonials-carousel {
+    padding: 0;
   }
   
   .newsletter-form {

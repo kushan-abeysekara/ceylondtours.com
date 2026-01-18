@@ -243,7 +243,7 @@ const Home = () => {
           
           <div className="testimonials-carousel">
             <div className="testimonials-track">
-              {[...testimonials, ...testimonials].map((testimonial, index) => (
+              {[...testimonials, ...testimonials, ...testimonials].map((testimonial, index) => (
                 <div key={`testimonial-${index}`} className="testimonial-slide">
                   <TestimonialCard {...testimonial} />
                 </div>
