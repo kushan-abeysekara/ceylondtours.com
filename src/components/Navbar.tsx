@@ -1,12 +1,20 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+  const location = useLocation();
 
   const toggleMenu = (): void => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const isActive = (path: string): boolean => {
+    if (path === '/') {
+      return location.pathname === '/';
+    }
+    return location.pathname.startsWith(path);
   };
 
   return (
@@ -24,19 +32,19 @@ const Navbar: React.FC = () => {
         
         <ul className={`navbar-menu ${isMenuOpen ? 'active' : ''}`}>
           <li className="navbar-item">
-            <Link to="/" className="navbar-link" onClick={() => setIsMenuOpen(false)}>Home</Link>
+            <Link to="/" className={`navbar-link ${isActive('/') ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>Home</Link>
           </li>
           <li className="navbar-item">
-            <Link to="/tours" className="navbar-link" onClick={() => setIsMenuOpen(false)}>Tours</Link>
+            <Link to="/tours" className={`navbar-link ${isActive('/tours') ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>Tours</Link>
           </li>
           <li className="navbar-item">
-            <Link to="/destinations" className="navbar-link" onClick={() => setIsMenuOpen(false)}>Destination</Link>
+            <Link to="/destinations" className={`navbar-link ${isActive('/destinations') ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>Destination</Link>
           </li>
           <li className="navbar-item">
-            <Link to="/about" className="navbar-link" onClick={() => setIsMenuOpen(false)}>About Us</Link>
+            <Link to="/about" className={`navbar-link ${isActive('/about') ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>About Us</Link>
           </li>
           <li className="navbar-item">
-            <Link to="/contact" className="navbar-link" onClick={() => setIsMenuOpen(false)}>Contact</Link>
+            <Link to="/contact" className={`navbar-link ${isActive('/contact') ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>Contact</Link>
           </li>
         </ul>
 

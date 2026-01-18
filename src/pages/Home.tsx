@@ -160,21 +160,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Top Destinations Section */}
-      <section className="top-destinations-section">
-        <div className="container">
-          <h2 className="section-title">Top Destinations</h2>
-          
-          <div className="top-destinations-grid">
-            {topDestinations.map(dest => (
-              <DestinationCard key={dest.id} {...dest} size="large" />
-            ))}
-          </div>
-          
-          <button className="view-all-btn">All Destinations →</button>
-        </div>
-      </section>
-
       {/* Features Section */}
       <section className="features-section">
         <div className="container">
@@ -200,6 +185,7 @@ const Home = () => {
 
       {/* Memories Section */}
       <MemoriesSection />
+      
 
       {/* Testimonials Section */}
       <section className="testimonials-section">
@@ -214,27 +200,15 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Newsletter Section */}
-      <section className="newsletter-section">
-        <div className="container">
-          <div className="newsletter-content">
-            <div className="newsletter-image">
-              <img src={require('../img/HomeBottom.jpg')} alt="Colonial Building" />
-            </div>
-            <div className="newsletter-form-wrapper">
-              <h2 className="newsletter-title">Get special offers and more from Travel</h2>
-              <p className="newsletter-subtitle">
-                Subscribe to see secret deals prices drop the moment you sign up and affordable and memorable.
-              </p>
-              <div className="newsletter-form">
-                <input 
-                  type="email" 
-                  placeholder="Email address" 
-                  className="newsletter-input"
-                />
-                <button className="newsletter-button">Subscribe</button>
-              </div>
-            </div>
+      {/* CTA Banner */}
+      <section className="contact-cta-banner">
+        <div className="contact-cta-overlay">
+          <div className="container">
+            <h2 className="contact-cta-title">Get in Touch with Ceylon D Tour</h2>
+            <p className="contact-cta-subtitle">
+              Need Help Planning Your Sri Lanka Trip? Our Team Is Ready To Assist You—Contact Us Today!
+            </p>
+            <button className="contact-cta-btn">Ceylone D Tours</button>
           </div>
         </div>
       </section>

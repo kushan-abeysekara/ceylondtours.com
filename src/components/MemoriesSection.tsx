@@ -1,27 +1,45 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './MemoriesSection.css';
 
 const MemoriesSection = () => {
-  const memories = [
-    {
-      id: 1,
-      image: require('../img/Memory1.jpg'),
-      category: 'Tourism & Travel',
-      title: 'Family Adventure'
-    },
-    {
-      id: 2,
-      image: require('../img/Memory2.jpg'),
-      category: 'Tourism & Travel',
-      title: 'Mountain Exploration'
-    },
-    {
-      id: 3,
-      image: require('../img/Memory3.jpg'),
-      category: 'Tourism & Travel',
-      title: 'Nature Journey'
-    }
+  const imageSet1 = [
+    require('../img/Memory1.jpg'),
+    require('../img/Memory2.jpg'),
+    require('../img/Memory3.jpg'),
+    require('../img/Memory1.jpg'),
+    require('../img/Memory2.jpg'),
+    require('../img/Memory3.jpg')
   ];
+
+  const imageSet2 = [
+    require('../img/Memory3.jpg'),
+    require('../img/Memory1.jpg'),
+    require('../img/Memory2.jpg'),
+    require('../img/Memory3.jpg'),
+    require('../img/Memory1.jpg'),
+    require('../img/Memory2.jpg')
+  ];
+
+  const imageSets = [imageSet1, imageSet2];
+
+  const memories = [
+    { id: 1, title: 'Family Adventure' },
+    { id: 2, title: 'Mountain Exploration' },
+    { id: 3, title: 'Nature Journey' },
+    { id: 4, title: 'Family Adventure' },
+    { id: 5, title: 'Mountain Exploration' },
+    { id: 6, title: 'Nature Journey' }
+  ];
+
+  const [currentSetIndex, setCurrentSetIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSetIndex((prevIndex) => (prevIndex + 1) % imageSets.length);
+    }, 1500);
+
+    return () => clearInterval(interval);
+  }, [imageSets.length]);
 
   return (
     <section className="memories-section">
@@ -33,15 +51,18 @@ const MemoriesSection = () => {
         </p>
         
         <div className="memories-grid">
-          {memories.map(memory => (
+          {memories.map((memory, index) => (
             <div key={memory.id} className="memory-card">
-              <img src={memory.image} alt={memory.title} className="memory-image" />
-              <div className="memory-info">
-                <p className="memory-category">{memory.category}</p>
+              <div className="memory-image-container">
+                <img 
+                  src={imageSets[currentSetIndex][index]} 
+                  alt={memory.title} 
+                  className="memory-image" 
+                  key={`${currentSetIndex}-${index}`}
+                />
                 <button 
-                  className="memory-link"
+                  className="memory-view-btn"
                   onClick={() => console.log('View clicked')}
-                  style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0, font: 'inherit', color: 'inherit', textDecoration: 'none' }}
                 >
                   View →
                 </button>

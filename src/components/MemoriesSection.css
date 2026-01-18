@@ -44,34 +44,50 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-.memory-image {
+.memory-image-container {
+  position: relative;
   width: 100%;
   height: 250px;
+}
+
+.memory-image {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  display: block;
+  animation: fadeIn 0.5s ease-in-out;
 }
 
-.memory-info {
-  padding: 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.memory-category {
-  color: #666;
-  font-size: 0.9rem;
-  margin: 0;
-}
-
-.memory-link {
+.memory-view-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: white;
   color: #1a1a1a;
-  text-decoration: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
   font-weight: 600;
-  transition: color 0.3s;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
-.memory-link:hover {
-  color: #667eea;
+.memory-view-btn:hover {
+  background: #1a1a1a;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 @media (max-width: 992px) {

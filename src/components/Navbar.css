@@ -52,6 +52,11 @@
   color: #000;
 }
 
+.navbar-link.active {
+  color: #000;
+  font-weight: 700;
+}
+
 .navbar-actions {
   display: flex;
   align-items: center;
