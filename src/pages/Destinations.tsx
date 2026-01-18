@@ -18,7 +18,7 @@ const Destinations = () => {
         'Custom cultural tour plans to match your interests',
         'Well-organized and comfortable sightseeing experience'
       ],
-      image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800',
+      image: require('../img/destination_sigiriya.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '1 Days' },
@@ -35,7 +35,7 @@ const Destinations = () => {
         'Flexible sightseeing plans around Ella',
         'Relaxed and smooth travel experience'
       ],
-      image: 'https://images.unsplash.com/photo-1588971550723-4c4ae923cdbb?w=800',
+      image: require('../img/destination_NineArch.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
@@ -52,7 +52,7 @@ const Destinations = () => {
         'Custom surf and beach holiday options',
         'Easy, relaxed, and worry-free beach travel'
       ],
-      image: 'https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=800',
+      image: require('../img/destination_Arugambay.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
@@ -69,7 +69,7 @@ const Destinations = () => {
         'Personalized cultural and religious tour options',
         'Peaceful, well-organized temple visit experience'
       ],
-      image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800',
+      image: require('../img/destination_templetoth relic.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '1 Days' },
@@ -86,7 +86,7 @@ const Destinations = () => {
         'Flexible nature tour options',
         'Calm and seamless waterfall experience'
       ],
-      image: 'https://images.unsplash.com/photo-1580549239615-367449433e06?w=800',
+      image: require('../img/destination_Boburuella.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '1 Days' },
