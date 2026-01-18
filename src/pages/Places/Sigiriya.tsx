@@ -10,7 +10,7 @@ const Sigiriya = () => {
     <div className="destination-page">
       {/* Hero Section */}
       <section className="dest-hero">
-        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1600" alt="Sigiriya" />
+        <img src={require('../../img/sigiriya_head.webp')} alt="Sigiriya" />
         <div className="dest-badge">Sigiriya</div>
       </section>
 
