@@ -477,7 +477,7 @@ const Destinations = () => {
         'Easy sightseeing access',
         'Relaxed travel experience'
       ],
-      image: require('../img/destination_ravaba.webp'),
+      image: require('../img/destination_Ravaba.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '1 Day' },
