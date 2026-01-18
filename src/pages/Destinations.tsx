@@ -545,7 +545,7 @@ const Destinations = () => {
         'Cultural sightseeing',
         'Smooth travel arrangements'
       ],
-      image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
+      image: require('../img/destination_batticalo.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
@@ -562,7 +562,7 @@ const Destinations = () => {
         'Nature-focused sightseeing',
         'Peaceful experience'
       ],
-      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800',
+      image: require('../img/destination_badulla.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
@@ -579,7 +579,7 @@ const Destinations = () => {
         'Guided plantation visits',
         'Relaxed experience'
       ],
-      image: 'https://images.unsplash.com/photo-1563968743333-044cef800494?w=800',
+      image: require('../img/destination_hatton.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
