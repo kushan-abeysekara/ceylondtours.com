@@ -154,7 +154,7 @@ const Destinations = () => {
         'Flexible walking and exploration plans',
         'Relaxed coastal experience'
       ],
-      image: 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800',
+      image: require('../img/destination_galle fort.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '1 Days' },
