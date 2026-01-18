@@ -324,7 +324,7 @@ const Destinations = () => {
         'Flexible beach and activity schedules',
         'Fun-filled and relaxing travel experience'
       ],
-      image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
+      image: require('../img/destination_Hikkaduwa.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
