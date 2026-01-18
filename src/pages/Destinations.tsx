@@ -477,7 +477,7 @@ const Destinations = () => {
         'Easy sightseeing access',
         'Relaxed travel experience'
       ],
-      image: 'https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=800',
+      image: require('../img/destination_ravaba.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '1 Day' },
@@ -494,7 +494,7 @@ const Destinations = () => {
         'Safe climbing experience',
         'Peaceful natural setting'
       ],
-      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800',
+      image: require('../img/destination_pidurangala.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '1 Day' },
