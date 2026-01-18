@@ -52,7 +52,7 @@ const Destinations = () => {
         'Custom surf and beach holiday options',
         'Easy, relaxed, and worry-free beach travel'
       ],
-      image: 'https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=800',
+      image: require('../img/destination_Arugambay.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
