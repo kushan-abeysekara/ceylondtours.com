@@ -6,8 +6,8 @@
 .destinations-hero {
   position: relative;
   height: 350px;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url('../img/destination.head.webp') center/cover;
+  background: linear-gradient(#00000066, rgba(0, 0, 0, 0.4)),
+  url('../img/Destinatins.webp') center/cover;
   display: flex;
   align-items: center;
   justify-content: center;

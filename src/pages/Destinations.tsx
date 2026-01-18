@@ -103,7 +103,7 @@ const Destinations = () => {
         'Custom trekking and nature tours',
         'Peaceful and scenic travel experience'
       ],
-      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800',
+      image: require('../img/destination_ella.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
@@ -120,7 +120,7 @@ const Destinations = () => {
         'Flexible temple and city tour options',
         'Peaceful and enriching experience'
       ],
-      image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800',
+      image: require('../img/destination_kandy.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
@@ -137,7 +137,7 @@ const Destinations = () => {
         'Tea estate and nature tours',
         'Relaxed and scenic experience'
       ],
-      image: 'https://images.unsplash.com/photo-1563968743333-044cef800494?w=800',
+      image: require('../img/destination_nuwaraeliya.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
@@ -154,7 +154,7 @@ const Destinations = () => {
         'Flexible walking and exploration plans',
         'Relaxed coastal experience'
       ],
-      image: 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800',
+      image: require('../img/destination_galle fort.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '1 Days' },
@@ -171,7 +171,7 @@ const Destinations = () => {
         'Flexible safari schedules',
         'Thrilling wildlife adventure'
       ],
-      image: 'https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=800',
+      image: require('../img/destination_yala.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
@@ -188,7 +188,7 @@ const Destinations = () => {
         'Whale watching and beach activities',
         'Relaxing seaside experience'
       ],
-      image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
+      image: require('../img/destination_mirissa.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
@@ -205,7 +205,7 @@ const Destinations = () => {
         'Flexible activity schedules',
         'Fun and relaxing experience'
       ],
-      image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800',
+      image: require('../img/destination_bentota.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
@@ -222,7 +222,7 @@ const Destinations = () => {
         'Secure and organized temple visits',
         'Enriching cultural experience'
       ],
-      image: 'https://images.unsplash.com/photo-1548013146-72479768bada?w=800',
+      image: require('../img/destination_anuradapura.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
@@ -239,7 +239,7 @@ const Destinations = () => {
         'Expert guided experiences',
         'Comfortable heritage exploration'
       ],
-      image: 'https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?w=800',
+      image: require('../img/destination_polonnaruwa.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '1 Days' },
@@ -256,7 +256,7 @@ const Destinations = () => {
         'Guided temple tours',
         'Peaceful cultural experience'
       ],
-      image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800',
+      image: require('../img/destination_dambulla.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '1 Days' },
@@ -273,7 +273,7 @@ const Destinations = () => {
         'Nature-focused travel plans',
         'Breathtaking natural scenery'
       ],
-      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800',
+      image: require('../img/destination_hortan.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '1 Days' },
@@ -290,7 +290,7 @@ const Destinations = () => {
         'Safe mountain trekking',
         'Spiritual and scenic journey'
       ],
-      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800',
+      image: require('../img/destination_adams peak.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
@@ -307,7 +307,7 @@ const Destinations = () => {
         'Beach and diving activities',
         'Relaxed seaside experience'
       ],
-      image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
+      image: require('../img/destination_trincomalee.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
@@ -324,7 +324,7 @@ const Destinations = () => {
         'Flexible beach and activity schedules',
         'Fun-filled and relaxing travel experience'
       ],
-      image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
+      image: require('../img/destination_Hikkaduwa.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
@@ -341,7 +341,7 @@ const Destinations = () => {
         'Flexible safari schedules',
         'Smooth and comfortable travel'
       ],
-      image: 'https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=800',
+      image: require('../img/destination_udawalawa.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
@@ -358,7 +358,7 @@ const Destinations = () => {
         'Adventure-based activities',
         'Relaxed and nature-focused experience'
       ],
-      image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
+      image: require('../img/destination_kalpitiya.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
@@ -375,7 +375,7 @@ const Destinations = () => {
         'Guided city exploration',
         'Comfortable travel arrangements'
       ],
-      image: 'https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?w=800',
+      image: require('../img/destination_jaffna.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
@@ -392,7 +392,7 @@ const Destinations = () => {
         'Nature-focused travel plans',
         'Calm and refreshing environment'
       ],
-      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800',
+      image: require('../img/destination_knuckles.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
@@ -409,7 +409,7 @@ const Destinations = () => {
         'Professional guides',
         'Exciting and smooth travel experience'
       ],
-      image: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800',
+      image: require('../img/destination_kithulgala.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
@@ -426,7 +426,7 @@ const Destinations = () => {
         'Family-friendly plans',
         'Peaceful and smooth experience'
       ],
-      image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
+      image: require('../img/destination_pasikuda.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
@@ -443,7 +443,7 @@ const Destinations = () => {
         'Flexible short-stay plans',
         'Comfortable coastal experience'
       ],
-      image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
+      image: require('../img/destination_negombo.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '1 Day' },
@@ -460,7 +460,7 @@ const Destinations = () => {
         'Guided historical visits',
         'Smooth travel experience'
       ],
-      image: 'https://images.unsplash.com/photo-1548013146-72479768bada?w=800',
+      image: require('../img/destination_mahiyanaganaya.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
@@ -477,7 +477,7 @@ const Destinations = () => {
         'Easy sightseeing access',
         'Relaxed travel experience'
       ],
-      image: 'https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=800',
+      image: require('../img/destination_ravaba.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '1 Day' },
@@ -494,7 +494,7 @@ const Destinations = () => {
         'Safe climbing experience',
         'Peaceful natural setting'
       ],
-      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800',
+      image: require('../img/destination_pidurangala.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '1 Day' },
@@ -511,7 +511,7 @@ const Destinations = () => {
         'Guided nature walks',
         'Calm and natural environment'
       ],
-      image: 'https://images.unsplash.com/photo-1511497584788-876760111969?w=800',
+      image: require('../img/destination_sinharaja.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
@@ -528,7 +528,7 @@ const Destinations = () => {
         'Professional wildlife guides',
         'Comfortable travel'
       ],
-      image: 'https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=800',
+      image: require('../img/destination_wilpattu.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
@@ -545,7 +545,7 @@ const Destinations = () => {
         'Cultural sightseeing',
         'Smooth travel arrangements'
       ],
-      image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
+      image: require('../img/destination_batticalo.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
@@ -562,7 +562,7 @@ const Destinations = () => {
         'Nature-focused sightseeing',
         'Peaceful experience'
       ],
-      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800',
+      image: require('../img/destination_badulla.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
@@ -579,7 +579,7 @@ const Destinations = () => {
         'Guided plantation visits',
         'Relaxed experience'
       ],
-      image: 'https://images.unsplash.com/photo-1563968743333-044cef800494?w=800',
+      image: require('../img/destination_hatton.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
@@ -596,7 +596,7 @@ const Destinations = () => {
         'Cultural exploration',
         'Comfortable travel'
       ],
-      image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800',
+      image: require('../img/destination_matara.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
@@ -613,7 +613,7 @@ const Destinations = () => {
         'Leisure sightseeing',
         'Relaxed experience'
       ],
-      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800',
+      image: require('../img/destination_hambantota.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
@@ -630,7 +630,7 @@ const Destinations = () => {
         'Peaceful spiritual atmosphere',
         'Comfortable arrangements'
       ],
-      image: 'https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?w=800',
+      image: require('../img/destination_kataragama.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
@@ -647,7 +647,7 @@ const Destinations = () => {
         'Flexible sightseeing plans',
         'Smooth urban experience'
       ],
-      image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800',
+      image: require('../img/destination_colombo.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },

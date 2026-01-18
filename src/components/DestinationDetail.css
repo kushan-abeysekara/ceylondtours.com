@@ -108,9 +108,12 @@
 
 .destination-detail-image img {
   width: 100%;
+  max-width: 100%;
   height: 400px;
   object-fit: cover;
+  object-position: center;
   transition: transform 0.3s;
+  display: block;
 }
 
 .destination-detail-image:hover img {
@@ -127,6 +130,8 @@
   }
   
   .destination-detail-image img {
+    width: 100%;
+    max-width: 100%;
     height: 350px;
   }
 }
@@ -161,8 +166,17 @@
     gap: 1.5rem;
   }
   
+  .destination-detail-image {
+    width: 100%;
+    max-width: 100%;
+  }
+  
   .destination-detail-image img {
-    height: 500px;
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
   }
   
   .destination-detail-btn {
@@ -187,7 +201,16 @@
     font-size: 0.75rem;
   }
   
+  .destination-detail-image {
+    width: 100%;
+    max-width: 100%;
+  }
+  
   .destination-detail-image img {
-    height: 450px;
+    width: 100%;
+    max-width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
   }
 }
