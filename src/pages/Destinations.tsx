@@ -409,7 +409,7 @@ const Destinations = () => {
         'Professional guides',
         'Exciting and smooth travel experience'
       ],
-      image: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800',
+      image: require('../img/destination_kithulgala.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
