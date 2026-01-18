@@ -2,8 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './DestinationDetail.css';
 
-const DestinationDetail = ({ id, title, description, features, image, icons, reverse }) => {
-  const getDestinationPath = (id) => {
+interface DestinationDetailProps {
+  id: number;
+  title: string;
+  description: string;
+  features: string[];
+  image: any;
+  icons: { icon: string; label: string; }[];
+  reverse: boolean;
+}
+
+const DestinationDetail: React.FC<DestinationDetailProps> = ({ id, title, description, features, image, icons, reverse }) => {
+  const getDestinationPath = (id: number): string => {
     const paths = {
       1: '/destinations/sigiriya',
       2: '/destinations/nine-arch-bridge',

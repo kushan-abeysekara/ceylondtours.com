@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
 import './FAQAccordion.css';
 
-const FAQAccordion = ({ question, answer }) => {
+interface FAQAccordionProps {
+  question: string;
+  answer: string;
+}
+
+const FAQAccordion: React.FC<FAQAccordionProps> = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
