@@ -647,7 +647,7 @@ const Destinations = () => {
         'Flexible sightseeing plans',
         'Smooth urban experience'
       ],
-      image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800',
+      image: require('../img/destination_colombo.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
