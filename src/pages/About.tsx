@@ -165,7 +165,7 @@ const About = () => {
             </div>
             <div className="cta-banner-right">
               <h3 className="cta-banner-title">Book your holiday with complete confidence</h3>
-              <a href="/book" className="cta-banner-btn">
+              <a href="https://www.tripadvisor.com/Attraction_Review-g297896-d13293559-Reviews-Ceylon_D_Tours-Galle_Galle_District_Southern_Province.html" className="cta-banner-btn" target="_blank" rel="noopener noreferrer">
                 Book Now
                 <span className="infinity-icon">∞</span>
               </a>

@@ -182,10 +182,10 @@ const Home = () => {
             </div>
             
             <div className="navbar-actions">
-              <Link to="/book" className="book-now-btn">
+              <a href="https://www.tripadvisor.com/Attraction_Review-g297896-d13293559-Reviews-Ceylon_D_Tours-Galle_Galle_District_Southern_Province.html" className="book-now-btn" target="_blank" rel="noopener noreferrer">
                 Book Now
                 <span className="infinity-icon">∞</span>
-              </Link>
+              </a>
             </div>
           </div>
         </div>

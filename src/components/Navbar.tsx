@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
             <Link to="/" className={`navbar-link ${isActive('/') ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>Home</Link>
           </li>
           <li className="navbar-item">
-            <Link to="/tours" className={`navbar-link ${isActive('/tours') ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>Tours</Link>
+            <a href="https://www.tripadvisor.com/Attraction_Review-g297896-d13293559-Reviews-Ceylon_D_Tours-Galle_Galle_District_Southern_Province.html" className="navbar-link" target="_blank" rel="noopener noreferrer" onClick={() => setIsMenuOpen(false)}>Tours</a>
           </li>
           <li className="navbar-item">
             <Link to="/destinations" className={`navbar-link ${isActive('/destinations') ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>Destination</Link>
@@ -54,10 +54,10 @@ const Navbar: React.FC = () => {
               <path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16zM19 19l-4.35-4.35" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </button>
-          <Link to="/book" className="book-now-btn">
+          <a href="https://www.tripadvisor.com/Attraction_Review-g297896-d13293559-Reviews-Ceylon_D_Tours-Galle_Galle_District_Southern_Province.html" className="book-now-btn" target="_blank" rel="noopener noreferrer">
             Book Now
             <span className="infinity-icon">∞</span>
-          </Link>
+          </a>
         </div>
       </div>
     </nav>
