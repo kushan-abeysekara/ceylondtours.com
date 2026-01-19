@@ -10,7 +10,7 @@ const BomburuElla = () => {
     <div className="destination-page">
       {/* Hero Section */}
       <section className="dest-hero">
-        <img src="https://images.unsplash.com/photo-1580549239615-367449433e06?w=1600" alt="Bomburu Ella" />
+        <img src={require('../../img/bomburu 1.webp')} alt="Bomburu Ella" />
         <div className="dest-badge">Bomburu Ella</div>
       </section>
 
