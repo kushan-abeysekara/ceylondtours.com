@@ -86,10 +86,10 @@
 .search-card {
   background: white;
   border-radius: 16px;
-  padding: 1.5rem;
+  padding: 1.5rem 2rem;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
   max-width: 900px;
   position: absolute;
@@ -103,6 +103,10 @@
   align-items: center;
   gap: 0.8rem;
   flex: 1;
+}
+
+.search-field:last-child {
+  justify-content: flex-end;
 }
 
 .search-icon-svg {

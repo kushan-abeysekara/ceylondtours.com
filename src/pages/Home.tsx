@@ -35,19 +35,23 @@ const Home = () => {
       id: 1, 
       image: [
         require('../img/BoburuElla.webp'),
-        require('../img/Sigiriya.jpg'),
+        require('../img/bomburu 1.webp'),
         require('../img/Ella.jpg')
       ], 
-      badge: 'Boburu Ella' 
+      badge: 'Bomburu Ella',
+      title: 'Discover Bomburu Ella',
+      description: 'Boburu Ella is a breathtaking waterfall near Ella, surrounded by thick forests and cool mountain air. It is an ideal place for nature lovers, photography enthusiasts, and travelers seeking peace, freshness, and scenic beauty.'
     },
     { 
       id: 2, 
       image: [
         require('../img/NineArch.jpg'),
-        require('../img/Hiriketiya.webp'),
-        require('../img/Arugambay.jpg')
+        require('../img/nine arch 1.webp'),
+        require('../img/nine arch 2.webp')
       ], 
-      badge: 'Nine Arch' 
+      badge: 'Nine Arch Bridge',
+      title: 'Discover Nine Arch Bridge',
+      description: 'Nine Arch Bridge is a famous historic railway bridge located in Ella, known for its impressive stone arches, lush green surroundings, and the magical experience of watching trains pass through the misty hills.'
     },
     { 
       id: 3, 
@@ -56,25 +60,31 @@ const Home = () => {
         require('../img/BoburuElla.webp'),
         require('../img/Mirissa1.jpg')
       ], 
-      badge: 'Hiriketiya' 
+      badge: 'Hiriketiya',
+      title: 'Discover Hiriketiya Beach',
+      description: 'Hiriketiya is a charming crescent-shaped beach popular for surfing, swimming, yoga, and relaxation. With calm waters, golden sands, cafés, and a relaxed atmosphere, it attracts travelers seeking peaceful beachside experiences.'
     },
     { 
       id: 4, 
       image: [
-        require('../img/Arugambay.jpg'),
-        require('../img/NineArch.jpg'),
-        require('../img/Sigiriya.jpg')
+        require('../img/arugam bay 1.webp'),
+        require('../img/arugam bay 2.webp'),
+        require('../img/arugam bay 3.webp')
       ], 
-      badge: 'Arugam Bay' 
+      badge: 'Arugam Bay',
+      title: 'Discover Arugam Bay',
+      description: 'Arugam Bay is a world-renowned surfing destination on Sri Lanka’s east coast, famous for long waves, laid-back beach culture, nearby wildlife spots, and stunning sunsets enjoyed by surfers and travelers from around the world.'
     },
     { 
       id: 5, 
       image: [
-        require('../img/Sigiriya.jpg'),
-        require('../img/Ella.jpg'),
-        require('../img/BoburuElla.webp')
+        require('../img/sigiriya_head.webp'),
+        require('../img/sigiriya 1.webp'),
+        require('../img/sigiriya 2.webp')
       ], 
-      badge: 'Sigiriya' 
+      badge: 'Sigiriya',
+      title: 'Discover Sigiriya Rock',
+      description: 'Sigiriya is an ancient rock fortress and UNESCO World Heritage Site, famous for its royal gardens, fresco paintings, mirror wall, and panoramic views from the summit, showcasing Sri Lanka’s rich history and culture.'
     },
     { 
       id: 6, 
@@ -83,7 +93,9 @@ const Home = () => {
         require('../img/Hiriketiya.webp'),
         require('../img/Arugambay.jpg')
       ], 
-      badge: 'Ella-Badulla' 
+      badge: 'Ella',
+      title: 'Discover Ella',
+      description: 'Ella and Badulla are beautiful hill-country destinations offering cool weather, scenic train journeys, tea plantations, waterfalls, hiking trails, and peaceful mountain landscapes, making them perfect for relaxation, sightseeing, and adventure travel experiences.'
     }
   ];
 
@@ -193,8 +205,7 @@ const Home = () => {
           <div className="hero-content">
             <h1 className="hero-title">Live your dream<br />destinations.</h1>
             <p className="hero-subtitle">
-              Quisq eu consqur ornare congue non enim<br />
-              pellentesque eleifend ipsum.
+              Discover Sri Lanka with Ceylon D Tours <br/> safe, flexible, and unforgettable travel experiences.
             </p>
           </div>
           
@@ -212,18 +223,13 @@ const Home = () => {
             
             <div className="search-divider"></div>
             
-            <div className="search-field">
-              <svg className="search-icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-              <div className="search-input-group">
-                <label>Date</label>
-                <input type="text" placeholder="Set date" />
-              </div>
+            <div className="navbar-actions">
+              <a href="https://www.tripadvisor.com/Attraction_Review-g297896-d13293559-Reviews-Ceylon_D_Tours-Galle_Galle_District_Southern_Province.html" className="book-now-btn" target="_blank" rel="noopener noreferrer">
+                Book Now
+                <span className="infinity-icon">∞</span>
+              </a>
             </div>
+          
             
             <div className="search-divider"></div>
             
@@ -239,12 +245,7 @@ const Home = () => {
               </div>
             </div>
             
-            <div className="navbar-actions">
-              <a href="https://www.tripadvisor.com/Attraction_Review-g297896-d13293559-Reviews-Ceylon_D_Tours-Galle_Galle_District_Southern_Province.html" className="book-now-btn" target="_blank" rel="noopener noreferrer">
-                Book Now
-                <span className="infinity-icon">∞</span>
-              </a>
-            </div>
+
           </div>
         </div>
       </section>
