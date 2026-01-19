@@ -36,7 +36,7 @@ const Home = () => {
       image: [
         require('../img/BoburuElla.webp'),
         require('../img/bomburu 1.webp'),
-        require('../img/Ella.jpg')
+        require('../img/bomuru-ella 3.jpg')
       ], 
       badge: 'Bomburu Ella',
       title: 'Discover Bomburu Ella',
@@ -57,8 +57,8 @@ const Home = () => {
       id: 3, 
       image: [
         require('../img/Hiriketiya.webp'),
-        require('../img/BoburuElla.webp'),
-        require('../img/Mirissa1.jpg')
+        require('../img/hiriketiya 2.jpg'),
+        require('../img/hiriketiya 1.jpg')
       ], 
       badge: 'Hiriketiya',
       title: 'Discover Hiriketiya Beach',
@@ -90,8 +90,8 @@ const Home = () => {
       id: 6, 
       image: [
         require('../img/Ella.jpg'),
-        require('../img/Hiriketiya.webp'),
-        require('../img/Arugambay.jpg')
+        require('../img/ella 2.webp'),
+        require('../img/ella 3.webp')
       ], 
       badge: 'Ella',
       title: 'Discover Ella',
@@ -117,73 +117,73 @@ const Home = () => {
   const testimonials = [
     { 
       id: 1, 
-      name: 'Charlie R', 
-      image: 'https://i.pravatar.cc/150?img=1',
+      name: 'José Manuel C', 
+      image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/f1/79/default-avatar-2020-21.jpg?w=300&h=-1&s=1',
       rating: '5.0',
-      text: 'It was an amazing trip to Sri Lanka. Our tour guide was very friendly and knowledgeable. The places we visit were absolutely great places and learned lot about Sri Lankan culture and history.'
+      text: 'People that know me say I have travel a lot and in the case of Dami, for me it has been the Best professional that I have had, and furthermore the Best person, that has accompany me in my journeys. Thank you Dami, I wish you the Best in your New endeavour!'
     },
     { 
       id: 2, 
-      name: 'Julia D', 
-      image: 'https://i.pravatar.cc/150?img=5',
-      rating: '5.0',
-      text: 'Brilliant work! I went there for a night, but not enough to explore the beauty of Sri Lanka, even the food was great, and our coordinator was very nice, humble, friendly and made us comfortable.'
+      name: 'Kitty F', 
+      image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/e8/24/default-avatar-2020-60.jpg?w=300&h=-1&s=1',
+      rating: '"',
+      text: 'Dami drove us for four days around the centre of Sri Lanka. We saw so much of the beautiful country and he taught us a lot about the culture and landscape whilst keeping us safe travelling through bumpy roads. He is great company, very efficient, thoughtful and always on time. We highly recommend Dami and will definitely be back to tour with him again in this very special place.'
     },
     { 
       id: 3, 
-      name: 'Charles H', 
-      image: 'https://i.pravatar.cc/150?img=12',
+      name: 'Charlie D', 
+      image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/e3/6a/default-avatar-2020-47.jpg?w=300&h=-1&s=1',
       rating: '5.0',
-      text: 'One of the best trip experiences my wife and I have had. The beauty was incomparable and provided us with more than we expected. The sites, hotels and restaurants was top class throughout.'
+      text: 'It was an amazing trip to Sri Lanka and a lot of that can be attributed to Dami. He went above and beyond to provide a great service and is very personable. 10/10 would recommend to anyone'
     },
     { 
       id: 4, 
-      name: 'Sarah M', 
-      image: 'https://i.pravatar.cc/150?img=9',
+      name: 'Julia D', 
+      image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/f1/42/default-avatar-2020-20.jpg?w=300&h=-1&s=1',
       rating: '5.0',
-      text: 'An unforgettable journey through Sri Lanka. The landscapes were breathtaking, the people were warm and welcoming, and every moment was filled with wonder and discovery.'
+      text: 'Brilliant on all levels.Traveled w family and found Dami very good with all of us sharing his culture and knowledge Generous with time and sharing great food stops along the wayClean car and always helpful. Highly recommend'
     },
     { 
       id: 5, 
-      name: 'Michael K', 
-      image: 'https://i.pravatar.cc/150?img=13',
-      rating: '4.9',
-      text: 'Ceylon D Tour exceeded all our expectations. From the ancient temples to pristine beaches, every destination was carefully selected. Our guide made the experience truly special.'
+      name: 'Charlie H', 
+      image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/f4/20/default-avatar-2020-31.jpg?w=300&h=-1&s=1',
+      rating: '5/5',
+      text: 'Dami was the best tour guide we could have wished for. He was kind and knowledgeable and ensured our trip was the best possible experience. I could not recommend him enough.'
     },
     { 
       id: 6, 
-      name: 'Emma L', 
-      image: 'https://i.pravatar.cc/150?img=10',
+      name: 'Gosia W', 
+      image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/de/0a/default-avatar-2020-35.jpg?w=200&h=-1&s=1',
       rating: '5.0',
-      text: 'Perfect organization from start to finish. The itinerary was well-planned, accommodations were excellent, and we felt safe and cared for throughout our entire Sri Lankan adventure.'
+      text: 'We had a great trip over Sri Lanka in July with Dami: the best guide😍. His knowledge and amazing care is our best memory from this beatiful island🪷.'
     },
     { 
       id: 7, 
-      name: 'David P', 
-      image: 'https://i.pravatar.cc/150?img=14',
+      name: 'Grace T', 
+      image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/e9/60/default-avatar-2020-64.jpg?w=200&h=-1&s=1',
       rating: '5.0',
-      text: 'The wildlife safari was incredible! Saw elephants in their natural habitat. The cultural experiences and local cuisine made this trip unforgettable. Highly recommend Ceylon D Tour!'
+      text: 'Dami is fantastic! He is so kind, caring and friendly and will go above and beyond to show you the best spots in Sri Lanka! He is so knowledgeable on Sri Lankan history and native flora and fauna. I’d recommend him to everyone!'
     },
     { 
       id: 8, 
-      name: 'Lisa T', 
-      image: 'https://i.pravatar.cc/150?img=20',
+      name: 'Benjamin L', 
+      image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/ea/b2/default-avatar-2020-69.jpg?w=200&h=-1&s=1',
       rating: '4.8',
-      text: 'Beautiful country, amazing tour! The tea plantations were stunning, the train ride through the hills was magical, and our guide was knowledgeable about every location we visited.'
+      text: 'Daminda is not only the best and safest driver in Sri Lanka, he has also the best knowledge and contacts.He is a very understanding and calm person! We did a tour around the Island for almost one week with him and the experience could not have been any better.'
     },
     { 
       id: 9, 
-      name: 'James W', 
-      image: 'https://i.pravatar.cc/150?img=15',
+      name: 'Peter L', 
+      image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/ea/b2/default-avatar-2020-69.jpg?w=200&h=-1&s=1',
       rating: '5.0',
-      text: 'Best vacation ever! The combination of adventure, relaxation, and cultural immersion was perfect. Every day brought new experiences and memories that will last a lifetime.'
+      text: 'Absolutely excellent guide, excellent knowledge and conversation, entertaining, patient, thoughtful, we give this guide our highest recommendation.'
     },
     { 
       id: 10, 
-      name: 'Sophie B', 
-      image: 'https://i.pravatar.cc/150?img=16',
+      name: 'Z O', 
+      image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/f4/d0/default-avatar-2020-33.jpg?w=100&h=-1&s=1',
       rating: '5.0',
-      text: 'From Sigiriya Rock to the beaches of the south, every moment was magical. The attention to detail and personal service from Ceylon D Tour made all the difference.'
+      text: 'Dami was a great guide -- he was very positive and informative. He also offered lots of good advice and suggestions!'
     }
   ];
 

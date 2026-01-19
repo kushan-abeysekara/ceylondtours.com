@@ -9,7 +9,7 @@
   overflow: visible;
   border-radius: 24px;
   margin: 2rem auto;
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
   max-width: 1200px;
 }
 
@@ -331,9 +331,10 @@
 
 /* Testimonials Section */
 .testimonials-section {
-  padding: 4rem 0;
+  padding: 4rem 0 5rem 0;
   background: #f8f9fa;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 
 .testimonials-section .container {
@@ -345,14 +346,14 @@
   width: 100%;
   overflow: hidden;
   margin-top: 3rem;
-  padding: 0 1rem;
+  padding: 0 1rem 2rem 1rem;
 }
 
 .testimonials-track {
   display: flex;
   gap: 1.5rem;
   will-change: transform;
-  animation: scroll-left 35s linear infinite;
+  animation: scroll-left 60s linear infinite;
 }
 
 @keyframes scroll-left {
@@ -360,7 +361,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-100% / 3));
+    transform: translateX(calc(-10 * (380px + 1.5rem)));
   }
 }
 
@@ -369,8 +370,8 @@
 }
 
 .testimonial-slide {
-  min-width: calc((100% - 3rem) / 3);
-  max-width: calc((100% - 3rem) / 3);
+  min-width: 380px;
+  max-width: 380px;
   flex-shrink: 0;
 }
 

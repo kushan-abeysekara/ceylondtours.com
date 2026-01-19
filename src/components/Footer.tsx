@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
           </div>
           <div className="footer-cta-content">
             <p className="footer-cta-text">Don't Know Which Destination To Choose?</p>
-            <a href="tel:+94858577-3477" className="footer-cta-phone">Call Us (858) 577-3477</a>
+            <a href="tel:+94858577-3477" className="footer-cta-phone">Call Us +94 77 626 6640</a>
           </div>
           <div className="footer-cta-icon right">
             <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -64,11 +64,12 @@ const Footer: React.FC = () => {
             <div className="footer-column">
               <h4 className="footer-heading">Useful Links</h4>
               <ul className="footer-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="https://www.tripadvisor.com/Attraction_Review-g297896-d13293559-Reviews-Ceylon_D_Tours-Galle_Galle_District_Southern_Province.html" target="_blank" rel="noopener noreferrer">Tours</a></li>
+                <li><a href="/destinations">Destinations</a></li>
                 <li><a href="/about">About Us</a></li>
-                <li><a href="/blog">Travel Blog</a></li>
-                <li><a href="/partner">Become Partner</a></li>
-                <li><a href="/faq">F.A.Q.</a></li>
-                <li><a href="/privacy">Privacy Policy</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+
               </ul>
             </div>
 
@@ -80,21 +81,21 @@ const Footer: React.FC = () => {
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                     <path d="M3.654 1.328a.678.678 0 00-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 004.168 6.608 17.569 17.569 0 006.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 00-.063-1.015l-2.307-1.794a.678.678 0 00-.58-.122l-2.19.547a1.745 1.745 0 01-1.657-.459L5.482 8.062a1.745 1.745 0 01-.46-1.657l.548-2.19a.678.678 0 00-.122-.58L3.654 1.328z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
-                  <a href="tel:+94896675-9493">(896) 675-9493</a>
+                  <a href="tel:+94896675-9493">+94 77 626 6640</a>
                 </li>
                 <li>
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                     <path d="M2.667 2.667h10.666c.734 0 1.334.6 1.334 1.333v8c0 .733-.6 1.333-1.334 1.333H2.667c-.734 0-1.334-.6-1.334-1.333V4c0-.733.6-1.333 1.334-1.333z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                     <path d="M14.667 4L8 8.667 1.333 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
-                  <a href="mailto:micivartz@icloud.com">micivartz@icloud.com</a>
+                  <a href="mailto:micivartz@icloud.com">info@ceylondtours.com</a>
                 </li>
                 <li>
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                     <path d="M14 6.667C14 11.333 8 15.333 8 15.333S2 11.333 2 6.667C2 5.07 2.632 3.54 3.757 2.415 4.883 1.29 6.41.667 8 .667s3.117.623 4.243 1.748C13.368 3.54 14 5.07 14 6.667z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                     <path d="M8 8.667a2 2 0 100-4 2 2 0 000 4z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
-                  <span>43 W. Wellington Road Fairhope, AL 36532</span>
+                  <span>Sri Lanka</span>
                 </li>
               </ul>
             </div>
