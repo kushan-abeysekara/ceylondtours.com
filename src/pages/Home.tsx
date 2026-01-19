@@ -275,7 +275,7 @@ const Home = () => {
             ))}
           </div>
 
-          <button className="view-all-btn">All Destinations →</button>
+          <Link to="/destinations" className="view-all-btn">All Destinations →</Link>
 
         </div>
       </section>
@@ -284,17 +284,17 @@ const Home = () => {
         <div className="container">
           <div className="features-grid">
             <FeatureCard 
-              icon="🛡️"
+              icon={<img src={require('../img/shield-icon.png')} alt="Shield" />}
               title="Book With Confidence"
               description="We provide safe and reliable tour packages, secure bookings, and world-support that gets to know you."
             />
             <FeatureCard 
-              icon="😊"
+              icon={<img src={require('../img/smile-icon.png')} alt="Smile" />}
               title="Stress-free experience"
               description="We take care of all planning and booking to holiday planning, transport, accommodation for you."
             />
             <FeatureCard 
-              icon="⚡"
+              icon={<img src={require('../img/lightning-icon.png')} alt="Lightning" />}
               title="Flexible tour options"
               description="Make plans that fit perfectly with your match your schedule, budget, and travel preferences easily."
             />

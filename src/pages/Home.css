@@ -199,6 +199,8 @@
   cursor: pointer;
   text-decoration: underline;
   transition: color 0.3s;
+  text-align: center;
+  width: fit-content;
 }
 
 .view-all-btn:hover {
