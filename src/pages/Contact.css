@@ -232,10 +232,30 @@
   font-size: 1rem;
   cursor: pointer;
   transition: transform 0.3s;
+  animation: buttonPopup 2s ease-in-out infinite;
 }
 
 .contact-cta-btn:hover {
   transform: translateY(-2px);
+  animation-play-state: paused;
+}
+
+@keyframes buttonPopup {
+  0%, 100% {
+    transform: scale(1) translateY(0);
+  }
+  10% {
+    transform: scale(0.95) translateY(0);
+  }
+  30% {
+    transform: scale(1.08) translateY(-6px);
+  }
+  50% {
+    transform: scale(1.03) translateY(-3px);
+  }
+  70% {
+    transform: scale(1.01) translateY(0);
+  }
 }
 
 /* Responsive Design */
