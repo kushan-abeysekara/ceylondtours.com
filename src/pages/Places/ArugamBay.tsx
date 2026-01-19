@@ -10,7 +10,7 @@ const ArugamBay = () => {
     <div className="destination-page">
       {/* Hero Section */}
       <section className="dest-hero">
-        <img src="https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=1600" alt="Arugam Bay" />
+        <img src={require('../../img/arugam bay 1.webp')} alt="Arugam Bay" />
         <div className="dest-badge">Arugam Bay</div>
       </section>
 
@@ -19,7 +19,7 @@ const ArugamBay = () => {
         <div className="dest-container">
           <div className="dest-main-section">
             <div className="dest-left">
-              <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800" alt="Arugam Bay beach" />
+              <img src={require('../../img/arugam bay 2.webp')} alt="Arugam Bay beach" />
             </div>
             <div className="dest-right">
               <h1 className="dest-title">Discover Arugam Bay</h1>
@@ -88,7 +88,7 @@ const ArugamBay = () => {
               </p>
             </div>
             <div className="dest-bottom-right">
-              <img src="https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=800" alt="Arugam Bay sunset" />
+              <img src={require('../../img/arugam bay 3.webp')} alt="Arugam Bay sunset" />
             </div>
           </div>
         </div>
