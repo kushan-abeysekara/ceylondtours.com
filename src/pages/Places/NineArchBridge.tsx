@@ -19,7 +19,7 @@ const NineArchBridge = () => {
         <div className="dest-container">
           <div className="dest-main-section">
             <div className="dest-left">
-              <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800" alt="Nine Arch Bridge view" />
+              <img src={require('../../img/nine arch 1.webp')} alt="Nine Arch Bridge view" />
             </div>
             <div className="dest-right">
               <h1 className="dest-title">Discover Nine Arch Bridge</h1>
@@ -88,7 +88,7 @@ const NineArchBridge = () => {
               </p>
             </div>
             <div className="dest-bottom-right">
-              <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800" alt="Nine Arch Bridge sunset" />
+              <img src={require('../../img/nine arch 2.webp')} alt="Nine Arch Bridge sunset" />
             </div>
           </div>
         </div>
