@@ -404,3 +404,18 @@
     font-size: 0.9rem;
   }
 }
+
+/* Contact Icon Popup Animation */
+@keyframes contactIconPopup {
+  0%, 100% {
+    transform: scale(1) translateY(0);
+  }
+  50% {
+    transform: scale(1.15) translateY(-8px);
+  }
+}
+
+.contact-icon-animated {
+  animation: contactIconPopup 1.5s ease-in-out infinite;
+  display: inline-block;
+}

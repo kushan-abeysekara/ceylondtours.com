@@ -40,32 +40,32 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: (
-        <svg viewBox="0 0 24 24" fill="none">
+        <svg viewBox="0 0 24 24" fill="none" className="contact-icon-animated">
           <path d="M3.654 1.328a.678.678 0 00-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 004.168 6.608 17.569 17.569 0 006.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 00-.063-1.015l-2.307-1.794a.678.678 0 00-.58-.122l-2.19.547a1.745 1.745 0 01-1.657-.459L5.482 8.062a1.745 1.745 0 01-.46-1.657l.548-2.19a.678.678 0 00-.122-.58L3.654 1.328z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
       ),
       title: 'Phone',
-      info: ['(358) 707-4989', '(863) 267-3534']
+      info: ['+94 77 626 6640']
     },
     {
       icon: (
-        <svg viewBox="0 0 24 24" fill="none">
+        <svg viewBox="0 0 24 24" fill="none" className="contact-icon-animated">
           <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
           <circle cx="12" cy="10" r="3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
       ),
       title: 'Address',
-      info: ['7914 Lees Creek St. Dayton, OH 45420', '8911 Tanglewood Ave. Capitol Heights, MD 20743']
+      info: ['Sri Lanka']
     },
     {
       icon: (
-        <svg viewBox="0 0 24 24" fill="none">
+        <svg viewBox="0 0 24 24" fill="none" className="contact-icon-animated">
           <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
           <path d="M22 6l-10 7L2 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
       ),
       title: 'Email',
-      info: ['rhavyn@outlook.com', 'natiannae@msn.com']
+      info: ['info@ceylondtours.com']
     }
   ];
 

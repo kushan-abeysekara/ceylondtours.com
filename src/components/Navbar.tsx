@@ -56,7 +56,7 @@ const Navbar: React.FC = () => {
           </button>
           <a href="https://www.tripadvisor.com/Attraction_Review-g297896-d13293559-Reviews-Ceylon_D_Tours-Galle_Galle_District_Southern_Province.html" className="book-now-btn" target="_blank" rel="noopener noreferrer">
             Book Now
-            <span className="infinity-icon">∞</span>
+            <img src={require('../img/Booknow.png')} alt="Book Now" className="infinity-icon" style={{ width: '20px', height: '15px', filter: 'brightness(0) invert(1)' }} />
           </a>
         </div>
       </div>

@@ -15,10 +15,7 @@ const About = () => {
     {
       id: 1,
       icon: (
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M20 35c8.284 0 15-6.716 15-15 0-8.284-6.716-15-15-15-8.284 0-15 6.716-15 15 0 8.284 6.716 15 15 15z" stroke="currentColor" strokeWidth="2"/>
-          <path d="M5 20h30M20 5c3.5 0 6.5 6.716 6.5 15s-3 15-6.5 15c-3.5 0-6.5-6.716-6.5-15S16.5 5 20 5z" stroke="currentColor" strokeWidth="2"/>
-        </svg>
+        <img src={require('../img/abouticon1.png')} alt="Ocean cruises" className="service-icon-animated" style={{ width: '100px', height: '60px' }} />
       ),
       title: 'Ocean cruises',
       description: 'Lorem ipsum dolor amet consetur adipiscing sed eiusmod tempor.'
@@ -26,10 +23,7 @@ const About = () => {
     {
       id: 2,
       icon: (
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M5 30l10-15 5 5 10-15 5 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-          <path d="M3 30h34" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-        </svg>
+         <img src={require('../img/abouticon2.png')} alt="Ocean cruises" className="service-icon-animated" style={{ width: '60px', height: '60px' }} />
       ),
       title: 'Mountain holidays',
       description: 'Lorem consectetur adipiscing sediu eiusmod tempor incididunt ut labore.'
@@ -37,22 +31,15 @@ const About = () => {
     {
       id: 3,
       icon: (
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M10 25c2-3 4-5 8-5s6 2 8 5M5 30h30" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-          <circle cx="20" cy="15" r="3" stroke="currentColor" strokeWidth="2"/>
-        </svg>
+         <img src={require('../img/abouticon3.png')} alt="Ocean cruises" className="service-icon-animated" style={{ width: '60px', height: '60px' }} />
       ),
-      title: 'Surfing',
+      title: 'Cultural Events',
       description: 'Ipsum dolor sit amet adipicing elit eiusmod tempor in at labore dolore.'
     },
     {
       id: 4,
       icon: (
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M8 28h24v-8H8v8zM14 20v-6h12v6" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-          <circle cx="10" cy="30" r="2" stroke="currentColor" strokeWidth="2"/>
-          <circle cx="30" cy="30" r="2" stroke="currentColor" strokeWidth="2"/>
-        </svg>
+        <img src={require('../img/abouticon4.png')} alt="Ocean cruises" className="service-icon-animated" style={{ width: '100px', height: '100px' }} />
       ),
       title: 'Individual transfer',
       description: 'Lorem dolor sit amet consectetur adipicing sed eiusmod tempor incididunt.'
@@ -60,12 +47,7 @@ const About = () => {
     {
       id: 5,
       icon: (
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M5 28h30v-8H5v8zM11 20v-6h18v6" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-          <circle cx="10" cy="30" r="2" stroke="currentColor" strokeWidth="2"/>
-          <circle cx="30" cy="30" r="2" stroke="currentColor" strokeWidth="2"/>
-          <path d="M15 14v-4M25 14v-4M20 14v-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-        </svg>
+        <img src={require('../img/abouticon5.png')} alt="Ocean cruises" className="service-icon-animated" style={{ width: '60px', height: '60px' }} />
       ),
       title: 'Group transfer',
       description: 'Dolor amet consectetur adipisicing elit, sed do eiusmod tempor incididunt.'
@@ -73,9 +55,7 @@ const About = () => {
     {
       id: 6,
       icon: (
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M15 10h10M15 15h10M15 20h10M10 10v15M30 10v15M5 25h30" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-        </svg>
+         <img src={require('../img/abouticon6.png')} alt="Ocean cruises" className="service-icon-animated" style={{ width: '70px', height: '50px' }} />
       ),
       title: 'Sightseeing',
       description: 'Lorem dolor lorem elit adipiscing elit dolore at eiusmod et temporibus.'
@@ -167,7 +147,7 @@ const About = () => {
               <h3 className="cta-banner-title">Book your holiday with complete confidence</h3>
               <a href="https://www.tripadvisor.com/Attraction_Review-g297896-d13293559-Reviews-Ceylon_D_Tours-Galle_Galle_District_Southern_Province.html" className="cta-banner-btn" target="_blank" rel="noopener noreferrer">
                 Book Now
-                <span className="infinity-icon">∞</span>
+                <img src={require('../img/Booknow.png')} alt="Book Now" className="infinity-icon" style={{ width: '20px', height: '15px', filter: 'brightness(0)' }} />
               </a>
             </div>
           </div>
