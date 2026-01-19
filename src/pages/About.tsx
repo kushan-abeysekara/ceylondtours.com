@@ -18,7 +18,7 @@ const About = () => {
         <img src={require('../img/abouticon1.png')} alt="Ocean cruises" className="service-icon-animated" style={{ width: '100px', height: '60px' }} />
       ),
       title: 'Ocean cruises',
-      description: 'Lorem ipsum dolor amet consetur adipiscing sed eiusmod tempor.'
+      description: 'Enjoy scenic coastal cruises along Sri Lanka’s southern and western shores, featuring sunset views, marine life, and relaxing ocean experiences.'
     },
     {
       id: 2,
@@ -26,7 +26,7 @@ const About = () => {
          <img src={require('../img/abouticon2.png')} alt="Ocean cruises" className="service-icon-animated" style={{ width: '60px', height: '60px' }} />
       ),
       title: 'Mountain holidays',
-      description: 'Lorem consectetur adipiscing sediu eiusmod tempor incididunt ut labore.'
+      description: 'Discover the cool hills of Ella, Nuwara Eliya, and Haputale with misty landscapes, tea plantations, waterfalls, and peaceful nature retreats.'
     },
     {
       id: 3,
@@ -34,7 +34,7 @@ const About = () => {
          <img src={require('../img/abouticon3.png')} alt="Ocean cruises" className="service-icon-animated" style={{ width: '60px', height: '60px' }} />
       ),
       title: 'Cultural Events',
-      description: 'Ipsum dolor sit amet adipicing elit eiusmod tempor in at labore dolore.'
+      description: 'Experience Sri Lanka’s rich heritage through traditional festivals, ancient temples, historical cities, and authentic cultural performances.'
     },
     {
       id: 4,
@@ -42,7 +42,7 @@ const About = () => {
         <img src={require('../img/abouticon4.png')} alt="Ocean cruises" className="service-icon-animated" style={{ width: '100px', height: '100px' }} />
       ),
       title: 'Individual transfer',
-      description: 'Lorem dolor sit amet consectetur adipicing sed eiusmod tempor incididunt.'
+      description: 'Comfortable and reliable private transfers with experienced local drivers, ensuring safe and smooth travel across Sri Lanka.'
     },
     {
       id: 5,
@@ -50,7 +50,7 @@ const About = () => {
         <img src={require('../img/abouticon5.png')} alt="Ocean cruises" className="service-icon-animated" style={{ width: '60px', height: '60px' }} />
       ),
       title: 'Group transfer',
-      description: 'Dolor amet consectetur adipisicing elit, sed do eiusmod tempor incididunt.'
+      description: 'Spacious and well-maintained vehicles for families, corporate groups, and tour parties, ideal for long and short-distance travel.'
     },
     {
       id: 6,
@@ -58,7 +58,7 @@ const About = () => {
          <img src={require('../img/abouticon6.png')} alt="Ocean cruises" className="service-icon-animated" style={{ width: '70px', height: '50px' }} />
       ),
       title: 'Sightseeing',
-      description: 'Lorem dolor lorem elit adipiscing elit dolore at eiusmod et temporibus.'
+      description: 'Explore Sri Lanka’s top attractions including Sigiriya, Kandy, Galle, wildlife parks, beaches, and scenic viewpoints with expert guidance.'
     }
   ];
 
@@ -109,8 +109,7 @@ const About = () => {
           <div className="explore-header">
             <h2 className="explore-title">Dare to Explore with<br />Travel Agency</h2>
             <p className="explore-description">
-              We specialize in eco-conscious travel and sustainable stays, and Platinum WorldGroup 
-              is the exclusive platform sourcing them from the best hoteliers.
+              We create unforgettable Sri Lankan travel experiences with eco-friendly tours, handpicked hotels, and responsible tourism practices across the island.
             </p>
           </div>
 
