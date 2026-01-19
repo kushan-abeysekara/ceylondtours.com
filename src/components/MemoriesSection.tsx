@@ -6,18 +6,18 @@ const MemoriesSection = () => {
     require('../img/Memory1.jpg'),
     require('../img/Memory2.jpg'),
     require('../img/Memory3.jpg'),
-    require('../img/Memory1.jpg'),
-    require('../img/Memory2.jpg'),
-    require('../img/Memory3.jpg')
+    require('../img/Memory4.jpg'),
+    require('../img/Memory5.jpg'),
+    require('../img/Memory6.jpg')
   ];
 
   const imageSet2 = [
-    require('../img/Memory3.jpg'),
-    require('../img/Memory1.jpg'),
-    require('../img/Memory2.jpg'),
-    require('../img/Memory3.jpg'),
-    require('../img/Memory1.jpg'),
-    require('../img/Memory2.jpg')
+    require('../img/happyTravelers1.jpg'),
+    require('../img/happyTravelers2.jpg'),
+    require('../img/happyTravelers3.jpg'),
+    require('../img/happyTravelers4.jpg'),
+    require('../img/happyTravelers5.jpg'),
+    require('../img/happyTravelers6.jpg')
   ];
 
   const imageSets = [imageSet1, imageSet2];
@@ -36,7 +36,7 @@ const MemoriesSection = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSetIndex((prevIndex) => (prevIndex + 1) % imageSets.length);
-    }, 1500);
+    }, 2000);
 
     return () => clearInterval(interval);
   }, [imageSets.length]);
@@ -60,12 +60,14 @@ const MemoriesSection = () => {
                   className="memory-image" 
                   key={`${currentSetIndex}-${index}`}
                 />
-                <button 
+                <a 
+                  href="https://www.tripadvisor.com/Attraction_Review-g297896-d13293559-Reviews-Ceylon_D_Tours-Galle_Galle_District_Southern_Province.html"
                   className="memory-view-btn"
-                  onClick={() => console.log('View clicked')}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   View →
-                </button>
+                </a>
               </div>
             </div>
           ))}

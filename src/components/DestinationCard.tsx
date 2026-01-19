@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './DestinationCard.css';
 
 interface DestinationCardProps {
@@ -7,9 +8,10 @@ interface DestinationCardProps {
   badge?: string;
   description?: string;
   size?: 'small' | 'medium' | 'large';
+  link?: string;
 }
 
-const DestinationCard: React.FC<DestinationCardProps> = ({ image, title, badge, description, size = 'medium' }) => {
+const DestinationCard: React.FC<DestinationCardProps> = ({ image, title, badge, description, size = 'medium', link = '/destinations' }) => {
   const images = Array.isArray(image) ? image : [image];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -42,9 +44,9 @@ const DestinationCard: React.FC<DestinationCardProps> = ({ image, title, badge, 
         <p className="destination-description">
           {description || 'Facilisi vulputate malesuada libero vitae fusce placerat dignissim blandit.'}
         </p>
-        <a href="https://www.tripadvisor.com/Attraction_Review-g297896-d13293559-Reviews-Ceylon_D_Tours-Galle_Galle_District_Southern_Province.html" className="destination-btn" target="_blank" rel="noopener noreferrer">
-          Book Now
-        </a>
+        <Link to={link} className="destination-btn">
+          View More
+        </Link>
       </div>
     </div>
   );

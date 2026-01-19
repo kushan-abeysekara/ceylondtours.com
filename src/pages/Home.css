@@ -319,7 +319,7 @@
 
 /* Features Section */
 .features-section {
-  padding: 2rem 0 4rem 0;
+  padding: 2rem 0 1rem 0;
 }
 
 .features-grid {
@@ -353,7 +353,7 @@
   display: flex;
   gap: 1.5rem;
   will-change: transform;
-  animation: scroll-left 60s linear infinite;
+  animation: scroll-left 120s linear infinite;
 }
 
 @keyframes scroll-left {
@@ -513,7 +513,7 @@
   }
   
   .testimonials-track {
-    animation: scroll-left 25s linear infinite;
+    animation: scroll-left 40s linear infinite;
   }
   
   .newsletter-content {
@@ -601,7 +601,7 @@
   
   .testimonials-track {
     gap: 1rem;
-    animation: scroll-left 18s linear infinite;
+    animation: scroll-left 30s linear infinite;
   }
   
   .testimonials-carousel {

@@ -107,8 +107,7 @@ const Footer: React.FC = () => {
       <div className="footer-bottom">
         <div className="footer-container">
           <p className="footer-copyright">
-            ©Copyright Travel Agency {new Date().getFullYear()}. Design by Figma.guru
-            <span className="footer-heart">❤️</span>
+            ©Copyright Travel Agency {new Date().getFullYear()}. Design by Keen Systems
           </p>
         </div>
       </div>

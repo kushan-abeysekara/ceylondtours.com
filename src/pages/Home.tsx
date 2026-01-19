@@ -5,6 +5,7 @@ import DestinationCard from '../components/DestinationCard';
 import TestimonialCard from '../components/TestimonialCard';
 import FeatureCard from '../components/FeatureCard';
 import MemoriesSection from '../components/MemoriesSection';
+import { link } from 'node:fs';
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -40,7 +41,8 @@ const Home = () => {
       ], 
       badge: 'Bomburu Ella',
       title: 'Discover Bomburu Ella',
-      description: 'Boburu Ella is a breathtaking waterfall near Ella, surrounded by thick forests and cool mountain air. It is an ideal place for nature lovers, photography enthusiasts, and travelers seeking peace, freshness, and scenic beauty.'
+      description: 'Boburu Ella is a breathtaking waterfall near Ella, surrounded by thick forests and cool mountain air. It is an ideal place for nature lovers, photography enthusiasts, and travelers seeking peace, freshness, and scenic beauty.',
+      link: '/destinations/bomburu-ella'
     },
     { 
       id: 2, 
@@ -51,18 +53,20 @@ const Home = () => {
       ], 
       badge: 'Nine Arch Bridge',
       title: 'Discover Nine Arch Bridge',
-      description: 'Nine Arch Bridge is a famous historic railway bridge located in Ella, known for its impressive stone arches, lush green surroundings, and the magical experience of watching trains pass through the misty hills.'
+      description: 'Nine Arch Bridge is a famous historic railway bridge located in Ella, known for its impressive stone arches, lush green surroundings, and the magical experience of watching trains pass through the misty hills.',
+      link: '/destinations/nine-arch-bridge'
     },
     { 
       id: 3, 
       image: [
-        require('../img/Hiriketiya.webp'),
-        require('../img/hiriketiya 2.jpg'),
-        require('../img/hiriketiya 1.jpg')
+        require('../img/Temple of the tooth 1.webp'),
+        require('../img/kandy 1.webp'),
+        require('../img/kandy 3.webp')
       ], 
-      badge: 'Hiriketiya',
-      title: 'Discover Hiriketiya Beach',
-      description: 'Hiriketiya is a charming crescent-shaped beach popular for surfing, swimming, yoga, and relaxation. With calm waters, golden sands, cafés, and a relaxed atmosphere, it attracts travelers seeking peaceful beachside experiences.'
+      badge: 'Kandy',
+      title: 'Discover Kandy',
+      description: 'Kandy is a vibrant city known for its rich cultural heritage, beautiful temples, and scenic lake. It is a popular destination for those interested in history, spirituality, and traditional Sri Lankan culture.',
+      link: '/destinations/kandy'
     },
     { 
       id: 4, 
@@ -73,7 +77,8 @@ const Home = () => {
       ], 
       badge: 'Arugam Bay',
       title: 'Discover Arugam Bay',
-      description: 'Arugam Bay is a world-renowned surfing destination on Sri Lanka’s east coast, famous for long waves, laid-back beach culture, nearby wildlife spots, and stunning sunsets enjoyed by surfers and travelers from around the world.'
+      description: 'Arugam Bay is a world-renowned surfing destination on Sri Lanka’s east coast, famous for long waves, laid-back beach culture, nearby wildlife spots, and stunning sunsets enjoyed by surfers and travelers from around the world.',
+      link: '/destinations/arugam-bay'
     },
     { 
       id: 5, 
@@ -84,7 +89,8 @@ const Home = () => {
       ], 
       badge: 'Sigiriya',
       title: 'Discover Sigiriya Rock',
-      description: 'Sigiriya is an ancient rock fortress and UNESCO World Heritage Site, famous for its royal gardens, fresco paintings, mirror wall, and panoramic views from the summit, showcasing Sri Lanka’s rich history and culture.'
+      description: 'Sigiriya is an ancient rock fortress and UNESCO World Heritage Site, famous for its royal gardens, fresco paintings, mirror wall, and panoramic views from the summit, showcasing Sri Lanka’s rich history and culture.',
+      link: '/destinations/sigiriya'
     },
     { 
       id: 6, 
@@ -95,7 +101,8 @@ const Home = () => {
       ], 
       badge: 'Ella',
       title: 'Discover Ella',
-      description: 'Ella and Badulla are beautiful hill-country destinations offering cool weather, scenic train journeys, tea plantations, waterfalls, hiking trails, and peaceful mountain landscapes, making them perfect for relaxation, sightseeing, and adventure travel experiences.'
+      description: 'Ella and Badulla are beautiful hill-country destinations offering cool weather, scenic train journeys, tea plantations, waterfalls, hiking trails, and peaceful mountain landscapes, making them perfect for relaxation, sightseeing, and adventure travel experiences.',
+      link: '/destinations/ella'
     }
   ];
 
@@ -119,28 +126,28 @@ const Home = () => {
       id: 1, 
       name: 'José Manuel C', 
       image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/f1/79/default-avatar-2020-21.jpg?w=300&h=-1&s=1',
-      rating: '5.0',
+      rating: '5/5',
       text: 'People that know me say I have travel a lot and in the case of Dami, for me it has been the Best professional that I have had, and furthermore the Best person, that has accompany me in my journeys. Thank you Dami, I wish you the Best in your New endeavour!'
     },
     { 
       id: 2, 
       name: 'Kitty F', 
       image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/e8/24/default-avatar-2020-60.jpg?w=300&h=-1&s=1',
-      rating: '"',
+      rating: '5/5',
       text: 'Dami drove us for four days around the centre of Sri Lanka. We saw so much of the beautiful country and he taught us a lot about the culture and landscape whilst keeping us safe travelling through bumpy roads. He is great company, very efficient, thoughtful and always on time. We highly recommend Dami and will definitely be back to tour with him again in this very special place.'
     },
     { 
       id: 3, 
       name: 'Charlie D', 
       image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/e3/6a/default-avatar-2020-47.jpg?w=300&h=-1&s=1',
-      rating: '5.0',
+      rating: '5/5',
       text: 'It was an amazing trip to Sri Lanka and a lot of that can be attributed to Dami. He went above and beyond to provide a great service and is very personable. 10/10 would recommend to anyone'
     },
     { 
       id: 4, 
       name: 'Julia D', 
       image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/f1/42/default-avatar-2020-20.jpg?w=300&h=-1&s=1',
-      rating: '5.0',
+      rating: '5/5',
       text: 'Brilliant on all levels.Traveled w family and found Dami very good with all of us sharing his culture and knowledge Generous with time and sharing great food stops along the wayClean car and always helpful. Highly recommend'
     },
     { 
@@ -154,35 +161,35 @@ const Home = () => {
       id: 6, 
       name: 'Gosia W', 
       image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/de/0a/default-avatar-2020-35.jpg?w=200&h=-1&s=1',
-      rating: '5.0',
+      rating: '5/5',
       text: 'We had a great trip over Sri Lanka in July with Dami: the best guide😍. His knowledge and amazing care is our best memory from this beatiful island🪷.'
     },
     { 
       id: 7, 
       name: 'Grace T', 
       image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/e9/60/default-avatar-2020-64.jpg?w=200&h=-1&s=1',
-      rating: '5.0',
+      rating: '5/5',
       text: 'Dami is fantastic! He is so kind, caring and friendly and will go above and beyond to show you the best spots in Sri Lanka! He is so knowledgeable on Sri Lankan history and native flora and fauna. I’d recommend him to everyone!'
     },
     { 
       id: 8, 
       name: 'Benjamin L', 
       image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/ea/b2/default-avatar-2020-69.jpg?w=200&h=-1&s=1',
-      rating: '4.8',
+      rating: '5/5',
       text: 'Daminda is not only the best and safest driver in Sri Lanka, he has also the best knowledge and contacts.He is a very understanding and calm person! We did a tour around the Island for almost one week with him and the experience could not have been any better.'
     },
     { 
       id: 9, 
       name: 'Peter L', 
       image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/ea/b2/default-avatar-2020-69.jpg?w=200&h=-1&s=1',
-      rating: '5.0',
+      rating: '5/5',
       text: 'Absolutely excellent guide, excellent knowledge and conversation, entertaining, patient, thoughtful, we give this guide our highest recommendation.'
     },
     { 
       id: 10, 
       name: 'Z O', 
       image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/f4/d0/default-avatar-2020-33.jpg?w=100&h=-1&s=1',
-      rating: '5.0',
+      rating: '5/5',
       text: 'Dami was a great guide -- he was very positive and informative. He also offered lots of good advice and suggestions!'
     }
   ];
