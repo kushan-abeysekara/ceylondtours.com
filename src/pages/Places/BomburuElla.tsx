@@ -88,7 +88,7 @@ const BomburuElla = () => {
               </p>
             </div>
             <div className="dest-bottom-right">
-              <img src="https://images.unsplash.com/photo-1580549239615-367449433e06?w=800" alt="Bomburu Ella landscape" />
+              <img src={require('../../img/Bomburu Ella 2.webp')} alt="Bomburu Ella landscape" />
             </div>
           </div>
         </div>
