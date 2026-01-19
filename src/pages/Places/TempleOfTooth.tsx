@@ -87,7 +87,7 @@ const TempleOfTooth = () => {
               </p>
             </div>
             <div className="dest-bottom-right">
-              <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800" alt="Temple architecture" />
+              <img src={require('../../img/temple of the tooth 3.webp')} alt="Temple architecture" />
             </div>
           </div>
         </div>
