@@ -10,7 +10,7 @@ const NuwaraEliya = () => {
     <div className="destination-page">
       {/* Hero Section */}
       <section className="dest-hero">
-        <img src="https://images.unsplash.com/photo-1580549239615-367449433e06?w=1600" alt="Nuwara Eliya" />
+        <img src={require('../../img/nuwra eliya 1.webp')} alt="Nuwara Eliya" />
         <div className="dest-badge">Nuwara Eliya</div>
       </section>
 
@@ -19,7 +19,7 @@ const NuwaraEliya = () => {
         <div className="dest-container">
           <div className="dest-main-section">
             <div className="dest-left">
-              <img src="https://images.unsplash.com/photo-1587895265520-f806d3b7e4bb?w=800" alt="Nuwara Eliya tea gardens" />
+              <img src={require('../../img/nuwra eliya 2.webp')} alt="Nuwara Eliya tea gardens" />
             </div>
             <div className="dest-right">
               <h1 className="dest-title">Discover Nuwara Eliya</h1>
