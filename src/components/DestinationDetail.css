@@ -75,6 +75,37 @@
 
 .destination-icon-svg {
   font-size: 1.5rem;
+  animation: iconBounceUp 2.5s ease-in-out infinite;
+}
+
+.destination-icon-item:nth-child(1) .destination-icon-svg {
+  animation-delay: 0s;
+}
+
+.destination-icon-item:nth-child(2) .destination-icon-svg {
+  animation-delay: 0.4s;
+}
+
+.destination-icon-item:nth-child(3) .destination-icon-svg {
+  animation-delay: 0.8s;
+}
+
+@keyframes iconBounceUp {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  12% {
+    transform: translateY(-8px) scale(1.1);
+  }
+  24% {
+    transform: translateY(0) scale(1);
+  }
+  36% {
+    transform: translateY(-5px) scale(1.05);
+  }
+  48% {
+    transform: translateY(0) scale(1);
+  }
 }
 
 .destination-icon-label {
