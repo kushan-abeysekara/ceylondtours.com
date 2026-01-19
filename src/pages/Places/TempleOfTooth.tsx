@@ -10,7 +10,7 @@ const TempleOfTooth = () => {
     <div className="destination-page">
       {/* Hero Section */}
       <section className="dest-hero">
-        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600" alt="Temple of the Tooth Relic" />
+        <img src={require('../../img/Temple of the tooth 1.webp')} alt="Temple of the Tooth Relic" />
         <div className="dest-badge">Temple of the Tooth Relic</div>
       </section>
 
@@ -19,7 +19,7 @@ const TempleOfTooth = () => {
         <div className="dest-container">
           <div className="dest-main-section">
             <div className="dest-left">
-              <img src="https://images.unsplash.com/photo-1588971550723-4c4ae923cdbb?w=800" alt="Temple interior" />
+              <img src={require('../../img/Temple of the Sacred Tooth 2.webp')} alt="Temple interior" />
             </div>
             <div className="dest-right">
               <h1 className="dest-title">Discover Temple of the Tooth Relic</h1>
