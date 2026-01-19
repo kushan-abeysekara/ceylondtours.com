@@ -203,13 +203,12 @@ const Home = () => {
           <button className="view-all-btn">All Destinations →</button>
           
           <div className="destinations-grid">
-            {popularDestinations.map(dest => (
+            {popularDestinations.slice(0, 2).map(dest => (
               <DestinationCard key={dest.id} {...dest} />
             ))}
           </div>
         </div>
       </section>
-
       {/* Features Section */}
       <section className="features-section">
         <div className="container">
