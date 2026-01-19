@@ -10,7 +10,7 @@ const GalleFort = () => {
     <div className="destination-page">
       {/* Hero Section */}
       <section className="dest-hero">
-        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1600" alt="Galle Fort" />
+        <img src={require('../../img/destination_galle fort - Copy.webp')} alt="Galle Fort" />
         <div className="dest-badge">Galle Fort</div>
       </section>
 
@@ -19,7 +19,7 @@ const GalleFort = () => {
         <div className="dest-container">
           <div className="dest-main-section">
             <div className="dest-left">
-              <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800" alt="Galle Fort walls" />
+              <img src={require('../../img/galle fort 4.webp')} alt="Galle Fort walls" />
             </div>
             <div className="dest-right">
               <h1 className="dest-title">Discover Galle Fort</h1>
@@ -88,7 +88,7 @@ const GalleFort = () => {
               </p>
             </div>
             <div className="dest-bottom-right">
-              <img src="https://images.unsplash.com/photo-1588971550723-4c4ae923cdbb?w=800" alt="Galle Fort street" />
+              <img src={require('../../img/galle fort 3.webp')} alt="Galle Fort street" />
             </div>
           </div>
         </div>
