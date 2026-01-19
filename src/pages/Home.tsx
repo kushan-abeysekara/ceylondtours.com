@@ -8,6 +8,7 @@ import MemoriesSection from '../components/MemoriesSection';
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentCardPair, setCurrentCardPair] = useState(0);
 
   const heroImages = [
     require('../img/slider1.jpg'),
@@ -30,13 +31,70 @@ const Home = () => {
   }, [heroImages.length]);
 
   const popularDestinations = [
-    { id: 1, image: require('../img/BoburuElla.webp'), badge: 'Boburu Ella' },
-    { id: 2, image: require('../img/NineArch.jpg'), badge: 'Nine Arch' },
-    { id: 3, image: require('../img/Hiriketiya.webp'), badge: 'Hiriketiya' },
-    { id: 4, image: require('../img/Arugambay.jpg'), badge: 'Arugam Bay' },
-    { id: 5, image: require('../img/Sigiriya.jpg'), badge: 'Sigiriya' },
-    { id: 6, image: require('../img/Ella.jpg'), badge: 'Ella-Badulla' }
+    { 
+      id: 1, 
+      image: [
+        require('../img/BoburuElla.webp'),
+        require('../img/Sigiriya.jpg'),
+        require('../img/Ella.jpg')
+      ], 
+      badge: 'Boburu Ella' 
+    },
+    { 
+      id: 2, 
+      image: [
+        require('../img/NineArch.jpg'),
+        require('../img/Hiriketiya.webp'),
+        require('../img/Arugambay.jpg')
+      ], 
+      badge: 'Nine Arch' 
+    },
+    { 
+      id: 3, 
+      image: [
+        require('../img/Hiriketiya.webp'),
+        require('../img/BoburuElla.webp'),
+        require('../img/Mirissa1.jpg')
+      ], 
+      badge: 'Hiriketiya' 
+    },
+    { 
+      id: 4, 
+      image: [
+        require('../img/Arugambay.jpg'),
+        require('../img/NineArch.jpg'),
+        require('../img/Sigiriya.jpg')
+      ], 
+      badge: 'Arugam Bay' 
+    },
+    { 
+      id: 5, 
+      image: [
+        require('../img/Sigiriya.jpg'),
+        require('../img/Ella.jpg'),
+        require('../img/BoburuElla.webp')
+      ], 
+      badge: 'Sigiriya' 
+    },
+    { 
+      id: 6, 
+      image: [
+        require('../img/Ella.jpg'),
+        require('../img/Hiriketiya.webp'),
+        require('../img/Arugambay.jpg')
+      ], 
+      badge: 'Ella-Badulla' 
+    }
   ];
+
+  // Cycle through destination card pairs every 4.5 seconds (3 images × 1.5s)
+  useEffect(() => {
+    const cardTimer = setInterval(() => {
+      setCurrentCardPair((prev) => (prev + 1) % 3); // 3 pairs: 0-1, 2-3, 4-5
+    }, 4500);
+
+    return () => clearInterval(cardTimer);
+  }, []);
 
   const topDestinations = [
     { id: 1, image: require('../img/Sigiriya.jpg'), title: 'Sigiriya' },
@@ -203,7 +261,7 @@ const Home = () => {
           <button className="view-all-btn">All Destinations →</button>
           
           <div className="destinations-grid">
-            {popularDestinations.slice(0, 2).map(dest => (
+            {popularDestinations.slice(currentCardPair * 2, currentCardPair * 2 + 2).map(dest => (
               <DestinationCard key={dest.id} {...dest} />
             ))}
           </div>

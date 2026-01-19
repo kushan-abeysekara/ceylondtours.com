@@ -20,17 +20,27 @@
 .destination-image-wrapper {
   flex: 0 0 45%;
   overflow: hidden;
+  position: relative;
 }
 
 .destination-image {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
 }
 
-.destination-card:hover .destination-image {
+.destination-image.active {
+  opacity: 1;
+}
+
+.destination-card:hover .destination-image.active {
   transform: scale(1.05);
+  transition: transform 0.3s ease, opacity 0.8s ease-in-out;
 }
 
 .destination-content {

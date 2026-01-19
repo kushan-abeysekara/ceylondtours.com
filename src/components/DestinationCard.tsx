@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './DestinationCard.css';
 
 interface DestinationCardProps {
-  image: string;
+  image: string | string[];
   title?: string;
   badge?: string;
   description?: string;
@@ -10,10 +10,30 @@ interface DestinationCardProps {
 }
 
 const DestinationCard: React.FC<DestinationCardProps> = ({ image, title, badge, description, size = 'medium' }) => {
+  const images = Array.isArray(image) ? image : [image];
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    if (images.length > 1) {
+      const interval = setInterval(() => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+      }, 1500);
+
+      return () => clearInterval(interval);
+    }
+  }, [images.length]);
+
   return (
     <div className={`destination-card ${size}`}>
       <div className="destination-image-wrapper">
-        <img src={image} alt={title || badge || 'Destination'} className="destination-image" />
+        {images.map((img, index) => (
+          <img 
+            key={index}
+            src={img} 
+            alt={title || badge || 'Destination'} 
+            className={`destination-image ${index === currentImageIndex ? 'active' : ''}`}
+          />
+        ))}
       </div>
       <div className="destination-content">
         <h3 className="destination-title">
