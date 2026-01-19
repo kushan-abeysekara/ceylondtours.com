@@ -19,7 +19,7 @@ const ArugamBay = () => {
         <div className="dest-container">
           <div className="dest-main-section">
             <div className="dest-left">
-              <img src={require('../../img/arugam bay 3.webp')} alt="Arugam Bay beach" />
+              <img src={require('../../img/arugam bay 2.webp')} alt="Arugam Bay beach" />
             </div>
             <div className="dest-right">
               <h1 className="dest-title">Discover Arugam Bay</h1>
@@ -88,7 +88,7 @@ const ArugamBay = () => {
               </p>
             </div>
             <div className="dest-bottom-right">
-              <img src={require('../../img/arugam bay 2.webp')} alt="Arugam Bay sunset" />
+              <img src={require('../../img/arugam bay 3.webp')} alt="Arugam Bay sunset" />
             </div>
           </div>
         </div>
