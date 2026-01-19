@@ -10,7 +10,7 @@ const NineArchBridge = () => {
     <div className="destination-page">
       {/* Hero Section */}
       <section className="dest-hero">
-        <img src="https://images.unsplash.com/photo-1588971550723-4c4ae923cdbb?w=1600" alt="Nine Arch Bridge" />
+        <img src={require('../../img/destination_NineArch.webp')} alt="Nine Arch Bridge" />
         <div className="dest-badge">Nine Arch Bridge</div>
       </section>
 
