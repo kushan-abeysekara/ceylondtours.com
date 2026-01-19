@@ -81,14 +81,26 @@ const ArugamBay = () => {
           <div className="dest-bottom-section">
             <div className="dest-bottom-left">
               <p className="dest-bottom-text">
-                Arugam Bay, located on Sri Lanka's southeastern coast, is a laid-back surf town that attracts wave riders from around the world. The main surf point offers consistent swells from April to October, making it one of the top surfing destinations in Asia.
+                Arugam Bay is a world-renowned beach destination located on Sri Lanka's southeast coast, famous for its laid-back atmosphere, golden sandy beaches, and excellent surf conditions. Originally a small fishing village, Arugam Bay has grown into an international surfing hotspot, attracting surfers from around the world, especially during the peak season from April to October.
               </p>
               <p className="dest-bottom-text">
-                Beyond surfing, visitors can enjoy pristine beaches, wildlife safaris in nearby Kumana National Park, and the famous Elephant Rock viewpoint. The bay offers a perfect blend of adventure, relaxation, and natural beauty with its golden sunsets and warm hospitality.
+                The area is home to several well-known surf breaks such as Main Point, Whiskey Point, and Peanut Farm, making it ideal for both beginners and experienced surfers. Beyond surfing, visitors can enjoy stunning sunsets, calm lagoons, nearby wildlife sanctuaries, and cultural sites, offering a perfect blend of adventure, relaxation, and natural beauty.
               </p>
             </div>
             <div className="dest-bottom-right">
               <img src={require('../../img/arugam bay 3.webp')} alt="Arugam Bay sunset" />
+            </div>
+          </div>
+
+          {/* Ceylon D Tour Section */}
+          <div className="dest-main-section" style={{ marginTop: '4rem' }}>
+            <div className="dest-left">
+              <img src={require('../../img/arugam bay 4.webp')} alt="Ceylon D Tour Arugam Bay experience" />
+            </div>
+            <div className="dest-right">
+              <p className="dest-description">
+                Ceylon D Tour offers carefully curated Arugam Bay travel experiences designed for comfort, safety, and unforgettable coastal adventures. Our tour packages include reliable transportation, flexible itineraries, accommodation assistance, and guided visits to popular surf spots, beaches, and nearby attractions such as Kumana National Park, Pottuvil Lagoon, and ancient temples. Whether you're seeking an exciting surf holiday, a peaceful beach escape, or a mix of nature and culture, Ceylon D Tour ensures a smooth and personalized journey, allowing you to experience the best of Arugam Bay at your own pace.
+              </p>
             </div>
           </div>
         </div>
