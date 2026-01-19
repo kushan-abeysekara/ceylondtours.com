@@ -10,7 +10,7 @@ const Ella = () => {
     <div className="destination-page">
       {/* Hero Section */}
       <section className="dest-hero">
-        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600" alt="Ella" />
+        <img src={require('../../img/ella 1.webp')} alt="Ella" />
         <div className="dest-badge">Ella</div>
       </section>
 
@@ -88,7 +88,7 @@ const Ella = () => {
               </p>
             </div>
             <div className="dest-bottom-right">
-              <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800" alt="Ella landscape" />
+              <img src={require('../../img/ella 2.webp')} alt="Ella landscape" />
             </div>
           </div>
         </div>
