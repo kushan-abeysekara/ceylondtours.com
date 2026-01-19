@@ -8,6 +8,7 @@ import About from './pages/About';
 import Tours from './pages/Tours';
 import Contact from './pages/Contact';
 import Destinations from './pages/Destinations';
+import Gallery from './pages/Gallery';
 import Sigiriya from './pages/Places/Sigiriya';
 import NineArchBridge from './pages/Places/NineArchBridge';
 import ArugamBay from './pages/Places/ArugamBay';
@@ -62,6 +63,7 @@ const App: React.FC = () => {
             <Route path="/about" element={<About />} />
             <Route path="/tours" element={<Tours />} />
             <Route path="/destinations" element={<Destinations />} />
+            <Route path="/gallery" element={<Gallery />} />
             <Route path="/destinations/sigiriya" element={<Sigiriya />} />
             <Route path="/destinations/nine-arch-bridge" element={<NineArchBridge />} />
             <Route path="/destinations/arugam-bay" element={<ArugamBay />} />

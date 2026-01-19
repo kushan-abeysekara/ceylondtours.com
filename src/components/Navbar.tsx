@@ -43,6 +43,9 @@ const Navbar: React.FC = () => {
           <li className="navbar-item">
             <Link to="/about" className={`navbar-link ${isActive('/about') ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>About Us</Link>
           </li>
+           <li className="navbar-item">
+            <Link to="/gallery" className={`navbar-link ${isActive('/gallery') ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>Gallery</Link>
+          </li>
           <li className="navbar-item">
             <Link to="/contact" className={`navbar-link ${isActive('/contact') ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>Contact</Link>
           </li>
