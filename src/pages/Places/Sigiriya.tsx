@@ -81,14 +81,26 @@ const Sigiriya = () => {
           <div className="dest-bottom-section">
             <div className="dest-bottom-left">
               <p className="dest-bottom-text">
-                Sigiriya, also known as the "Lion Rock," is one of Sri Lanka's most iconic landmarks, rising nearly 200 meters above the surrounding plains. Built in the 5th century by King Kashyapa, the fortress features advanced urban planning, landscaped water gardens, mirror walls, and world-famous frescoes.
+                Sigiriya, also known as the Lion Rock, is a world-famous ancient rock fortress built in the 5th century AD by King Kashyapa I and is recognized today as a UNESCO World Heritage Site. Rising nearly 200 meters above the surrounding plains, Sigiriya reflects exceptional ancient Sri Lankan engineering and urban planning through its landscaped water gardens, advanced irrigation systems, mirror wall inscriptions, and iconic frescoes depicting celestial maidens.
               </p>
               <p className="dest-bottom-text">
-                Visitors can climb to the summit via the lion-shaped gateway and explore the ruins of the royal palace while enjoying panoramic views of forests and villages below. Sigiriya offers a unique blend of history, art, architecture, and natural beauty.
+                Visitors can climb through the historic lion-shaped gateway to reach the summit, where the ruins of the royal palace and breathtaking panoramic views of forests, lakes, and nearby villages create an unforgettable experience. The site perfectly blends history, art, architecture, and natural beauty, making it one of Sri Lanka's most treasured cultural landmarks.
               </p>
             </div>
             <div className="dest-bottom-right">
               <img src={require('../../img/sigiriya 2.webp')} alt="Sigiriya sunset" />
+            </div>
+          </div>
+
+          {/* Ceylon D Tour Section */}
+          <div className="dest-main-section" style={{ marginTop: '4rem' }}>
+            <div className="dest-left">
+              <img src={require('../../img/sigiriya 3.webp')} alt="Ceylon D Tour Sigiriya experience" />
+            </div>
+            <div className="dest-right">
+              <p className="dest-description">
+                Ceylon D Tour offers carefully designed Sigiriya tour experiences that ensure safe, comfortable, and memorable travel for every visitor. Our services include reliable transportation, experienced drivers, knowledgeable guides, and flexible sightseeing plans tailored to your preferences. We also arrange sunrise or sunset visits, assistance with entrance tickets, and visits to nearby attractions such as Pidurangala Rock and cultural village tours. With a strong focus on personalized service and smooth travel arrangements, Ceylon D Tour allows you to explore Sigiriya at a relaxed pace while enjoying a truly enriching Sri Lankan travel experience.
+              </p>
             </div>
           </div>
         </div>

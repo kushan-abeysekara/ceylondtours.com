@@ -81,14 +81,26 @@ const NineArchBridge = () => {
           <div className="dest-bottom-section">
             <div className="dest-bottom-left">
               <p className="dest-bottom-text">
-                The Nine Arch Bridge, also known as the Bridge in the Sky, is an iconic railway viaduct located in the misty hills of Ella. Built during the British colonial era entirely with cement, stone and brick without using any steel, this architectural marvel spans 91 meters long and 24 meters high.
+                The Nine Arch Bridge, also known as the "Bridge in the Sky," is one of Sri Lanka's most iconic railway landmarks, located in the scenic hill town of Ella. Built during the British colonial period in the early 20th century, the bridge is an impressive example of colonial-era engineering, constructed entirely of stone, brick, and cement without the use of steel.
               </p>
               <p className="dest-bottom-text">
-                Surrounded by lush tea plantations and dense jungle, visitors can witness trains passing over the bridge multiple times daily, creating perfect photo opportunities. The best time to visit is early morning or late afternoon when the mist adds a magical atmosphere to the scenery.
+                Surrounded by lush green tea plantations and misty mountain landscapes, the bridge spans a deep valley and offers breathtaking views, especially when a train passes across it. Today, the Nine Arch Bridge is a must-visit destination for photographers, nature lovers, and travelers seeking a peaceful yet unforgettable hill-country experience.
               </p>
             </div>
             <div className="dest-bottom-right">
               <img src={require('../../img/nine arch 1.webp')} alt="Nine Arch Bridge sunset" />
+            </div>
+          </div>
+
+          {/* Ceylon D Tour Section */}
+          <div className="dest-main-section" style={{ marginTop: '4rem' }}>
+            <div className="dest-left">
+              <img src={require('../../img/ninr arch 3.webp')} alt="Ceylon D Tour Nine Arch Bridge experience" />
+            </div>
+            <div className="dest-right">
+              <p className="dest-description">
+                Ceylon D Tour offers well-organized tours to the Nine Arch Bridge, ensuring a comfortable and enjoyable journey through Sri Lanka's beautiful hill country. Our packages include reliable transportation, flexible sightseeing schedules, and guidance on the best times to visit for train sightings and photography. We also arrange visits to nearby attractions such as Ella Rock, Little Adam's Peak, and tea plantations to enhance your travel experience. With personalized service, trusted travel arrangements, and local expertise, Ceylon D Tour guarantees a smooth and memorable visit to the Nine Arch Bridge and the surrounding Ella region.
+              </p>
             </div>
           </div>
         </div>

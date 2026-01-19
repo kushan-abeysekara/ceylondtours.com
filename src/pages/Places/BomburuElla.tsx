@@ -10,7 +10,7 @@ const BomburuElla = () => {
     <div className="destination-page">
       {/* Hero Section */}
       <section className="dest-hero">
-        <img src={require('../../img/bomburu 1.webp')} alt="Bomburu Ella" />
+        <img src={require('../../img/bomburu ella 1.webp')} alt="Bomburu Ella" />
         <div className="dest-badge">Bomburu Ella</div>
       </section>
 
@@ -19,7 +19,7 @@ const BomburuElla = () => {
         <div className="dest-container">
           <div className="dest-main-section">
             <div className="dest-left">
-              <img src="https://images.unsplash.com/photo-1587895265520-f806d3b7e4bb?w=800" alt="Bomburu Ella waterfall" />
+              <img src={require('../../img/BoburuElla.webp')} alt="Bomburu Ella waterfall" />
             </div>
             <div className="dest-right">
               <h1 className="dest-title">Discover Bomburu Ella</h1>
@@ -88,7 +88,7 @@ const BomburuElla = () => {
               </p>
             </div>
             <div className="dest-bottom-right">
-              <img src="https://images.unsplash.com/photo-1580549239615-367449433e06?w=800" alt="Bomburu Ella landscape" />
+              <img src={require('../../img/Bomburu Ella 2.webp')} alt="Bomburu Ella landscape" />
             </div>
           </div>
         </div>

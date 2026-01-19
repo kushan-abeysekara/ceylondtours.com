@@ -80,14 +80,26 @@ const TempleOfTooth = () => {
           <div className="dest-bottom-section">
             <div className="dest-bottom-left">
               <p className="dest-bottom-text">
-                The Temple of the Sacred Tooth Relic (Sri Dalada Maligawa) is located in the royal palace complex of Kandy, the last capital of the Sinhala kings. The temple has played an important role in Sri Lankan politics and culture since its construction in the 16th century.
+                The Temple of the Sacred Tooth Relic (Sri Dalada Maligawa) is one of the most important religious and cultural landmarks in Sri Lanka, located in the heart of Kandy. The temple houses the sacred tooth relic of Lord Buddha, which has been revered for centuries and symbolizes spiritual authority and cultural heritage. Built within the former royal palace complex of the Kandyan Kingdom, the temple showcases exquisite Kandyan architecture, detailed wood carvings, golden roofs, and sacred shrines.
               </p>
               <p className="dest-bottom-text">
-                The temple holds daily rituals where devotees can observe the sacred casket containing the tooth relic. The annual Esala Perahera festival featuring a grand procession with decorated elephants is one of Asia's most spectacular cultural events. Visitors should dress modestly and be prepared for security checks.
+                Daily rituals, known as Thevava, attract devotees and visitors from around the world, while the annual Esala Perahera procession stands as one of Asia's grandest cultural festivals, reflecting deep-rooted traditions and devotion.
               </p>
             </div>
             <div className="dest-bottom-right">
               <img src={require('../../img/temple of the tooth 3.webp')} alt="Temple architecture" />
+            </div>
+          </div>
+
+          {/* Ceylon D Tour Section */}
+          <div className="dest-main-section" style={{ marginTop: '4rem' }}>
+            <div className="dest-left">
+              <img src={require('../../img/temple of the tooth.webp')} alt="Ceylon D Tour Temple of Tooth experience" />
+            </div>
+            <div className="dest-right">
+              <p className="dest-description">
+                Ceylon D Tour offers thoughtfully planned visits to the Temple of the Tooth Relic, ensuring a respectful, comfortable, and enriching experience for every traveler. Our tour services include reliable transportation, knowledgeable guides who explain the temple's history and customs, and flexible schedules to experience morning or evening rituals. We also arrange combined tours with Kandy city highlights such as Kandy Lake, cultural dance shows, and nearby viewpoints. With personalized service, attention to cultural sensitivity, and trusted travel arrangements, Ceylon D Tour allows you to explore this sacred site with ease while gaining a deeper understanding of Sri Lanka's spiritual heritage.
+              </p>
             </div>
           </div>
         </div>
