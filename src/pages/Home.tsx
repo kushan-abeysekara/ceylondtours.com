@@ -258,13 +258,25 @@ const Home = () => {
             cities and wildlife safaris, our popular destinations offer unforgettable experiences for every traveler.
           </p>
           
-          <button className="view-all-btn">All Destinations →</button>
-          
           <div className="destinations-grid">
             {popularDestinations.slice(currentCardPair * 2, currentCardPair * 2 + 2).map(dest => (
               <DestinationCard key={dest.id} {...dest} />
             ))}
           </div>
+
+          <div className="destinations-pagination">
+            {[0, 1, 2].map((index) => (
+              <button
+                key={index}
+                className={`pagination-dot ${currentCardPair === index ? 'active' : ''}`}
+                onClick={() => setCurrentCardPair(index)}
+                aria-label={`Go to destination pair ${index + 1}`}
+              />
+            ))}
+          </div>
+
+          <button className="view-all-btn">All Destinations →</button>
+
         </div>
       </section>
       {/* Features Section */}
