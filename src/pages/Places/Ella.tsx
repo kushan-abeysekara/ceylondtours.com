@@ -19,7 +19,7 @@ const Ella = () => {
         <div className="dest-container">
           <div className="dest-main-section">
             <div className="dest-left">
-              <img src="https://images.unsplash.com/photo-1588971550723-4c4ae923cdbb?w=800" alt="Ella mountains" />
+              <img src={require('../../img/ella 2.webp')} alt="Ella mountains" />
             </div>
             <div className="dest-right">
               <h1 className="dest-title">Discover Ella</h1>
@@ -88,7 +88,7 @@ const Ella = () => {
               </p>
             </div>
             <div className="dest-bottom-right">
-              <img src={require('../../img/ella 2.webp')} alt="Ella landscape" />
+              <img src={require('../../img/ella 3.webp')} alt="Ella landscape" />
             </div>
           </div>
         </div>
