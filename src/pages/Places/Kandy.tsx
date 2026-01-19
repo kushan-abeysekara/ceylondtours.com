@@ -19,7 +19,7 @@ const Kandy = () => {
         <div className="dest-container">
           <div className="dest-main-section">
             <div className="dest-left">
-              <img src="https://images.unsplash.com/photo-1588971550723-4c4ae923cdbb?w=800" alt="Kandy lake" />
+              <img src={require('../../img/kandy 2.webp')} alt="Kandy lake" />
             </div>
             <div className="dest-right">
               <h1 className="dest-title">Discover Kandy</h1>
