@@ -89,6 +89,38 @@ const Contact = () => {
         </div>
       </section>
 
+      {/* CTA Banner */}
+      <section className="cta-banner">
+        <div className="container">
+          <div className="cta-banner-content">
+            <div className="cta-banner-left">
+              <div className="tripadvisor-badge">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="20" cy="20" r="18" fill="white"/>
+                  <circle cx="20" cy="20" r="12" fill="#34E0A1"/>
+                  <path d="M20 12c-2.5 0-4.5 2-4.5 4.5s2 4.5 4.5 4.5 4.5-2 4.5-4.5-2-4.5-4.5-4.5zm0 7c-1.4 0-2.5-1.1-2.5-2.5s1.1-2.5 2.5-2.5 2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5z" fill="black"/>
+                </svg>
+                <span className="tripadvisor-text">Tripadvisor</span>
+              </div>
+              <div className="city-illustration">
+                <div className="cloud cloud-1"></div>
+                <div className="cloud cloud-2"></div>
+                <div className="building building-1"></div>
+                <div className="building building-2"></div>
+                <div className="building building-3"></div>
+              </div>
+            </div>
+            <div className="cta-banner-right">
+              <h3 className="cta-banner-title">Ready to Plan Your Sri Lankan Adventure? Let's Connect!</h3>
+              <a href="https://www.tripadvisor.com/Attraction_Review-g297896-d13293559-Reviews-Ceylon_D_Tours-Galle_Galle_District_Southern_Province.html" className="cta-banner-btn" target="_blank" rel="noopener noreferrer">
+                Contact Us
+                <img src={require('../img/Booknow.png')} alt="Book Now" className="infinity-icon" style={{ width: '20px', height: '15px', filter: 'brightness(0)' }} />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Form Section */}
       <section className="contact-form-section">
         <div className="container">
