@@ -91,8 +91,22 @@ const Hikkaduwa: React.FC = () => {
               <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800" alt="Hikkaduwa Marine Life" />
             </div>
           </div>
+
+          {/* Ceylon D Tour Section */}
+          <div className="dest-main-section" style={{ marginTop: '4rem' }}>
+            <div className="dest-left">
+              <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800" alt="Ceylon D Tour Hikkaduwa experience" />
+            </div>
+            <div className="dest-right">
+              <p className="dest-description">
+                Ceylon D Tour provides exciting Hikkaduwa beach holiday packages with reliable transportation, snorkeling and diving arrangements, and accommodation assistance. Our services include coral reef tours, surfing lessons, turtle hatchery visits, and beachside relaxation. With Ceylon D Tour, you can enjoy Hikkaduwa's vibrant beach culture, marine adventures, and coastal entertainment with personalized service and flexible travel arrangements tailored to your preferences.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+    
     </div>
   );
 };

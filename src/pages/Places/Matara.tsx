@@ -58,10 +58,10 @@ const Matara: React.FC = () => {
           <div className="dest-bottom-section">
             <div className="dest-bottom-left">
               <p className="dest-bottom-text">
-                Matara is a historic city located along the southern coast of Sri Lanka. It features colonial buildings, temples, and scenic beaches.
+                Matara is a historic southern coastal city known for its colonial Dutch fort, beautiful beaches, and religious landmarks. The city features Matara Fort, Paravi Duwa Temple on a small island, and Star Fort, showcasing centuries of cultural and architectural heritage.
               </p>
               <p className="dest-bottom-text">
-                The city offers a balance of cultural history and seaside relaxation.
+                Visitors can explore pristine beaches like Polhena and Madiha, enjoy water sports, visit local markets, and experience authentic southern Sri Lankan culture. Matara offers a perfect combination of history, spirituality, and coastal relaxation.
               </p>
             </div>
             <div className="dest-bottom-right">
@@ -71,8 +71,25 @@ const Matara: React.FC = () => {
               />
             </div>
           </div>
+
+          {/* Ceylon D Tour Section */}
+          <div className="dest-main-section" style={{ marginTop: '4rem' }}>
+            <div className="dest-left">
+              <img
+                src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800"
+                alt="Ceylon D Tour Matara experience"
+              />
+            </div>
+            <div className="dest-right">
+              <p className="dest-description">
+                Ceylon D Tour provides comprehensive Matara travel packages with reliable transportation, heritage site tours, and beach excursions. Our services include fort visits, temple explorations, coastal sightseeing, and local cuisine experiences. With Ceylon D Tour, you can discover Matara's colonial history, religious sites, and beautiful beaches with flexible itineraries, accommodation assistance, and personalized service for an authentic southern coastal experience.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+    
     </div>
   );
 };

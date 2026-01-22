@@ -58,10 +58,10 @@ const Colombo: React.FC = () => {
           <div className="dest-bottom-section">
             <div className="dest-bottom-left">
               <p className="dest-bottom-text">
-                Colombo is a vibrant city featuring modern skyscrapers, shopping malls, and historic buildings. It reflects Sri Lanka's economic and cultural diversity.
+                Colombo is Sri Lanka's bustling commercial capital and largest city, blending modern skyscrapers with colonial-era buildings, vibrant markets, and coastal promenades. As the country's economic and cultural hub, Colombo offers diverse experiences ranging from shopping malls and fine dining to historic temples, museums, and beach walks along Galle Face Green.
               </p>
               <p className="dest-bottom-text">
-                Visitors can enjoy museums, markets, dining, and coastal walks, making Colombo an exciting urban destination.
+                Visitors can explore cultural landmarks such as Gangaramaya Temple, the National Museum, Pettah Market, and Independence Square. With its mix of tradition and modernity, Colombo serves as an exciting introduction to Sri Lanka's urban lifestyle and multicultural heritage.
               </p>
             </div>
             <div className="dest-bottom-right">
@@ -71,8 +71,25 @@ const Colombo: React.FC = () => {
               />
             </div>
           </div>
+
+          {/* Ceylon D Tour Section */}
+          <div className="dest-main-section" style={{ marginTop: '4rem' }}>
+            <div className="dest-left">
+              <img
+                src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800"
+                alt="Ceylon D Tour Colombo experience"
+              />
+            </div>
+            <div className="dest-right">
+              <p className="dest-description">
+                Ceylon D Tour provides well-organized Colombo city tours with comfortable transportation, flexible itineraries, and knowledgeable local guides. Our packages include visits to key landmarks, shopping districts, cultural sites, and coastal attractions. We also arrange airport transfers, hotel assistance, and combined city-heritage tours. With Ceylon D Tour, you can experience Colombo's vibrant urban culture and historical charm in a safe, convenient, and personalized manner.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+    
     </div>
   );
 };

@@ -58,10 +58,10 @@ const Jaffna: React.FC = () => {
           <div className="dest-bottom-section">
             <div className="dest-bottom-left">
               <p className="dest-bottom-text">
-                Jaffna is a unique city in northern Sri Lanka known for its distinct Tamil culture, ancient temples, and colonial influences. The region offers a deep cultural experience different from other parts of the island.
+                Jaffna is a culturally rich city in northern Sri Lanka, known for its distinct Tamil heritage, ancient Hindu temples, and colonial architecture. The region offers a unique cultural experience different from other parts of the island, showcasing traditional festivals, authentic cuisine, and historical landmarks.
               </p>
               <p className="dest-bottom-text">
-                Visitors can explore historic temples, libraries, forts, and enjoy authentic Jaffna cuisine. The city reflects resilience, tradition, and a strong cultural identity, making it an enriching travel destination.
+                Visitors can explore Nallur Kandaswamy Temple, Jaffna Fort, Jaffna Library, and scenic islands like Delft and Nainativu. The city reflects resilience, tradition, and a strong cultural identity, making it an enriching and educational travel destination.
               </p>
             </div>
             <div className="dest-bottom-right">
@@ -71,8 +71,25 @@ const Jaffna: React.FC = () => {
               />
             </div>
           </div>
+
+          {/* Ceylon D Tour Section */}
+          <div className="dest-main-section" style={{ marginTop: '4rem' }}>
+            <div className="dest-left">
+              <img
+                src="https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?w=800"
+                alt="Ceylon D Tour Jaffna experience"
+              />
+            </div>
+            <div className="dest-right">
+              <p className="dest-description">
+                Ceylon D Tour provides specialized Jaffna cultural tours with comfortable transportation, knowledgeable local guides, and culturally sensitive itineraries. Our packages include temple visits, historic site explorations, island excursions, and authentic cuisine experiences. With Ceylon D Tour, you can discover Jaffna's unique Tamil heritage, colonial history, and vibrant culture with personalized service, respect for local traditions, and seamless travel arrangements.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+    
     </div>
   );
 };

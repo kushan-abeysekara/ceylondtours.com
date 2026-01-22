@@ -91,8 +91,22 @@ const Kandy = () => {
               <img src={require('../../img/kandy 3.webp')} alt="Kandy city" />
             </div>
           </div>
+
+          {/* Ceylon D Tour Section */}
+          <div className="dest-main-section" style={{ marginTop: '4rem' }}>
+            <div className="dest-left">
+              <img src={require('../../img/kandy 2.webp')} alt="Ceylon D Tour Kandy experience" />
+            </div>
+            <div className="dest-right">
+              <p className="dest-description">
+                Ceylon D Tour offers comprehensive Kandy tour experiences with comfortable transportation, expert guides, and culturally enriching itineraries. Our services include visits to the Temple of the Tooth Relic, Kandy Lake walks, Royal Botanical Gardens, and traditional cultural shows. We provide flexible schedules, accommodation assistance, and combined tours to nearby attractions such as tea plantations and spice gardens. With Ceylon D Tour, you'll discover Kandy's spiritual heritage and natural beauty with personalized service and trusted travel arrangements.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+    
     </div>
   );
 };

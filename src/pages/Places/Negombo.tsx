@@ -58,10 +58,10 @@ const Negombo: React.FC = () => {
           <div className="dest-bottom-section">
             <div className="dest-bottom-left">
               <p className="dest-bottom-text">
-                Negombo is a popular entry and exit point for travelers due to its proximity to Bandaranaike International Airport. The town is known for its fishing industry and sandy beaches.
+                Negombo is a lively coastal town located just 10 kilometers from Bandaranaike International Airport, making it a popular first or last stop for travelers. The town is famous for its rich fishing heritage, bustling fish markets, sandy beaches, and Dutch colonial architecture including old churches and canals.
               </p>
               <p className="dest-bottom-text">
-                Visitors can explore the fish market, Dutch canals, churches, and enjoy fresh seafood. Negombo is ideal for short stays and relaxation after long journeys.
+                Visitors can explore the Negombo Lagoon, enjoy fresh seafood at beachside restaurants, visit St. Mary's Church, and relax on the beach. Its convenient location and coastal charm make Negombo an ideal destination for short stays and easy relaxation.
               </p>
             </div>
             <div className="dest-bottom-right">
@@ -71,8 +71,25 @@ const Negombo: React.FC = () => {
               />
             </div>
           </div>
+
+          {/* Ceylon D Tour Section */}
+          <div className="dest-main-section" style={{ marginTop: '4rem' }}>
+            <div className="dest-left">
+              <img
+                src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800"
+                alt="Ceylon D Tour Negombo experience"
+              />
+            </div>
+            <div className="dest-right">
+              <p className="dest-description">
+                Ceylon D Tour provides convenient Negombo travel services including airport transfers, city tours, and accommodation arrangements. Our packages cover visits to the fish market, lagoon boat rides, Dutch Fort, and beach relaxation spots. With flexible scheduling and reliable transportation, Ceylon D Tour ensures a smooth and enjoyable Negombo experience, perfect for starting or ending your Sri Lankan adventure comfortably.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+    
     </div>
   );
 };

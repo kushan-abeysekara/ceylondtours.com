@@ -81,18 +81,32 @@ const NuwaraEliya = () => {
           <div className="dest-bottom-section">
             <div className="dest-bottom-left">
               <p className="dest-bottom-text">
-                Nuwara Eliya is famous for its colonial-era buildings, cool climate, and rolling tea plantations. The town offers a refreshing escape from tropical heat and showcases British architectural influence.
+                Nuwara Eliya, often called "Little England," is Sri Lanka's most famous hill station, located at 1,868 meters above sea level. The town is known for its cool climate, misty mountains, colonial-era architecture, and sprawling tea plantations that produce some of the world's finest Ceylon tea.
               </p>
               <p className="dest-bottom-text">
-                Visitors can explore tea factories, Gregory Lake, Victoria Park, and scenic viewpoints. Its peaceful environment makes it perfect for relaxation and slow-paced travel.
+                Visitors can explore tea factories, stroll through Victoria Park, enjoy boating on Gregory Lake, and visit scenic waterfalls. The town's refreshing atmosphere, lush landscapes, and British colonial charm make Nuwara Eliya a perfect retreat from tropical heat.
               </p>
             </div>
             <div className="dest-bottom-right">
               <img src={require('../../img/nuwra eliya 2.webp')} alt="Nuwara Eliya landscape" />
             </div>
           </div>
+
+          {/* Ceylon D Tour Section */}
+          <div className="dest-main-section" style={{ marginTop: '4rem' }}>
+            <div className="dest-left">
+              <img src={require('../../img/nuwra eliya 3.webp')} alt="Ceylon D Tour Nuwara Eliya experience" />
+            </div>
+            <div className="dest-right">
+              <p className="dest-description">
+                Ceylon D Tour offers tailored Nuwara Eliya travel experiences with comfortable transportation through scenic hill-country roads, tea plantation visits, and flexible sightseeing itineraries. Our packages include tours of tea factories, botanical gardens, waterfalls, and historic landmarks. With personalized service, accommodation assistance, and expert local guidance, Ceylon D Tour ensures a memorable exploration of Nuwara Eliya's cool climate, natural beauty, and colonial heritage.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+    
     </div>
   );
 };

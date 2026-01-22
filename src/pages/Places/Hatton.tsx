@@ -58,10 +58,10 @@ const Hatton: React.FC = () => {
           <div className="dest-bottom-section">
             <div className="dest-bottom-left">
               <p className="dest-bottom-text">
-                Hatton is surrounded by lush tea estates and rolling hills, offering stunning landscapes. It serves as a main base for pilgrims visiting Adam's Peak.
+                Hatton is a charming hill-country town surrounded by sprawling tea estates, serving as the main gateway to Adam's Peak and a hub for Sri Lanka's tea industry. Located at 1,271 meters above sea level, Hatton offers cool temperatures, scenic mountain views, and opportunities to explore working tea plantations and factories where Ceylon tea is processed.
               </p>
               <p className="dest-bottom-text">
-                Visitors can enjoy tea plantation views, cool weather, and peaceful surroundings.
+                The town's proximity to Adam's Peak makes it a popular base during pilgrimage season. Visitors can tour tea factories, walk through emerald-green tea fields, visit Castlereagh Reservoir, and experience the authentic hill-country lifestyle. Hatton's peaceful atmosphere and natural beauty make it perfect for tea tourism and mountain exploration.
               </p>
             </div>
             <div className="dest-bottom-right">
@@ -71,8 +71,25 @@ const Hatton: React.FC = () => {
               />
             </div>
           </div>
+
+          {/* Ceylon D Tour Section */}
+          <div className="dest-main-section" style={{ marginTop: '4rem' }}>
+            <div className="dest-left">
+              <img
+                src="https://images.unsplash.com/photo-1563968743333-044cef800494?w=800"
+                alt="Ceylon D Tour Hatton experience"
+              />
+            </div>
+            <div className="dest-right">
+              <p className="dest-description">
+                Ceylon D Tour offers specialized Hatton tour packages with comfortable transportation through tea country, factory visits, and Adam's Peak pilgrimage coordination. Our services include guided plantation tours, accommodation arrangements, reservoir excursions, and flexible schedules for sunrise hikes. With Ceylon D Tour, you can experience Hatton's tea heritage, mountain scenery, and spiritual significance with expert guidance, personalized service, and seamless travel arrangements for an enriching highland journey.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+    
     </div>
   );
 };

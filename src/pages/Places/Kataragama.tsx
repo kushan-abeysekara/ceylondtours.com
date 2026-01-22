@@ -58,10 +58,10 @@ const Kataragama: React.FC = () => {
           <div className="dest-bottom-section">
             <div className="dest-bottom-left">
               <p className="dest-bottom-text">
-                Kataragama is one of Sri Lanka's most important religious sites, visited by Buddhists, Hindus, Muslims, and Christians.
+                Kataragama is one of Sri Lanka's most sacred multi-religious pilgrimage sites, revered by Buddhists, Hindus, Muslims, and indigenous Vedda people. The temple complex is dedicated to God Kataragama (Skanda) and attracts thousands of devotees throughout the year, especially during the annual Esala Festival featuring elaborate rituals and ceremonies.
               </p>
               <p className="dest-bottom-text">
-                The town offers a deeply spiritual experience with rituals, temples, and cultural traditions.
+                The town offers a unique spiritual atmosphere with daily pujas, religious processions, and traditional customs. Visitors can explore the main shrine, Buddhist temples, mosques, and the sacred Menik Ganga river. Kataragama provides a profound spiritual experience reflecting Sri Lanka's religious diversity and cultural harmony.
               </p>
             </div>
             <div className="dest-bottom-right">
@@ -71,8 +71,25 @@ const Kataragama: React.FC = () => {
               />
             </div>
           </div>
+
+          {/* Ceylon D Tour Section */}
+          <div className="dest-main-section" style={{ marginTop: '4rem' }}>
+            <div className="dest-left">
+              <img
+                src="https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?w=800"
+                alt="Ceylon D Tour Kataragama experience"
+              />
+            </div>
+            <div className="dest-right">
+              <p className="dest-description">
+                Ceylon D Tour provides respectful Kataragama pilgrimage packages with comfortable transportation, knowledgeable guides familiar with religious customs, and flexible visiting schedules. Our services include temple visit arrangements, cultural sensitivity guidance, and accommodation assistance near the sacred complex. With Ceylon D Tour, you can experience Kataragama's spiritual significance, religious rituals, and cultural depth with personalized service and appropriate respect for all traditions.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+    
     </div>
   );
 };

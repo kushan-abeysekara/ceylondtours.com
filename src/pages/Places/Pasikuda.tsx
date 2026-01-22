@@ -58,10 +58,10 @@ const Pasikuda: React.FC = () => {
           <div className="dest-bottom-section">
             <div className="dest-bottom-left">
               <p className="dest-bottom-text">
-                Pasikuda Beach is known for its shallow, crystal-clear waters that extend far into the sea, making it safe for swimming. The beach is clean, quiet, and well-maintained.
+                Pasikuda is a pristine beach destination on Sri Lanka's east coast, famous for its shallow, crystal-clear turquoise waters that extend far into the sea, making it one of the safest beaches for swimming in the country. The calm bay and soft sandy shores create an ideal environment for families and water sports enthusiasts.
               </p>
               <p className="dest-bottom-text">
-                It is perfect for families, couples, and travelers looking for relaxation. The calm environment and scenic beauty make Pasikuda one of Sri Lanka's best beach destinations.
+                The beach offers excellent snorkeling, diving, and water sports opportunities, along with scenic coastal views and peaceful surroundings. With its clean environment, luxury resorts, and tranquil atmosphere, Pasikuda is perfect for relaxation and seaside enjoyment.
               </p>
             </div>
             <div className="dest-bottom-right">
@@ -71,8 +71,25 @@ const Pasikuda: React.FC = () => {
               />
             </div>
           </div>
+
+          {/* Ceylon D Tour Section */}
+          <div className="dest-main-section" style={{ marginTop: '4rem' }}>
+            <div className="dest-left">
+              <img
+                src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800"
+                alt="Ceylon D Tour Pasikuda experience"
+              />
+            </div>
+            <div className="dest-right">
+              <p className="dest-description">
+                Ceylon D Tour provides exceptional Pasikuda beach holiday packages with comfortable transportation, accommodation arrangements, and water sports coordination. Our services include snorkeling excursions, coastal sightseeing, and relaxation-focused itineraries. With Ceylon D Tour, you can enjoy Pasikuda's pristine beaches, safe swimming waters, and tranquil coastal beauty with personalized service, flexible scheduling, and trusted travel support for an unforgettable beach experience.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+    
     </div>
   );
 };

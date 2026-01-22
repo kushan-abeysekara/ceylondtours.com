@@ -58,10 +58,10 @@ const Batticaloa: React.FC = () => {
           <div className="dest-bottom-section">
             <div className="dest-bottom-left">
               <p className="dest-bottom-text">
-                Batticaloa is famous for its lagoons, calm beaches, and rich eastern coastal culture. The city has a peaceful and laid-back atmosphere.
+                Batticaloa is a historic eastern coastal city known for its scenic lagoon, pristine beaches, and unique "singing fish" phenomenon in the lagoon waters. The city features Dutch colonial architecture, ancient Hindu temples, churches, and a rich Tamil cultural heritage reflected in its festivals, cuisine, and traditions.
               </p>
               <p className="dest-bottom-text">
-                Visitors can enjoy seaside views, historical sites, and local traditions, making it a pleasant and culturally rich destination.
+                Visitors can explore the Dutch Fort, Kallady Bridge spanning the lagoon, Pasikuda and Kalkudah beaches nearby, and experience authentic eastern Sri Lankan culture. The peaceful atmosphere, warm hospitality, and blend of history and coastal beauty make Batticaloa a rewarding off-the-beaten-path destination.
               </p>
             </div>
             <div className="dest-bottom-right">
@@ -71,8 +71,25 @@ const Batticaloa: React.FC = () => {
               />
             </div>
           </div>
+
+          {/* Ceylon D Tour Section */}
+          <div className="dest-main-section" style={{ marginTop: '4rem' }}>
+            <div className="dest-left">
+              <img
+                src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800"
+                alt="Ceylon D Tour Batticaloa experience"
+              />
+            </div>
+            <div className="dest-right">
+              <p className="dest-description">
+                Ceylon D Tour offers culturally immersive Batticaloa tour packages with comfortable transportation, lagoon boat rides, and heritage site visits. Our services include beach excursions to Pasikuda and Kalkudah, cultural tour guidance, and accommodation assistance. With Ceylon D Tour, you can discover Batticaloa's unique eastern culture, scenic lagoon beauty, and historic landmarks with personalized service, local expertise, and authentic cultural experiences for a memorable eastern coast journey.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+    
     </div>
   );
 };

@@ -58,10 +58,10 @@ const Kitulgala: React.FC = () => {
           <div className="dest-bottom-section">
             <div className="dest-bottom-left">
               <p className="dest-bottom-text">
-                Kitulgala is located near the Kelani River and is best known for white-water rafting and outdoor adventures. Surrounded by lush rainforests, it offers thrilling experiences in a natural setting.
+                Kitulgala is an adventure tourism hub nestled beside the Kelani River, surrounded by dense rainforests and scenic landscapes. Famous for white-water rafting, it offers thrilling rapids suitable for both beginners and experienced rafters. The area gained international fame as a filming location for "The Bridge on the River Kwai."
               </p>
               <p className="dest-bottom-text">
-                Apart from rafting, visitors can enjoy jungle trekking, bird watching, and exploring caves. Kitulgala is ideal for travelers looking for excitement and nature combined.
+                Beyond rafting, visitors can enjoy jungle trekking, waterfall rappelling, bird watching, canyoning, and cave exploration. The lush environment, exciting activities, and natural beauty make Kitulgala a perfect destination for adventure seekers and nature enthusiasts.
               </p>
             </div>
             <div className="dest-bottom-right">
@@ -71,8 +71,25 @@ const Kitulgala: React.FC = () => {
               />
             </div>
           </div>
+
+          {/* Ceylon D Tour Section */}
+          <div className="dest-main-section" style={{ marginTop: '4rem' }}>
+            <div className="dest-left">
+              <img
+                src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800"
+                alt="Ceylon D Tour Kitulgala experience"
+              />
+            </div>
+            <div className="dest-right">
+              <p className="dest-description">
+                Ceylon D Tour offers exciting Kitulgala adventure packages with reliable transportation, professional activity coordinators, and safety-focused arrangements. Our services include white-water rafting bookings, jungle trekking guides, waterfall excursions, and accommodation assistance. With Ceylon D Tour, you can experience Kitulgala's thrilling outdoor activities and natural beauty with trusted adventure partners, personalized itineraries, and comprehensive travel support for an adrenaline-filled journey.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+    
     </div>
   );
 };

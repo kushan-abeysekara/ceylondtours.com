@@ -58,10 +58,10 @@ const Badulla: React.FC = () => {
           <div className="dest-bottom-section">
             <div className="dest-bottom-left">
               <p className="dest-bottom-text">
-                Badulla is located in the Uva Province and is known for its cool climate and natural beauty. The area is surrounded by mountains, tea plantations, and waterfalls.
+                Badulla is the capital of Uva Province, nestled in Sri Lanka's highlands and surrounded by lush tea estates, waterfalls, and misty mountains. The town serves as the eastern terminus of the scenic Colombo-Badulla railway line, one of the most beautiful train journeys in the world. The cool climate and natural landscapes make it an ideal hill-country destination.
               </p>
               <p className="dest-bottom-text">
-                It offers a calm environment ideal for relaxation and exploration of nearby attractions.
+                Key attractions include Dunhinda Falls, Muthiyangana Raja Maha Vihara temple, Dowa Rock Temple, and surrounding tea plantations. Badulla offers a peaceful environment for nature walks, temple visits, and experiencing authentic upcountry Sri Lankan life away from crowded tourist areas.
               </p>
             </div>
             <div className="dest-bottom-right">
@@ -71,8 +71,25 @@ const Badulla: React.FC = () => {
               />
             </div>
           </div>
+
+          {/* Ceylon D Tour Section */}
+          <div className="dest-main-section" style={{ marginTop: '4rem' }}>
+            <div className="dest-left">
+              <img
+                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800"
+                alt="Ceylon D Tour Badulla experience"
+              />
+            </div>
+            <div className="dest-right">
+              <p className="dest-description">
+                Ceylon D Tour provides comprehensive Badulla tour packages with comfortable transportation through scenic highland routes, waterfall visits, and temple tours. Our services include tea plantation excursions, railway journey coordination, and accommodation assistance. With Ceylon D Tour, you can discover Badulla's natural beauty, cultural sites, and highland charm with flexible itineraries, local expertise, and personalized service for an authentic upcountry exploration experience.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+    
     </div>
   );
 };

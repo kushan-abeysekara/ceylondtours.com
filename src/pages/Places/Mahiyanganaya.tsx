@@ -58,10 +58,10 @@ const Mahiyanganaya: React.FC = () => {
           <div className="dest-bottom-section">
             <div className="dest-bottom-left">
               <p className="dest-bottom-text">
-                Mahiyanganaya is considered one of the oldest settlements in Sri Lanka and holds deep historical and religious importance. It is closely associated with the island's indigenous Vedda community.
+                Mahiyanganaya is one of Sri Lanka's oldest and most historically significant towns, closely associated with the island's ancient Buddhist heritage and indigenous Vedda community. The Mahiyangana Raja Maha Vihara temple is believed to have been visited by Lord Buddha himself, making it an important pilgrimage site with over 2,500 years of documented history.
               </p>
               <p className="dest-bottom-text">
-                Visitors can explore ancient temples, cultural sites, and learn about early Sri Lankan civilization. The area offers a unique blend of history, culture, and tradition.
+                The town serves as a gateway to the Maduru Oya National Park and offers unique opportunities to learn about Vedda culture, Sri Lanka's aboriginal inhabitants. Visitors can explore ancient temples, archaeological sites, and experience traditional Vedda villages. Mahiyanganaya provides a fascinating journey into Sri Lanka's earliest civilizations and spiritual roots.
               </p>
             </div>
             <div className="dest-bottom-right">
@@ -71,8 +71,25 @@ const Mahiyanganaya: React.FC = () => {
               />
             </div>
           </div>
+
+          {/* Ceylon D Tour Section */}
+          <div className="dest-main-section" style={{ marginTop: '4rem' }}>
+            <div className="dest-left">
+              <img
+                src="https://images.unsplash.com/photo-1548013146-72479768bada?w=800"
+                alt="Ceylon D Tour Mahiyanganaya experience"
+              />
+            </div>
+            <div className="dest-right">
+              <p className="dest-description">
+                Ceylon D Tour provides culturally immersive Mahiyanganaya tour packages with knowledgeable guides, comfortable transportation, and respectful cultural experiences. Our services include ancient temple visits, Vedda cultural encounters, national park excursions, and historical site explorations. With Ceylon D Tour, you can discover Mahiyanganaya's ancient Buddhist heritage, indigenous culture, and historical significance with personalized service, cultural sensitivity, and expert local knowledge for an enlightening journey into Sri Lanka's earliest civilizations.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+    
     </div>
   );
 };

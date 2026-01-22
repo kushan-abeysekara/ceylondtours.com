@@ -81,18 +81,32 @@ const Mirissa = () => {
           <div className="dest-bottom-section">
             <div className="dest-bottom-left">
               <p className="dest-bottom-text">
-                Mirissa is a laid-back coastal town known for its calm beaches and crystal-clear waters. It is one of the best locations in Sri Lanka for whale and dolphin watching.
+                Mirissa is a picturesque coastal town on Sri Lanka's southern coast, famous for its golden sandy beaches, turquoise waters, and world-class whale watching opportunities. From November to April, visitors can witness majestic blue whales and playful dolphins in their natural habitat, making Mirissa one of the best marine wildlife destinations in Asia.
               </p>
               <p className="dest-bottom-text">
-                Visitors can enjoy swimming, snorkeling, beach cafes, and stunning sunsets. Mirissa is ideal for relaxation and ocean adventures.
+                Beyond whale watching, Mirissa offers excellent surfing spots, beachside cafes, fresh seafood, and stunning sunsets. The laid-back atmosphere and natural beauty make it an ideal destination for relaxation, water sports, and coastal adventures.
               </p>
             </div>
             <div className="dest-bottom-right">
               <img src="https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=800" alt="Mirissa sunset" />
             </div>
           </div>
+
+          {/* Ceylon D Tour Section */}
+          <div className="dest-main-section" style={{ marginTop: '4rem' }}>
+            <div className="dest-left">
+              <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800" alt="Ceylon D Tour Mirissa experience" />
+            </div>
+            <div className="dest-right">
+              <p className="dest-description">
+                Ceylon D Tour offers exciting Mirissa travel experiences with reliable transportation, whale watching tour arrangements, and accommodation assistance. Our packages include beach excursions, visits to nearby attractions such as Coconut Tree Hill and Secret Beach, and flexible schedules tailored to your preferences. With Ceylon D Tour, you can enjoy Mirissa's coastal charm, marine wildlife encounters, and tropical beauty with trusted service and personalized travel arrangements.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+    
     </div>
   );
 };

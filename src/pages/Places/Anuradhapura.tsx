@@ -80,18 +80,32 @@ const Anuradhapura = () => {
           <div className="dest-bottom-section">
             <div className="dest-bottom-left">
               <p className="dest-bottom-text">
-                Anuradhapura was Sri Lanka's first ancient capital and a major center of Buddhist civilization. It features massive stupas, ancient monasteries, and sacred Bodhi trees.
+                Anuradhapura is one of Sri Lanka's ancient capitals and a UNESCO World Heritage Site, dating back over 2,500 years. The city served as the center of Theravada Buddhism and features massive stupas, sacred Bodhi trees, ancient monasteries, and advanced irrigation systems that showcase remarkable ancient engineering.
               </p>
               <p className="dest-bottom-text">
-                The city reflects advanced ancient engineering and religious devotion, making it a deeply spiritual and historical destination.
+                Key attractions include the Sri Maha Bodhi tree, Ruwanwelisaya stupa, Jetavanaramaya, and Abhayagiri monastery. Walking through these ancient ruins offers a deeply spiritual and historical experience, reflecting Sri Lanka's rich Buddhist heritage and architectural brilliance.
               </p>
             </div>
             <div className="dest-bottom-right">
               <img src="https://images.unsplash.com/photo-1588971550723-4c4ae923cdbb?w=800" alt="Anuradhapura ruins" />
             </div>
           </div>
+
+          {/* Ceylon D Tour Section */}
+          <div className="dest-main-section" style={{ marginTop: '4rem' }}>
+            <div className="dest-left">
+              <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800" alt="Ceylon D Tour Anuradhapura experience" />
+            </div>
+            <div className="dest-right">
+              <p className="dest-description">
+                Ceylon D Tour offers comprehensive Anuradhapura heritage tours with knowledgeable guides, comfortable transportation, and respectful cultural experiences. Our packages include visits to all major sacred sites, historical monuments, and ancient ruins with detailed explanations of their significance. We provide flexible itineraries, entrance assistance, and combined cultural tours. With Ceylon D Tour, you can explore Anuradhapura's spiritual depth and historical grandeur with trusted service and personalized attention.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+    
     </div>
   );
 };

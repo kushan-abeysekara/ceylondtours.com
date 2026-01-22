@@ -81,18 +81,32 @@ const YalaNationalPark = () => {
           <div className="dest-bottom-section">
             <div className="dest-bottom-left">
               <p className="dest-bottom-text">
-                Yala National Park is home to diverse wildlife including elephants, leopards, sloth bears, crocodiles, and many bird species. Its varied landscapes include forests, grasslands, and lagoons.
+                Yala National Park is Sri Lanka's most visited wildlife reserve and home to one of the highest leopard densities in the world. The park features diverse ecosystems including forests, grasslands, lagoons, and coastal areas, hosting elephants, sloth bears, crocodiles, spotted deer, and over 200 bird species.
               </p>
               <p className="dest-bottom-text">
-                Safari tours provide thrilling wildlife encounters and excellent photography opportunities, making Yala a must-visit for nature and wildlife lovers.
+                Safari tours through Yala offer thrilling wildlife encounters and stunning natural scenery. Whether you're a wildlife enthusiast, photographer, or nature lover, Yala provides unforgettable experiences and opportunities to witness Sri Lanka's incredible biodiversity.
               </p>
             </div>
             <div className="dest-bottom-right">
               <img src="https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=800" alt="Yala safari" />
             </div>
           </div>
+
+          {/* Ceylon D Tour Section */}
+          <div className="dest-main-section" style={{ marginTop: '4rem' }}>
+            <div className="dest-left">
+              <img src="https://images.unsplash.com/photo-1549366021-9f761d450615?w=800" alt="Ceylon D Tour Yala experience" />
+            </div>
+            <div className="dest-right">
+              <p className="dest-description">
+                Ceylon D Tour provides expert-led Yala safari experiences with reliable transportation, experienced wildlife guides, and comfortable jeep arrangements. Our packages include morning and evening safari options, park entrance assistance, and accommodation bookings near the reserve. We ensure safe, informative, and exciting wildlife adventures tailored to your interests. With Ceylon D Tour, you can explore Yala's natural wonders with personalized service and trusted travel support.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+    
     </div>
   );
 };

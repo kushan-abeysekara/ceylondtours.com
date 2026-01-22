@@ -58,10 +58,10 @@ const PidurangalaRock: React.FC = () => {
           <div className="dest-bottom-section">
             <div className="dest-bottom-left">
               <p className="dest-bottom-text">
-                Pidurangala Rock is located close to Sigiriya and offers a less crowded hiking experience. The climb leads to a flat summit with breathtaking views.
+                Pidurangala Rock is located just north of Sigiriya and offers a rewarding hiking experience with spectacular panoramic views of the famous Lion Rock. The climb involves traversing through an ancient temple, boulders, and natural rock formations, culminating in a flat summit with breathtaking 360-degree views of the surrounding landscapes.
               </p>
               <p className="dest-bottom-text">
-                Visitors can enjoy sunrise or sunset views overlooking Sigiriya and the surrounding forests. It is ideal for adventure lovers and photographers.
+                Sunrise and sunset from Pidurangala provide stunning photography opportunities and a less crowded alternative to Sigiriya. The ancient reclining Buddha statue at the temple adds cultural significance. Pidurangala is perfect for adventurous travelers seeking nature, history, and spectacular vistas in one unforgettable hike.
               </p>
             </div>
             <div className="dest-bottom-right">
@@ -71,8 +71,25 @@ const PidurangalaRock: React.FC = () => {
               />
             </div>
           </div>
+
+          {/* Ceylon D Tour Section */}
+          <div className="dest-main-section" style={{ marginTop: '4rem' }}>
+            <div className="dest-left">
+              <img
+                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800"
+                alt="Ceylon D Tour Pidurangala experience"
+              />
+            </div>
+            <div className="dest-right">
+              <p className="dest-description">
+                Ceylon D Tour offers guided Pidurangala Rock hiking tours with comfortable transportation, flexible timing for sunrise or sunset climbs, and safety-focused arrangements. Our packages include entrance coordination, hiking guidance, and combined tours with Sigiriya and nearby attractions. With Ceylon D Tour, you can experience Pidurangala's spectacular views, ancient temple, and adventurous climb with personalized service, local expertise, and seamless travel arrangements for a memorable hiking experience.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+    
     </div>
   );
 };

@@ -58,10 +58,10 @@ const KnucklesMountainRange: React.FC = () => {
           <div className="dest-bottom-section">
             <div className="dest-bottom-left">
               <p className="dest-bottom-text">
-                The Knuckles Mountain Range is a UNESCO-listed conservation area known for its dramatic landscapes and rich biodiversity. Covered in mist and cloud forests, it offers stunning views and untouched natural beauty.
+                The Knuckles Mountain Range is a UNESCO World Heritage Site named for its resemblance to clenched knuckles. This biodiversity hotspot features dramatic peaks, cloud forests, grasslands, and endemic species of plants and animals. The region offers challenging trekking routes through pristine wilderness, remote villages, and stunning scenic viewpoints.
               </p>
               <p className="dest-bottom-text">
-                The area is ideal for trekking, bird watching, and nature exploration. Its peaceful atmosphere and challenging trails make it a perfect destination for adventure seekers and nature lovers.
+                Trekkers can experience diverse ecosystems, observe rare bird species, and enjoy encounters with local mountain communities. The cool climate, misty landscapes, and untouched natural beauty make the Knuckles Range a paradise for adventure enthusiasts, nature photographers, and eco-tourists seeking authentic wilderness experiences.
               </p>
             </div>
             <div className="dest-bottom-right">
@@ -71,8 +71,25 @@ const KnucklesMountainRange: React.FC = () => {
               />
             </div>
           </div>
+
+          {/* Ceylon D Tour Section */}
+          <div className="dest-main-section" style={{ marginTop: '4rem' }}>
+            <div className="dest-left">
+              <img
+                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800"
+                alt="Ceylon D Tour Knuckles experience"
+              />
+            </div>
+            <div className="dest-right">
+              <p className="dest-description">
+                Ceylon D Tour provides expert-guided Knuckles trekking packages with experienced mountain guides, comfortable transportation to trailheads, and camping or homestay arrangements. Our services include customized trekking routes based on fitness levels, safety equipment guidance, and village tourism experiences. With Ceylon D Tour, you can explore the Knuckles' pristine wilderness, endemic biodiversity, and mountain culture with reliable support, environmental responsibility, and personalized adventure planning.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+    
     </div>
   );
 };

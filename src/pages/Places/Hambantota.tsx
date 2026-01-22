@@ -58,10 +58,10 @@ const Hambantota: React.FC = () => {
           <div className="dest-bottom-section">
             <div className="dest-bottom-left">
               <p className="dest-bottom-text">
-                Hambantota is known for its wide roads, parks, and nearby wildlife attractions. It represents modern development blended with nature.
+                Hambantota is Sri Lanka's southern gateway featuring modern infrastructure, international port facilities, and proximity to major wildlife reserves like Bundala and Udawalawe National Parks. The district showcases contemporary development alongside traditional coastal culture, offering visitors a unique blend of modernity and natural attractions.
               </p>
               <p className="dest-bottom-text">
-                Visitors can explore national parks, beaches, and modern facilities.
+                Key attractions include Hambantota Port, Mattala Airport, scenic beaches, salt pans, and the nearby Yala National Park entrance. The area serves as an ideal base for exploring southern wildlife reserves while enjoying modern amenities, making it perfect for travelers seeking convenience and nature exploration.
               </p>
             </div>
             <div className="dest-bottom-right">
@@ -71,8 +71,25 @@ const Hambantota: React.FC = () => {
               />
             </div>
           </div>
+
+          {/* Ceylon D Tour Section */}
+          <div className="dest-main-section" style={{ marginTop: '4rem' }}>
+            <div className="dest-left">
+              <img
+                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800"
+                alt="Ceylon D Tour Hambantota experience"
+              />
+            </div>
+            <div className="dest-right">
+              <p className="dest-description">
+                Ceylon D Tour provides comprehensive Hambantota tour packages with modern transportation, wildlife safari arrangements to nearby national parks, and accommodation assistance. Our services include beach excursions, bird watching at Bundala, and cultural site visits. With Ceylon D Tour, you can experience Hambantota's strategic location, wildlife access, and developing infrastructure with flexible itineraries, reliable service, and personalized attention for a convenient southern exploration experience.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+    
     </div>
   );
 };

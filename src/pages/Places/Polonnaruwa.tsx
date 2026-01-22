@@ -80,18 +80,32 @@ const Polonnaruwa = () => {
           <div className="dest-bottom-section">
             <div className="dest-bottom-left">
               <p className="dest-bottom-text">
-                Polonnaruwa showcases ancient palaces, temples, and statues from Sri Lanka's medieval period. The ruins are spread across a compact area.
+                Polonnaruwa is Sri Lanka's second ancient capital and a UNESCO World Heritage Site, showcasing well-preserved medieval ruins from the 11th and 12th centuries. The compact archaeological park features magnificent royal palaces, stone sculptures, Buddhist temples, and the famous Gal Vihara rock-carved Buddha statues.
               </p>
               <p className="dest-bottom-text">
-                Visitors can easily explore the site by bicycle while learning about the island's royal history and architecture.
+                Exploring Polonnaruwa by bicycle or foot offers an intimate view of Sri Lanka's medieval history and architecture. The site beautifully combines religious significance, artistic achievement, and historical importance, making it a must-visit cultural destination.
               </p>
             </div>
             <div className="dest-bottom-right">
               <img src="https://images.unsplash.com/photo-1588971550723-4c4ae923cdbb?w=800" alt="Polonnaruwa statues" />
             </div>
           </div>
+
+          {/* Ceylon D Tour Section */}
+          <div className="dest-main-section" style={{ marginTop: '4rem' }}>
+            <div className="dest-left">
+              <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1600" alt="Ceylon D Tour Polonnaruwa experience" />
+            </div>
+            <div className="dest-right">
+              <p className="dest-description">
+                Ceylon D Tour offers expertly guided Polonnaruwa heritage tours with comfortable transportation, bicycle rental arrangements, and knowledgeable guides who bring history to life. Our packages include visits to all major archaeological sites, detailed historical explanations, and flexible schedules. We also arrange combined tours with nearby attractions. With Ceylon D Tour, you can explore Polonnaruwa's medieval wonders with personalized service, cultural sensitivity, and seamless travel arrangements.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+    
     </div>
   );
 };

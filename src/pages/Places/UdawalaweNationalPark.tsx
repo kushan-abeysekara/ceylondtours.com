@@ -58,10 +58,10 @@ const UdawalaweNationalPark: React.FC = () => {
           <div className="dest-bottom-section">
             <div className="dest-bottom-left">
               <p className="dest-bottom-text">
-                Udawalawe National Park is one of the best places in Sri Lanka to see wild elephants roaming freely. The park consists of open grasslands, water reservoirs, and forests, creating ideal conditions for wildlife viewing.
+                Udawalawe National Park is renowned for having one of the highest concentrations of Asian elephants in Sri Lanka, with herds frequently visible grazing in open grasslands. The park's landscape includes the Udawalawe Reservoir, scrublands, and forests, creating excellent conditions for wildlife observation and photography.
               </p>
               <p className="dest-bottom-text">
-                Visitors can enjoy jeep safaris led by experienced guides, offering sightings of elephants, buffalo, deer, birds, and other animals. Udawalawe is a must-visit destination for wildlife lovers and photographers.
+                Beyond elephants, visitors can spot water buffalo, sambar deer, crocodiles, and numerous bird species. The Elephant Transit Home near the park rescues and rehabilitates orphaned elephants. Udawalawe offers consistent wildlife sightings year-round, making it a must-visit for nature enthusiasts.
               </p>
             </div>
             <div className="dest-bottom-right">
@@ -71,8 +71,25 @@ const UdawalaweNationalPark: React.FC = () => {
               />
             </div>
           </div>
+
+          {/* Ceylon D Tour Section */}
+          <div className="dest-main-section" style={{ marginTop: '4rem' }}>
+            <div className="dest-left">
+              <img
+                src="https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=800"
+                alt="Ceylon D Tour Udawalawe experience"
+              />
+            </div>
+            <div className="dest-right">
+              <p className="dest-description">
+                Ceylon D Tour provides expertly organized Udawalawe safari experiences with comfortable transportation, professional wildlife guides, and jeep safari arrangements. Our packages include morning or evening safari options, Elephant Transit Home visits, and accommodation bookings near the park. With Ceylon D Tour, you can witness Udawalawe's magnificent elephant herds and diverse wildlife with reliable service, safety-focused arrangements, and personalized itineraries for an unforgettable safari adventure.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+    
     </div>
   );
 };

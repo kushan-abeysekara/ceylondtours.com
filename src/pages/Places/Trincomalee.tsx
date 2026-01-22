@@ -81,18 +81,32 @@ const Trincomalee = () => {
           <div className="dest-bottom-section">
             <div className="dest-bottom-left">
               <p className="dest-bottom-text">
-                Trincomalee offers stunning beaches like Nilaveli and Uppuveli along with historical landmarks.
+                Trincomalee is a historic port city on Sri Lanka's northeast coast, famous for its pristine beaches, natural harbor, and cultural landmarks. The area features stunning beaches like Nilaveli and Uppuveli with crystal-clear waters, perfect for swimming, snorkeling, and diving. Trincomalee's coastline is also a prime location for whale and dolphin watching.
               </p>
               <p className="dest-bottom-text">
-                The area is also known for whale watching and crystal-clear waters.
+                Historical attractions include Fort Frederick, Koneswaram Temple perched on Swami Rock, and hot springs at Kanniya. The blend of natural beauty, marine life, and cultural heritage makes Trincomalee a captivating and diverse destination.
               </p>
             </div>
             <div className="dest-bottom-right">
               <img src="https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=800" alt="Trincomalee coast" />
             </div>
           </div>
+
+          {/* Ceylon D Tour Section */}
+          <div className="dest-main-section" style={{ marginTop: '4rem' }}>
+            <div className="dest-left">
+              <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800" alt="Ceylon D Tour Trincomalee experience" />
+            </div>
+            <div className="dest-right">
+              <p className="dest-description">
+                Ceylon D Tour offers comprehensive Trincomalee travel packages with comfortable transportation, beach excursions, whale watching arrangements, and cultural tours. Our services include visits to historic temples, fort explorations, hot springs, and snorkeling spots. With flexible itineraries and accommodation assistance, Ceylon D Tour ensures a memorable coastal adventure combining relaxation, marine wildlife, and cultural discovery in Trincomalee.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+    
     </div>
   );
 };

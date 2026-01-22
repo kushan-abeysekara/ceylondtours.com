@@ -91,6 +91,18 @@ const BomburuElla = () => {
               <img src={require('../../img/Bomburu Ella 2.webp')} alt="Bomburu Ella landscape" />
             </div>
           </div>
+
+          {/* Ceylon D Tour Section */}
+          <div className="dest-main-section" style={{ marginTop: '4rem' }}>
+            <div className="dest-left">
+              <img src={require('../../img/BoburuElla.webp')} alt="Ceylon D Tour Bomburu Ella experience" />
+            </div>
+            <div className="dest-right">
+              <p className="dest-description">
+                Ceylon D Tour offers scenic Bomburu Ella excursions as part of Nuwara Eliya tour packages with comfortable transportation through mountain roads, hiking guidance, and flexible visit schedules. Our services include combined tours with nearby tea estates and waterfalls. With Ceylon D Tour, you can experience Bomburu Ella's magnificent cascade, hiking trails, and highland beauty with personalized service, safety-focused arrangements, and local expertise for a memorable nature adventure.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 

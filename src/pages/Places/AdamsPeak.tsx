@@ -80,18 +80,32 @@ const AdamsPeak = () => {
           <div className="dest-bottom-section">
             <div className="dest-bottom-left">
               <p className="dest-bottom-text">
-                Adam's Peak is revered by Buddhists, Hindus, Christians, and Muslims. Thousands climb it annually.
+                Adam's Peak (Sri Pada) is a sacred mountain standing at 2,243 meters, revered by Buddhists, Hindus, Christians, and Muslims alike. The summit features a footprint-shaped rock formation believed to be that of Lord Buddha, Lord Shiva, or Adam, depending on religious interpretation. The pilgrimage season runs from December to May.
               </p>
               <p className="dest-bottom-text">
-                The sunrise from the summit is considered one of the most beautiful views in Sri Lanka.
+                Thousands of pilgrims and hikers climb the 5,500 steps during nighttime to witness the spectacular sunrise from the summit. The spiritual atmosphere, breathtaking views, and sense of accomplishment make Adam's Peak an unforgettable experience combining physical challenge with spiritual enlightenment.
               </p>
             </div>
             <div className="dest-bottom-right">
               <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800" alt="Adam's Peak sunrise" />
             </div>
           </div>
+
+          {/* Ceylon D Tour Section */}
+          <div className="dest-main-section" style={{ marginTop: '4rem' }}>
+            <div className="dest-left">
+              <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800" alt="Ceylon D Tour Adam's Peak experience" />
+            </div>
+            <div className="dest-right">
+              <p className="dest-description">
+                Ceylon D Tour provides organized Adam's Peak pilgrimage packages with comfortable transportation to the base, accommodation arrangements, and guidance on optimal climbing times. Our services include local expert advice, rest stop information, and safety recommendations. With Ceylon D Tour, you can experience this sacred climb with proper preparation, flexible timing, and trusted support, ensuring a meaningful and memorable pilgrimage journey.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+    
     </div>
   );
 };

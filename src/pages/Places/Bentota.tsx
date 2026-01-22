@@ -81,18 +81,32 @@ const Bentota = () => {
           <div className="dest-bottom-section">
             <div className="dest-bottom-left">
               <p className="dest-bottom-text">
-                Bentota features long sandy beaches and calm waters suitable for swimming and water sports. The Bentota River offers boat safaris through mangroves and villages.
+                Bentota is a premier beach destination on Sri Lanka's southwest coast, renowned for its golden sandy beaches, calm waters, and exciting water sports. The town features long stretches of pristine coastline perfect for swimming, surfing, jet skiing, and banana boat rides, making it ideal for both relaxation and adventure.
               </p>
               <p className="dest-bottom-text">
-                It is an excellent destination for both relaxation and adventure, suitable for families and couples.
+                The scenic Bentota River offers mangrove boat safaris, turtle hatchery visits, and opportunities to experience traditional village life. With luxury resorts, water activities, and natural beauty, Bentota provides a perfect blend of leisure and excitement for families and couples.
               </p>
             </div>
             <div className="dest-bottom-right">
               <img src="https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=800" alt="Bentota river" />
             </div>
           </div>
+
+          {/* Ceylon D Tour Section */}
+          <div className="dest-main-section" style={{ marginTop: '4rem' }}>
+            <div className="dest-left">
+              <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800" alt="Ceylon D Tour Bentota experience" />
+            </div>
+            <div className="dest-right">
+              <p className="dest-description">
+                Ceylon D Tour offers customized Bentota beach packages with reliable transportation, water sports arrangements, and river safari bookings. Our services include hotel assistance, turtle hatchery visits, Ayurvedic spa tours, and flexible beach activity schedules. With Ceylon D Tour, you can experience Bentota's coastal beauty, adventure activities, and relaxation opportunities with personalized attention and trusted travel support for an unforgettable beach holiday.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+    
     </div>
   );
 };

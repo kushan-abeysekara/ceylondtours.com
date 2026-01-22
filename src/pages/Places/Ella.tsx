@@ -91,8 +91,22 @@ const Ella = () => {
               <img src={require('../../img/ella 3.webp')} alt="Ella landscape" />
             </div>
           </div>
+
+          {/* Ceylon D Tour Section */}
+          <div className="dest-main-section" style={{ marginTop: '4rem' }}>
+            <div className="dest-left">
+              <img src={require('../../img/ella 2.webp')} alt="Ceylon D Tour Ella experience" />
+            </div>
+            <div className="dest-right">
+              <p className="dest-description">
+                Ceylon D Tour offers personalized Ella travel experiences with comfortable transportation, flexible schedules, and expert local guidance. Our tour packages include visits to scenic viewpoints, hiking trails, tea estates, and waterfall excursions around Ella. We also arrange accommodation assistance and combined tours to nearby attractions such as the Nine Arch Bridge and Ravana Falls. With Ceylon D Tour, you can explore Ella's natural beauty at your own pace while enjoying seamless travel arrangements and unforgettable hill-country adventures.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+    
     </div>
   );
 };

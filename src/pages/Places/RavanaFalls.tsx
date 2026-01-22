@@ -58,10 +58,10 @@ const RavanaFalls: React.FC = () => {
           <div className="dest-bottom-section">
             <div className="dest-bottom-left">
               <p className="dest-bottom-text">
-                Ravana Falls is one of Sri Lanka's most iconic waterfalls, located near Ella. According to legend, it is associated with King Ravana from the Ramayana.
+                Ravana Falls is a stunning waterfall located along the Ella-Wellawaya road, cascading from approximately 25 meters high. Named after the legendary King Ravana from the Hindu epic Ramayana, the falls are surrounded by lush greenery and rock formations, creating a picturesque natural setting perfect for photography and nature appreciation.
               </p>
               <p className="dest-bottom-text">
-                The waterfall is easily accessible and surrounded by natural beauty. It is a popular spot for photography and short nature stops.
+                The waterfall is easily accessible from the main road and offers a refreshing swimming spot at its base. Visitors can enjoy the natural beauty, cool mist, and scenic surroundings. Ravana Falls is an ideal stop when traveling between Ella and southern Sri Lanka, combining legend, natural beauty, and easy accessibility.
               </p>
             </div>
             <div className="dest-bottom-right">
@@ -71,8 +71,25 @@ const RavanaFalls: React.FC = () => {
               />
             </div>
           </div>
+
+          {/* Ceylon D Tour Section */}
+          <div className="dest-main-section" style={{ marginTop: '4rem' }}>
+            <div className="dest-left">
+              <img
+                src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=800"
+                alt="Ceylon D Tour Ravana Falls experience"
+              />
+            </div>
+            <div className="dest-right">
+              <p className="dest-description">
+                Ceylon D Tour includes Ravana Falls visits in Ella region tour packages with convenient transportation stops, photo opportunities, and flexible sightseeing schedules. Our services integrate waterfall visits with nearby attractions like Ella Rock and Nine Arch Bridge. With Ceylon D Tour, you can experience Ravana Falls' natural beauty, legendary history, and scenic charm as part of a comprehensive hill-country tour with personalized service and smooth travel arrangements.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+    
     </div>
   );
 };

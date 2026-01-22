@@ -80,18 +80,32 @@ const HortonPlains = () => {
           <div className="dest-bottom-section">
             <div className="dest-bottom-left">
               <p className="dest-bottom-text">
-                Horton Plains is famous for World's End, a sheer cliff with breathtaking views. The area is rich in biodiversity.
+                Horton Plains National Park is a UNESCO World Heritage Site featuring unique montane cloud forests, grasslands, and dramatic cliff formations. The park's main attraction is World's End, a sheer precipice with a 880-meter drop offering breathtaking panoramic views. The area is rich in endemic flora and fauna.
               </p>
               <p className="dest-bottom-text">
-                Cool temperatures and misty landscapes make it ideal for trekking and nature photography.
+                Early morning hikes through misty landscapes lead to World's End and Baker's Falls, a beautiful waterfall. The cool climate, diverse ecosystems, and stunning scenery make Horton Plains ideal for nature lovers, hikers, and wildlife photographers.
               </p>
             </div>
             <div className="dest-bottom-right">
               <img src="https://images.unsplash.com/photo-1580549239615-367449433e06?w=800" alt="Horton Plains landscape" />
             </div>
           </div>
+
+          {/* Ceylon D Tour Section */}
+          <div className="dest-main-section" style={{ marginTop: '4rem' }}>
+            <div className="dest-left">
+              <img src="https://images.unsplash.com/photo-1587895265520-f806d3b7e4bb?w=800" alt="Ceylon D Tour Horton Plains experience" />
+            </div>
+            <div className="dest-right">
+              <p className="dest-description">
+                Ceylon D Tour offers organized Horton Plains trekking experiences with early morning departures, comfortable transportation through scenic hill country, and park entrance assistance. Our packages include experienced guides, hiking equipment recommendations, and combined tours with nearby attractions like tea estates. With Ceylon D Tour, you can explore Horton Plains' natural wonders safely and comfortably while enjoying personalized service and expert local knowledge.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+    
     </div>
   );
 };

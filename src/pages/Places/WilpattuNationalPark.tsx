@@ -58,10 +58,10 @@ const WilpattuNationalPark: React.FC = () => {
           <div className="dest-bottom-section">
             <div className="dest-bottom-left">
               <p className="dest-bottom-text">
-                Wilpattu National Park is Sri Lanka's largest national park and is known for its unique natural lakes called "villus."
+                Wilpattu National Park is Sri Lanka's largest and oldest national park, famous for its unique natural sand-rimmed water basins called "villus." The park features dense forests, scrublands, and wetlands, providing diverse habitats for wildlife including leopards, elephants, sloth bears, and various bird species.
               </p>
               <p className="dest-bottom-text">
-                The park offers chances to spot leopards, elephants, and birds in a calm, less crowded environment, ideal for nature enthusiasts.
+                Wilpattu offers a more remote and less crowded safari experience compared to other parks, making it ideal for wildlife enthusiasts seeking tranquility. The park's natural beauty, leopard sightings, and serene atmosphere create an authentic wilderness adventure away from tourist crowds.
               </p>
             </div>
             <div className="dest-bottom-right">
@@ -71,8 +71,25 @@ const WilpattuNationalPark: React.FC = () => {
               />
             </div>
           </div>
+
+          {/* Ceylon D Tour Section */}
+          <div className="dest-main-section" style={{ marginTop: '4rem' }}>
+            <div className="dest-left">
+              <img
+                src="https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=800"
+                alt="Ceylon D Tour Wilpattu experience"
+              />
+            </div>
+            <div className="dest-right">
+              <p className="dest-description">
+                Ceylon D Tour offers exclusive Wilpattu safari packages with experienced wildlife trackers, comfortable jeep arrangements, and flexible safari timings. Our services include park entrance assistance, accommodation recommendations near the reserve, and combined tours with nearby attractions. With Ceylon D Tour, you can explore Wilpattu's pristine wilderness, spot elusive leopards, and enjoy peaceful safari experiences with expert guidance and trusted travel support for an authentic nature encounter.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+    
     </div>
   );
 };

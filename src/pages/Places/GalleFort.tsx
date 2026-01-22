@@ -91,8 +91,22 @@ const GalleFort = () => {
               <img src={require('../../img/galle fort 3.webp')} alt="Galle Fort street" />
             </div>
           </div>
+
+          {/* Ceylon D Tour Section */}
+          <div className="dest-main-section" style={{ marginTop: '4rem' }}>
+            <div className="dest-left">
+              <img src={require('../../img/galle fort 4.webp')} alt="Ceylon D Tour Galle Fort experience" />
+            </div>
+            <div className="dest-right">
+              <p className="dest-description">
+                Ceylon D Tour provides expertly curated Galle Fort tours that blend history, culture, and coastal beauty. Our services include reliable transportation, knowledgeable guides who share fascinating stories about the fort's colonial heritage, and flexible sightseeing schedules. We also arrange visits to nearby beaches, lighthouse walks, and local markets. With personalized attention and smooth travel arrangements, Ceylon D Tour ensures a memorable exploration of Galle Fort and its rich historical legacy.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+    
     </div>
   );
 };

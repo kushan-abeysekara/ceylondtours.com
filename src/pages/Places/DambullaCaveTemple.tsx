@@ -81,18 +81,32 @@ const DambullaCaveTemple = () => {
           <div className="dest-bottom-section">
             <div className="dest-bottom-left">
               <p className="dest-bottom-text">
-                Dambulla Cave Temple is a UNESCO World Heritage Site with over 150 Buddha statues and detailed wall paintings.
+                Dambulla Cave Temple, also known as the Golden Temple, is a UNESCO World Heritage Site featuring five cave shrines containing over 150 Buddha statues and 2,100 square meters of exquisite murals. Dating back to the 1st century BC, this sacred complex represents centuries of Buddhist art and devotion.
               </p>
               <p className="dest-bottom-text">
-                It is one of the best-preserved cave temple complexes in Asia and an important pilgrimage site.
+                The caves showcase remarkable preservation of ancient wall paintings and sculptures depicting Buddha's life and Sri Lankan history. Climbing to the temple rewards visitors with stunning views and a profound spiritual experience, making Dambulla one of Sri Lanka's most important cultural and religious sites.
               </p>
             </div>
             <div className="dest-bottom-right">
               <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800" alt="Dambulla cave" />
             </div>
           </div>
+
+          {/* Ceylon D Tour Section */}
+          <div className="dest-main-section" style={{ marginTop: '4rem' }}>
+            <div className="dest-left">
+              <img src="https://images.unsplash.com/photo-1588971550723-4c4ae923cdbb?w=800" alt="Ceylon D Tour Dambulla experience" />
+            </div>
+            <div className="dest-right">
+              <p className="dest-description">
+                Ceylon D Tour offers expertly guided Dambulla Cave Temple tours with comfortable transportation, knowledgeable cultural guides, and flexible visiting schedules. Our services include entrance assistance, historical explanations, and combined tours with nearby attractions like Sigiriya and Minneriya. With Ceylon D Tour, you can explore this ancient Buddhist sanctuary with cultural sensitivity, detailed insights, and personalized service for a deeply enriching spiritual and historical experience.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+    
     </div>
   );
 };

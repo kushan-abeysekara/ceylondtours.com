@@ -58,10 +58,10 @@ const SinharajaForest: React.FC = () => {
           <div className="dest-bottom-section">
             <div className="dest-bottom-left">
               <p className="dest-bottom-text">
-                Sinharaja Forest Reserve is Sri Lanka's last remaining primary rainforest and is home to many endemic plant and animal species.
+                Sinharaja Forest Reserve is Sri Lanka's last remaining primary tropical rainforest and a UNESCO World Heritage Site, renowned for its exceptional biodiversity. The reserve is home to numerous endemic species of birds, mammals, reptiles, amphibians, and plants, making it a paradise for nature researchers and wildlife enthusiasts.
               </p>
               <p className="dest-bottom-text">
-                Visitors can experience guided walks through dense forest trails, making it a paradise for nature lovers and researchers.
+                Guided treks through dense forest trails offer opportunities to observe rare purple-faced langurs, endemic bird species, colorful butterflies, and unique flora. The pristine ecosystem, mist-covered canopy, and natural soundscape create an immersive rainforest experience perfect for eco-tourism and conservation appreciation.
               </p>
             </div>
             <div className="dest-bottom-right">
@@ -71,8 +71,25 @@ const SinharajaForest: React.FC = () => {
               />
             </div>
           </div>
+
+          {/* Ceylon D Tour Section */}
+          <div className="dest-main-section" style={{ marginTop: '4rem' }}>
+            <div className="dest-left">
+              <img
+                src="https://images.unsplash.com/photo-1511497584788-876760111969?w=800"
+                alt="Ceylon D Tour Sinharaja experience"
+              />
+            </div>
+            <div className="dest-right">
+              <p className="dest-description">
+                Ceylon D Tour offers eco-friendly Sinharaja rainforest tours with experienced naturalist guides, comfortable transportation, and sustainable tourism practices. Our packages include guided jungle treks, bird watching excursions, entrance arrangements, and accommodation bookings near the reserve. With Ceylon D Tour, you can explore Sinharaja's unique biodiversity, endemic species, and pristine ecosystems with expert guidance, environmental responsibility, and personalized service for an unforgettable nature experience.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+    
     </div>
   );
 };
