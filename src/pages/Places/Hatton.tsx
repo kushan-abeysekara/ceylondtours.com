@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
 import './Sigiriya.css';
+import hatton1 from '../../img/webp/hatton1.webp';
+import hatton2 from '../../img/webp/hatton2.webp';
+import hatton3 from '../../img/webp/hatton3.webp';
+import hatton4 from '../../img/webp/hatton4.webp';
 
 const Hatton: React.FC = () => {
   useEffect(() => {
@@ -9,7 +13,7 @@ const Hatton: React.FC = () => {
   return (
     <div className="destination-page">
       <section className="dest-hero">
-        <img src="https://images.unsplash.com/photo-1563968743333-044cef800494?w=1600" alt="Hatton" />
+        <img src={hatton1} alt="Hatton" />
         <div className="dest-badge">Hatton</div>
       </section>
 
@@ -18,7 +22,7 @@ const Hatton: React.FC = () => {
           <div className="dest-main-section">
             <div className="dest-left">
               <img
-                src="https://images.unsplash.com/photo-1563968743333-044cef800494?w=800"
+                src={hatton2}
                 alt="Hatton Tea Estates"
               />
             </div>
@@ -66,7 +70,7 @@ const Hatton: React.FC = () => {
             </div>
             <div className="dest-bottom-right">
               <img
-                src="https://images.unsplash.com/photo-1587897773780-fe72528d6e52?w=800"
+                src={hatton3}
                 alt="Hatton Tea Gardens"
               />
             </div>
@@ -76,7 +80,7 @@ const Hatton: React.FC = () => {
           <div className="dest-main-section" style={{ marginTop: '4rem' }}>
             <div className="dest-left">
               <img
-                src="https://images.unsplash.com/photo-1563968743333-044cef800494?w=800"
+                src={hatton4}
                 alt="Ceylon D Tour Hatton experience"
               />
             </div>
