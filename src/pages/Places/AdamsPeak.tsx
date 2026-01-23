@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
 import './Sigiriya.css';
+import adamspeak1 from '../../img/webp/adamspeak1.webp';
+import adamspeak2 from '../../img/webp/adamspeak2.webp';
+import adamspeak3 from '../../img/webp/adamspeak3.webp';
+import adamspeak4 from '../../img/webp/adamspeak4.webp';
 
 const AdamsPeak = () => {
   useEffect(() => {
@@ -10,7 +14,7 @@ const AdamsPeak = () => {
     <div className="destination-page">
       {/* Hero Section */}
       <section className="dest-hero">
-        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600" alt="Adam's Peak" />
+        <img src={adamspeak1} alt="Adam's Peak" />
         <div className="dest-badge">Adam's Peak</div>
       </section>
 
@@ -19,7 +23,7 @@ const AdamsPeak = () => {
         <div className="dest-container">
           <div className="dest-main-section">
             <div className="dest-left">
-              <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800" alt="Adam's Peak summit" />
+              <img src={adamspeak2} alt="Adam's Peak summit" />
             </div>
             <div className="dest-right">
               <h1 className="dest-title">Discover Adam's Peak</h1>
@@ -87,14 +91,14 @@ const AdamsPeak = () => {
               </p>
             </div>
             <div className="dest-bottom-right">
-              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800" alt="Adam's Peak sunrise" />
+              <img src={adamspeak3} alt="Adam's Peak sunrise" />
             </div>
           </div>
 
           {/* Ceylon D Tour Section */}
           <div className="dest-main-section" style={{ marginTop: '4rem' }}>
             <div className="dest-left">
-              <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800" alt="Ceylon D Tour Adam's Peak experience" />
+              <img src={adamspeak4} alt="Ceylon D Tour Adam's Peak experience" />
             </div>
             <div className="dest-right">
               <p className="dest-description">
