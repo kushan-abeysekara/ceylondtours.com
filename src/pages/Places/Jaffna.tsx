@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
 import './Sigiriya.css';
+import jaffna1 from '../../img/webp/jaffna1.webp';
+import jaffna2 from '../../img/webp/jaffna2.webp';
+import jaffna3 from '../../img/webp/jaffna3.webp';
+import jaffna4 from '../../img/webp/jaffna4.webp';
 
 const Jaffna: React.FC = () => {
   useEffect(() => {
@@ -9,7 +13,7 @@ const Jaffna: React.FC = () => {
   return (
     <div className="destination-page">
       <section className="dest-hero">
-        <img src="https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?w=1600" alt="Jaffna" />
+        <img src={jaffna1} alt="Jaffna" />
         <div className="dest-badge">Jaffna</div>
       </section>
 
@@ -18,7 +22,7 @@ const Jaffna: React.FC = () => {
           <div className="dest-main-section">
             <div className="dest-left">
               <img
-                src="https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?w=800"
+                src={jaffna2}
                 alt="Jaffna Temple"
               />
             </div>
@@ -66,7 +70,7 @@ const Jaffna: React.FC = () => {
             </div>
             <div className="dest-bottom-right">
               <img
-                src="https://images.unsplash.com/photo-1548013146-72479768bada?w=800"
+                src={jaffna3}
                 alt="Jaffna Culture"
               />
             </div>
@@ -76,7 +80,7 @@ const Jaffna: React.FC = () => {
           <div className="dest-main-section" style={{ marginTop: '4rem' }}>
             <div className="dest-left">
               <img
-                src="https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?w=800"
+                src={jaffna4}
                 alt="Ceylon D Tour Jaffna experience"
               />
             </div>
