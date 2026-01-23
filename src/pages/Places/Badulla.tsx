@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
 import './Sigiriya.css';
+import badulla1 from '../../img/webp/badulla1.webp';
+import badulla2 from '../../img/webp/badulla2.webp';
+import badulla3 from '../../img/webp/badulla3.webp';
+import badulla4 from '../../img/webp/badulla4.webp';
 
 const Badulla: React.FC = () => {
   useEffect(() => {
@@ -9,7 +13,7 @@ const Badulla: React.FC = () => {
   return (
     <div className="destination-page">
       <section className="dest-hero">
-        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600" alt="Badulla" />
+        <img src={badulla1} alt="Badulla" />
         <div className="dest-badge">Badulla</div>
       </section>
 
@@ -18,7 +22,7 @@ const Badulla: React.FC = () => {
           <div className="dest-main-section">
             <div className="dest-left">
               <img
-                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800"
+                src={badulla2}
                 alt="Badulla Hills"
               />
             </div>
@@ -66,7 +70,7 @@ const Badulla: React.FC = () => {
             </div>
             <div className="dest-bottom-right">
               <img
-                src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800"
+                src={badulla3}
                 alt="Badulla Nature"
               />
             </div>
@@ -76,7 +80,7 @@ const Badulla: React.FC = () => {
           <div className="dest-main-section" style={{ marginTop: '4rem' }}>
             <div className="dest-left">
               <img
-                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800"
+                src={badulla4}
                 alt="Ceylon D Tour Badulla experience"
               />
             </div>
