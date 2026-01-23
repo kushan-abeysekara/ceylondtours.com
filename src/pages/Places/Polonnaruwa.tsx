@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react';
 import './Sigiriya.css';
-
+import polonnaruwa1 from '../../img/webp/polonnaruwa1.webp';
+import polonnaruwa2 from '../../img/webp/polonnaruwa2.webp';
+import polonnaruwa3 from '../../img/webp/polonnaruwa3.webp';
+import polonnaruwa4 from '../../img/webp/polonnaruwa4.webp';
 const Polonnaruwa = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -10,7 +13,7 @@ const Polonnaruwa = () => {
     <div className="destination-page">
       {/* Hero Section */}
       <section className="dest-hero">
-        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1600" alt="Polonnaruwa" />
+        <img src={polonnaruwa1} alt="Polonnaruwa" />
         <div className="dest-badge">Polonnaruwa</div>
       </section>
 
@@ -19,7 +22,7 @@ const Polonnaruwa = () => {
         <div className="dest-container">
           <div className="dest-main-section">
             <div className="dest-left">
-              <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800" alt="Polonnaruwa ruins" />
+              <img src={polonnaruwa2} alt="Polonnaruwa ruins" />
             </div>
             <div className="dest-right">
               <h1 className="dest-title">Discover Polonnaruwa</h1>
@@ -87,14 +90,14 @@ const Polonnaruwa = () => {
               </p>
             </div>
             <div className="dest-bottom-right">
-              <img src="https://images.unsplash.com/photo-1588971550723-4c4ae923cdbb?w=800" alt="Polonnaruwa statues" />
+              <img src={polonnaruwa3} alt="Polonnaruwa statues" />
             </div>
           </div>
 
           {/* Ceylon D Tour Section */}
           <div className="dest-main-section" style={{ marginTop: '4rem' }}>
             <div className="dest-left">
-              <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1600" alt="Ceylon D Tour Polonnaruwa experience" />
+              <img src={polonnaruwa4} alt="Ceylon D Tour Polonnaruwa experience" />
             </div>
             <div className="dest-right">
               <p className="dest-description">
