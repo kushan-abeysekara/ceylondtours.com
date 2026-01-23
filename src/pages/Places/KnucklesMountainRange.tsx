@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
 import './Sigiriya.css';
+import knuckles1 from '../../img/webp/knuckles1.webp';
+import knuckles2 from '../../img/webp/knuckles2.webp';
+import knuckles3 from '../../img/webp/knuckles3.webp';
+import knuckles4 from '../../img/webp/knuckles4.webp';
 
 const KnucklesMountainRange: React.FC = () => {
   useEffect(() => {
@@ -9,7 +13,7 @@ const KnucklesMountainRange: React.FC = () => {
   return (
     <div className="destination-page">
       <section className="dest-hero">
-        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600" alt="Knuckles Mountain Range" />
+        <img src={knuckles1} alt="Knuckles Mountain Range" />
         <div className="dest-badge">Knuckles Mountain Range</div>
       </section>
 
@@ -18,7 +22,7 @@ const KnucklesMountainRange: React.FC = () => {
           <div className="dest-main-section">
             <div className="dest-left">
               <img
-                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800"
+                src={knuckles2}
                 alt="Knuckles Mountain Range"
               />
             </div>
@@ -66,7 +70,7 @@ const KnucklesMountainRange: React.FC = () => {
             </div>
             <div className="dest-bottom-right">
               <img
-                src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800"
+                src={knuckles3}
                 alt="Knuckles Hiking"
               />
             </div>
@@ -76,7 +80,7 @@ const KnucklesMountainRange: React.FC = () => {
           <div className="dest-main-section" style={{ marginTop: '4rem' }}>
             <div className="dest-left">
               <img
-                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800"
+                src={knuckles4}
                 alt="Ceylon D Tour Knuckles experience"
               />
             </div>
