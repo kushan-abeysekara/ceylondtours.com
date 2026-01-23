@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
 import './Sigiriya.css';
+import sinharaja1 from '../../img/webp/sinharaja1.webp';
+import sinharaja2 from '../../img/webp/Sinharaja2.webp';
+import sinharaja3 from '../../img/webp/Sinharaja3.webp';
+import sinharaja4 from '../../img/webp/Sinharaja4.webp';
 
 const SinharajaForest: React.FC = () => {
   useEffect(() => {
@@ -9,7 +13,7 @@ const SinharajaForest: React.FC = () => {
   return (
     <div className="destination-page">
       <section className="dest-hero">
-        <img src="https://images.unsplash.com/photo-1511497584788-876760111969?w=1600" alt="Sinharaja Forest" />
+        <img src={sinharaja1} alt="Sinharaja Forest" />
         <div className="dest-badge">Sinharaja Forest</div>
       </section>
 
@@ -18,7 +22,7 @@ const SinharajaForest: React.FC = () => {
           <div className="dest-main-section">
             <div className="dest-left">
               <img
-                src="https://images.unsplash.com/photo-1511497584788-876760111969?w=800"
+                src={sinharaja2}
                 alt="Sinharaja Forest"
               />
             </div>
@@ -66,7 +70,7 @@ const SinharajaForest: React.FC = () => {
             </div>
             <div className="dest-bottom-right">
               <img
-                src="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=800"
+                src={sinharaja3}
                 alt="Sinharaja Biodiversity"
               />
             </div>
@@ -76,7 +80,7 @@ const SinharajaForest: React.FC = () => {
           <div className="dest-main-section" style={{ marginTop: '4rem' }}>
             <div className="dest-left">
               <img
-                src="https://images.unsplash.com/photo-1511497584788-876760111969?w=800"
+                src={sinharaja4}
                 alt="Ceylon D Tour Sinharaja experience"
               />
             </div>
