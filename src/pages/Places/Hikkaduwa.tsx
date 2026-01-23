@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
 import './Sigiriya.css';
+import hikkaduwa1 from '../../img/webp/hikkaduwa1.webp'; 
+import hikkaduwa2 from '../../img/webp/hikkaduwa2.webp'; 
+import hikkaduwa3 from '../../img/webp/hikkaduwa3.webp'; 
+import hikkaduwa4 from '../../img/webp/hikkaduwa4.webp';
 
 const Hikkaduwa: React.FC = () => {
   useEffect(() => {
@@ -10,7 +14,7 @@ const Hikkaduwa: React.FC = () => {
     <div className="destination-page">
       {/* Hero Section */}
       <section className="dest-hero">
-        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1600" alt="Hikkaduwa" />
+        <img src={hikkaduwa1} alt="Hikkaduwa" />
         <div className="dest-badge">Hikkaduwa</div>
       </section>
 
@@ -19,7 +23,7 @@ const Hikkaduwa: React.FC = () => {
         <div className="dest-container">
           <div className="dest-main-section">
             <div className="dest-left">
-              <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800" alt="Hikkaduwa Beach" />
+              <img src={hikkaduwa2} alt="Hikkaduwa Beach" />
             </div>
             <div className="dest-right">
               <h1 className="dest-title">Discover Hikkaduwa</h1>
@@ -88,14 +92,14 @@ const Hikkaduwa: React.FC = () => {
               </p>
             </div>
             <div className="dest-bottom-right">
-              <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800" alt="Hikkaduwa Marine Life" />
+              <img src={hikkaduwa3} alt="Hikkaduwa Marine Life" />
             </div>
           </div>
 
           {/* Ceylon D Tour Section */}
           <div className="dest-main-section" style={{ marginTop: '4rem' }}>
             <div className="dest-left">
-              <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800" alt="Ceylon D Tour Hikkaduwa experience" />
+              <img src={hikkaduwa4} alt="Ceylon D Tour Hikkaduwa experience" />
             </div>
             <div className="dest-right">
               <p className="dest-description">
