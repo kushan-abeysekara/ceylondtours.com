@@ -1,5 +1,10 @@
 import React, { useEffect } from 'react';
 import './Sigiriya.css';
+import mirissa1 from '../../img/webp/mirissabeach1.webp';
+import mirissa2 from '../../img/webp/mirissabeach2.webp';
+import mirissa3 from '../../img/webp/mirissabeach3.webp';
+import mirissa4 from '../../img/webp/mirissabeach4.webp';
+
 
 const Mirissa = () => {
   useEffect(() => {
@@ -10,7 +15,7 @@ const Mirissa = () => {
     <div className="destination-page">
       {/* Hero Section */}
       <section className="dest-hero">
-        <img src="https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=1600" alt="Mirissa" />
+        <img src={mirissa1} alt="Mirissa" />
         <div className="dest-badge">Mirissa</div>
       </section>
 
@@ -19,7 +24,7 @@ const Mirissa = () => {
         <div className="dest-container">
           <div className="dest-main-section">
             <div className="dest-left">
-              <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800" alt="Mirissa beach" />
+              <img src={mirissa2} alt="Mirissa beach" />
             </div>
             <div className="dest-right">
               <h1 className="dest-title">Discover Mirissa</h1>
@@ -88,14 +93,14 @@ const Mirissa = () => {
               </p>
             </div>
             <div className="dest-bottom-right">
-              <img src="https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=800" alt="Mirissa sunset" />
+              <img src={mirissa3} alt="Mirissa sunset" />
             </div>
           </div>
 
           {/* Ceylon D Tour Section */}
           <div className="dest-main-section" style={{ marginTop: '4rem' }}>
             <div className="dest-left">
-              <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800" alt="Ceylon D Tour Mirissa experience" />
+              <img src={mirissa4} alt="Ceylon D Tour Mirissa experience" />
             </div>
             <div className="dest-right">
               <p className="dest-description">
