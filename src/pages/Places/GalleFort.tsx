@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
 import './Sigiriya.css';
+import galle1 from '../../img/webp/galle1.webp';
+import galle2 from '../../img/webp/galle2.webp';
+import galle3 from '../../img/webp/galle3.webp';
+import galle4 from '../../img/webp/galle4.webp';
 
 const GalleFort = () => {
   useEffect(() => {
@@ -10,7 +14,7 @@ const GalleFort = () => {
     <div className="destination-page">
       {/* Hero Section */}
       <section className="dest-hero">
-        <img src={require('../../img/destination_galle fort - Copy.webp')} alt="Galle Fort" />
+        <img src={galle1} alt="Galle Fort" />
         <div className="dest-badge">Galle Fort</div>
       </section>
 
@@ -19,7 +23,7 @@ const GalleFort = () => {
         <div className="dest-container">
           <div className="dest-main-section">
             <div className="dest-left">
-              <img src={require('../../img/galle fort 4.webp')} alt="Galle Fort walls" />
+              <img src={galle2} alt="Galle Fort walls" />
             </div>
             <div className="dest-right">
               <h1 className="dest-title">Discover Galle Fort</h1>
@@ -88,14 +92,14 @@ const GalleFort = () => {
               </p>
             </div>
             <div className="dest-bottom-right">
-              <img src={require('../../img/galle fort 3.webp')} alt="Galle Fort street" />
+              <img src={galle3} alt="Galle Fort street" />
             </div>
           </div>
 
           {/* Ceylon D Tour Section */}
           <div className="dest-main-section" style={{ marginTop: '4rem' }}>
             <div className="dest-left">
-              <img src={require('../../img/galle fort 4.webp')} alt="Ceylon D Tour Galle Fort experience" />
+              <img src={galle4} alt="Ceylon D Tour Galle Fort experience" />
             </div>
             <div className="dest-right">
               <p className="dest-description">
