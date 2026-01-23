@@ -4,6 +4,8 @@ import bentota1 from '../../img/webp/bentota1.webp';
 import bentota2 from '../../img/webp/bentota2.webp';
 import bentota3 from '../../img/webp/bentota3.webp';
 import bentota4 from '../../img/webp/bentota4.webp';
+import DestinationSuggestions from '../../components/DestinationSuggestions';
+import { getRandomSuggestions } from '../../data/destinationsData';
 
 const Bentota = () => {
   useEffect(() => {
@@ -107,6 +109,12 @@ const Bentota = () => {
               </p>
             </div>
           </div>
+      {/* Destination Suggestions */}
+      <DestinationSuggestions 
+        currentDestination="Bentota"
+        suggestions={getRandomSuggestions('/places/bentota', 4)}
+      />
+
         </div>
       </section>
 
@@ -116,3 +124,4 @@ const Bentota = () => {
 };
 
 export default Bentota;
+

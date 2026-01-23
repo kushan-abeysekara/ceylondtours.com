@@ -4,6 +4,8 @@ import trincomalee1 from '../../img/webp/trincomalee1.webp';
 import trincomalee2 from '../../img/webp/trincomalee2.webp';
 import trincomalee3 from '../../img/webp/trincomalee3.webp';
 import trincomalee4 from '../../img/webp/trincomalee4.webp';
+import DestinationSuggestions from '../../components/DestinationSuggestions';
+import { getRandomSuggestions } from '../../data/destinationsData';
 
 const Trincomalee = () => {
   useEffect(() => {
@@ -107,6 +109,12 @@ const Trincomalee = () => {
               </p>
             </div>
           </div>
+      {/* Destination Suggestions */}
+      <DestinationSuggestions 
+        currentDestination="Trincomalee"
+        suggestions={getRandomSuggestions('/places/trincomalee', 4)}
+      />
+
         </div>
       </section>
 
@@ -116,3 +124,4 @@ const Trincomalee = () => {
 };
 
 export default Trincomalee;
+

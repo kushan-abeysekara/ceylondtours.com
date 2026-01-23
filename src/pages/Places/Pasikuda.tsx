@@ -4,6 +4,8 @@ import pasikuda1 from '../../img/webp/pasikuda1.webp';
 import pasikuda2 from '../../img/webp/pasikuda2.webp';
 import pasikuda3 from '../../img/webp/pasikuda3.webp';
 import pasikuda4 from '../../img/webp/pasikuda4.webp';
+import DestinationSuggestions from '../../components/DestinationSuggestions';
+import { getRandomSuggestions } from '../../data/destinationsData';
 
 const Pasikuda: React.FC = () => {
   useEffect(() => {
@@ -90,6 +92,12 @@ const Pasikuda: React.FC = () => {
               </p>
             </div>
           </div>
+      {/* Destination Suggestions */}
+      <DestinationSuggestions 
+        currentDestination="Pasikuda"
+        suggestions={getRandomSuggestions('/places/pasikuda', 4)}
+      />
+
         </div>
       </section>
 
@@ -99,3 +107,4 @@ const Pasikuda: React.FC = () => {
 };
 
 export default Pasikuda;
+

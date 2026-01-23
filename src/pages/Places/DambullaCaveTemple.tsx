@@ -4,6 +4,8 @@ import dambulla1 from '../../img/webp/dambulla1.webp';
 import dambulla2 from '../../img/webp/dambulla2.webp';
 import dambulla3 from '../../img/webp/dambulla3.webp';
 import dambulla4 from '../../img/webp/dambulla4.webp';
+import DestinationSuggestions from '../../components/DestinationSuggestions';
+import { getRandomSuggestions } from '../../data/destinationsData';
 
 const DambullaCaveTemple = () => {
   useEffect(() => {
@@ -107,6 +109,12 @@ const DambullaCaveTemple = () => {
               </p>
             </div>
           </div>
+      {/* Destination Suggestions */}
+      <DestinationSuggestions 
+        currentDestination="DambullaCaveTemple"
+        suggestions={getRandomSuggestions('/places/dambulla-cave-temple', 4)}
+      />
+
         </div>
       </section>
 
@@ -116,3 +124,4 @@ const DambullaCaveTemple = () => {
 };
 
 export default DambullaCaveTemple;
+

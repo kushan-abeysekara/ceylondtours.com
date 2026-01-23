@@ -4,6 +4,8 @@ import udawalawe1 from '../../img/webp/udawalawa1.webp';
 import udawalawe2 from '../../img/webp/udawalawa2.webp';
 import udawalawe3 from '../../img/webp/udawalawa3.webp';
 import udawalawe4 from '../../img/webp/udawalawa4.webp';
+import DestinationSuggestions from '../../components/DestinationSuggestions';
+import { getRandomSuggestions } from '../../data/destinationsData';
 const UdawalaweNationalPark: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -89,6 +91,12 @@ const UdawalaweNationalPark: React.FC = () => {
               </p>
             </div>
           </div>
+      {/* Destination Suggestions */}
+      <DestinationSuggestions 
+        currentDestination="UdawalaweNationalPark"
+        suggestions={getRandomSuggestions('/places/udawalawe-national-park', 4)}
+      />
+
         </div>
       </section>
 
@@ -98,3 +106,4 @@ const UdawalaweNationalPark: React.FC = () => {
 };
 
 export default UdawalaweNationalPark;
+

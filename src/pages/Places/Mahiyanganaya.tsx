@@ -4,6 +4,8 @@ import mahiyanganaya1 from '../../img/webp/mahiyanganaya1.webp';
 import mahiyanganaya2 from '../../img/webp/mahiyanganaya2.webp';
 import mahiyanganaya3 from '../../img/webp/mahiyanganaya3.webp';
 import mahiyanganaya4 from '../../img/webp/mahiyanganaya4.webp';
+import DestinationSuggestions from '../../components/DestinationSuggestions';
+import { getRandomSuggestions } from '../../data/destinationsData';
 
 const Mahiyanganaya: React.FC = () => {
   useEffect(() => {
@@ -90,6 +92,12 @@ const Mahiyanganaya: React.FC = () => {
               </p>
             </div>
           </div>
+      {/* Destination Suggestions */}
+      <DestinationSuggestions 
+        currentDestination="Mahiyanganaya"
+        suggestions={getRandomSuggestions('/places/mahiyanganaya', 4)}
+      />
+
         </div>
       </section>
 
@@ -99,3 +107,4 @@ const Mahiyanganaya: React.FC = () => {
 };
 
 export default Mahiyanganaya;
+

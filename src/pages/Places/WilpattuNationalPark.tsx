@@ -4,6 +4,8 @@ import wilpattu1 from '../../img/webp/wilapaththu1.webp';
 import wilpattu2 from '../../img/webp/wilapaththu2.webp';
 import wilpattu3 from '../../img/webp/wilapaththu3.webp';
 import wilpattu4 from '../../img/webp/wilapaththu4.webp';
+import DestinationSuggestions from '../../components/DestinationSuggestions';
+import { getRandomSuggestions } from '../../data/destinationsData';
 
 const WilpattuNationalPark: React.FC = () => {
   useEffect(() => {
@@ -90,6 +92,12 @@ const WilpattuNationalPark: React.FC = () => {
               </p>
             </div>
           </div>
+      {/* Destination Suggestions */}
+      <DestinationSuggestions 
+        currentDestination="WilpattuNationalPark"
+        suggestions={getRandomSuggestions('/places/wilpattu-national-park', 4)}
+      />
+
         </div>
       </section>
 
@@ -99,3 +107,4 @@ const WilpattuNationalPark: React.FC = () => {
 };
 
 export default WilpattuNationalPark;
+

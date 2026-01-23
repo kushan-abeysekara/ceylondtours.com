@@ -4,6 +4,8 @@ import hikkaduwa1 from '../../img/webp/hikkaduwa1.webp';
 import hikkaduwa2 from '../../img/webp/hikkaduwa2.webp'; 
 import hikkaduwa3 from '../../img/webp/hikkaduwa3.webp'; 
 import hikkaduwa4 from '../../img/webp/hikkaduwa4.webp';
+import DestinationSuggestions from '../../components/DestinationSuggestions';
+import { getRandomSuggestions } from '../../data/destinationsData';
 
 const Hikkaduwa: React.FC = () => {
   useEffect(() => {
@@ -107,6 +109,12 @@ const Hikkaduwa: React.FC = () => {
               </p>
             </div>
           </div>
+      {/* Destination Suggestions */}
+      <DestinationSuggestions 
+        currentDestination="Hikkaduwa"
+        suggestions={getRandomSuggestions('/places/hikkaduwa', 4)}
+      />
+
         </div>
       </section>
 
@@ -116,3 +124,4 @@ const Hikkaduwa: React.FC = () => {
 };
 
 export default Hikkaduwa;
+

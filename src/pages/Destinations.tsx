@@ -494,7 +494,7 @@ const Destinations = () => {
         'Safe climbing experience',
         'Peaceful natural setting'
       ],
-      image: require('../img/destination_pidurangala.webp'),
+      image: require('../img/webp/pidurangala4.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '1 Day' },

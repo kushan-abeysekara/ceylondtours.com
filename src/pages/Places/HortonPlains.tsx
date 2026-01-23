@@ -3,7 +3,9 @@ import './Sigiriya.css';
 import horton1 from '../../img/webp/hortan1.webp';
 import horton2 from '../../img/webp/hortan2.webp';
 import horton3 from '../../img/webp/hortan3.webp';
-import horton4 from '../../img/webp/hortan4.webp'; 
+import horton4 from '../../img/webp/hortan4.webp';
+import DestinationSuggestions from '../../components/DestinationSuggestions';
+import { getRandomSuggestions } from '../../data/destinationsData';
 
 const HortonPlains = () => {
   useEffect(() => {
@@ -106,6 +108,12 @@ const HortonPlains = () => {
               </p>
             </div>
           </div>
+      {/* Destination Suggestions */}
+      <DestinationSuggestions 
+        currentDestination="HortonPlains"
+        suggestions={getRandomSuggestions('/places/horton-plains', 4)}
+      />
+
         </div>
       </section>
 
@@ -115,3 +123,4 @@ const HortonPlains = () => {
 };
 
 export default HortonPlains;
+

@@ -4,6 +4,8 @@ import ravana1 from '../../img/webp/ravanaella1.webp';
 import ravana2 from '../../img/webp/ravanaella2.webp';
 import ravana3 from '../../img/webp/ravanaella3.webp';
 import ravana4 from '../../img/webp/ravanaella4.webp';
+import DestinationSuggestions from '../../components/DestinationSuggestions';
+import { getRandomSuggestions } from '../../data/destinationsData';
 const RavanaFalls: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -89,6 +91,12 @@ const RavanaFalls: React.FC = () => {
               </p>
             </div>
           </div>
+      {/* Destination Suggestions */}
+      <DestinationSuggestions 
+        currentDestination="RavanaFalls"
+        suggestions={getRandomSuggestions('/places/ravana-falls', 4)}
+      />
+
         </div>
       </section>
 
@@ -98,3 +106,4 @@ const RavanaFalls: React.FC = () => {
 };
 
 export default RavanaFalls;
+

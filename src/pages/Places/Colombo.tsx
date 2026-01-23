@@ -4,6 +4,8 @@ import colombo1 from '../../img/colombo1.webp';
 import colombo2 from '../../img/colombo2.webp';
 import colombo3 from '../../img/colombo3.webp';
 import colombo4 from '../../img/colombo4.webp';
+import DestinationSuggestions from '../../components/DestinationSuggestions';
+import { getRandomSuggestions } from '../../data/destinationsData';
 
 const Colombo: React.FC = () => {
   useEffect(() => {
@@ -90,6 +92,12 @@ const Colombo: React.FC = () => {
               </p>
             </div>
           </div>
+      {/* Destination Suggestions */}
+      <DestinationSuggestions 
+        currentDestination="Colombo"
+        suggestions={getRandomSuggestions('/places/colombo', 4)}
+      />
+
         </div>
       </section>
 
@@ -99,3 +107,4 @@ const Colombo: React.FC = () => {
 };
 
 export default Colombo;
+

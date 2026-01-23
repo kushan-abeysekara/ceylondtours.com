@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import './Sigiriya.css';
 import kataragama1 from '../../img/Kataragama1.webp';
+import DestinationSuggestions from '../../components/DestinationSuggestions';
+import { getRandomSuggestions } from '../../data/destinationsData';
 import kataragama2 from '../../img/kataragama2.webp';
 import kataragama3 from '../../img/kataragama3.webp';
 import kataragama4 from '../../img/kataragama4.webp';
@@ -93,6 +95,11 @@ const Kataragama: React.FC = () => {
         </div>
       </section>
 
+      {/* Destination Suggestions */}
+      <DestinationSuggestions 
+        currentDestination="Kataragama"
+        suggestions={getRandomSuggestions('/places/kataragama', 4)}
+      />
     
     </div>
   );

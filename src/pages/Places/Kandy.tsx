@@ -5,6 +5,8 @@ import kandy2 from '../../img/webp/kandy2.webp';
 import kandy3 from '../../img/webp/kandy3.webp';
 import kandy4 from '../../img/webp/kandy4.webp';
 import kandy from '../../img/webp/slider1.webp';
+import DestinationSuggestions from '../../components/DestinationSuggestions';
+import { getRandomSuggestions } from '../../data/destinationsData';
 
 const Kandy = () => {
   useEffect(() => {
@@ -108,6 +110,12 @@ const Kandy = () => {
               </p>
             </div>
           </div>
+      {/* Destination Suggestions */}
+      <DestinationSuggestions 
+        currentDestination="Kandy"
+        suggestions={getRandomSuggestions('/places/kandy', 4)}
+      />
+
         </div>
       </section>
 
@@ -117,3 +125,4 @@ const Kandy = () => {
 };
 
 export default Kandy;
+

@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import './Sigiriya.css';
+import DestinationSuggestions from '../../components/DestinationSuggestions';
+import { getRandomSuggestions } from '../../data/destinationsData';
 
 const TempleOfTooth = () => {
   useEffect(() => {
@@ -102,6 +104,12 @@ const TempleOfTooth = () => {
               </p>
             </div>
           </div>
+      {/* Destination Suggestions */}
+      <DestinationSuggestions 
+        currentDestination="TempleOfTooth"
+        suggestions={getRandomSuggestions('/places/temple-of-tooth', 4)}
+      />
+
         </div>
       </section>
 
@@ -111,3 +119,4 @@ const TempleOfTooth = () => {
 };
 
 export default TempleOfTooth;
+

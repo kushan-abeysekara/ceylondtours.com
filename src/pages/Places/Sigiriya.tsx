@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import './Sigiriya.css';
+import DestinationSuggestions from '../../components/DestinationSuggestions';
+import { getRandomSuggestions } from '../../data/destinationsData';
 
 const Sigiriya = () => {
   useEffect(() => {
@@ -106,6 +108,11 @@ const Sigiriya = () => {
         </div>
       </section>
 
+      {/* Destination Suggestions */}
+      <DestinationSuggestions 
+        currentDestination="Sigiriya"
+        suggestions={getRandomSuggestions('/places/sigiriya', 4)}
+      />
   
     </div>
   );

@@ -4,6 +4,8 @@ import badulla1 from '../../img/webp/badulla1.webp';
 import badulla2 from '../../img/webp/badulla2.webp';
 import badulla3 from '../../img/webp/badulla3.webp';
 import badulla4 from '../../img/webp/badulla4.webp';
+import DestinationSuggestions from '../../components/DestinationSuggestions';
+import { getRandomSuggestions } from '../../data/destinationsData';
 
 const Badulla: React.FC = () => {
   useEffect(() => {
@@ -90,6 +92,12 @@ const Badulla: React.FC = () => {
               </p>
             </div>
           </div>
+      {/* Destination Suggestions */}
+      <DestinationSuggestions 
+        currentDestination="Badulla"
+        suggestions={getRandomSuggestions('/places/badulla', 4)}
+      />
+
         </div>
       </section>
 
@@ -99,3 +107,4 @@ const Badulla: React.FC = () => {
 };
 
 export default Badulla;
+

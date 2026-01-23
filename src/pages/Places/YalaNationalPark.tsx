@@ -4,6 +4,8 @@ import yala1 from '../../img/webp/yala1.webp';
 import yala2 from '../../img/webp/yala2.webp';
 import yala3 from '../../img/webp/yala3.webp';
 import yala4 from '../../img/webp/yala4.webp';
+import DestinationSuggestions from '../../components/DestinationSuggestions';
+import { getRandomSuggestions } from '../../data/destinationsData';
 
 const YalaNationalPark = () => {
   useEffect(() => {
@@ -107,6 +109,12 @@ const YalaNationalPark = () => {
               </p>
             </div>
           </div>
+      {/* Destination Suggestions */}
+      <DestinationSuggestions 
+        currentDestination="YalaNationalPark"
+        suggestions={getRandomSuggestions('/places/yala-national-park', 4)}
+      />
+
         </div>
       </section>
 
@@ -116,3 +124,4 @@ const YalaNationalPark = () => {
 };
 
 export default YalaNationalPark;
+

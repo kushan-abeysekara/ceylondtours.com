@@ -4,6 +4,8 @@ import polonnaruwa1 from '../../img/webp/polonnaruwa1.webp';
 import polonnaruwa2 from '../../img/webp/polonnaruwa2.webp';
 import polonnaruwa3 from '../../img/webp/polonnaruwa3.webp';
 import polonnaruwa4 from '../../img/webp/polonnaruwa4.webp';
+import DestinationSuggestions from '../../components/DestinationSuggestions';
+import { getRandomSuggestions } from '../../data/destinationsData';
 const Polonnaruwa = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -105,6 +107,12 @@ const Polonnaruwa = () => {
               </p>
             </div>
           </div>
+      {/* Destination Suggestions */}
+      <DestinationSuggestions 
+        currentDestination="Polonnaruwa"
+        suggestions={getRandomSuggestions('/places/polonnaruwa', 4)}
+      />
+
         </div>
       </section>
 
@@ -114,3 +122,4 @@ const Polonnaruwa = () => {
 };
 
 export default Polonnaruwa;
+

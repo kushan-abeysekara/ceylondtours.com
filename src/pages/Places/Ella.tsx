@@ -4,6 +4,8 @@ import ella1 from '../../img/webp/ella1.webp';
 import ella2 from '../../img/webp/ella2.webp';
 import ella3 from '../../img/webp/ella3.webp';
 import ella4 from '../../img/webp/ella4.webp';
+import DestinationSuggestions from '../../components/DestinationSuggestions';
+import { getRandomSuggestions } from '../../data/destinationsData';
 
 const Ella = () => {
   useEffect(() => {
@@ -107,6 +109,12 @@ const Ella = () => {
               </p>
             </div>
           </div>
+      {/* Destination Suggestions */}
+      <DestinationSuggestions 
+        currentDestination="Ella"
+        suggestions={getRandomSuggestions('/places/ella', 4)}
+      />
+
         </div>
       </section>
 
@@ -116,3 +124,4 @@ const Ella = () => {
 };
 
 export default Ella;
+

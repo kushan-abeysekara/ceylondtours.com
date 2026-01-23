@@ -4,6 +4,8 @@ import hatton1 from '../../img/webp/hatton1.webp';
 import hatton2 from '../../img/webp/hatton2.webp';
 import hatton3 from '../../img/webp/hatton3.webp';
 import hatton4 from '../../img/webp/hatton4.webp';
+import DestinationSuggestions from '../../components/DestinationSuggestions';
+import { getRandomSuggestions } from '../../data/destinationsData';
 
 const Hatton: React.FC = () => {
   useEffect(() => {
@@ -90,6 +92,12 @@ const Hatton: React.FC = () => {
               </p>
             </div>
           </div>
+      {/* Destination Suggestions */}
+      <DestinationSuggestions 
+        currentDestination="Hatton"
+        suggestions={getRandomSuggestions('/places/hatton', 4)}
+      />
+
         </div>
       </section>
 
@@ -99,3 +107,4 @@ const Hatton: React.FC = () => {
 };
 
 export default Hatton;
+

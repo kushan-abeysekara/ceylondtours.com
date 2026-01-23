@@ -4,6 +4,8 @@ import pidurangala1 from '../../img/webp/pidurangala1.webp';
 import pidurangala2 from '../../img/webp/pidurangala2.webp';
 import pidurangala3 from '../../img/webp/pidurangala3.webp';
 import pidurangala4 from '../../img/webp/pidurangala4.webp';
+import DestinationSuggestions from '../../components/DestinationSuggestions';
+import { getRandomSuggestions } from '../../data/destinationsData';
 
 const PidurangalaRock: React.FC = () => {
   useEffect(() => {
@@ -90,6 +92,12 @@ const PidurangalaRock: React.FC = () => {
               </p>
             </div>
           </div>
+      {/* Destination Suggestions */}
+      <DestinationSuggestions 
+        currentDestination="PidurangalaRock"
+        suggestions={getRandomSuggestions('/places/pidurangala-rock', 4)}
+      />
+
         </div>
       </section>
 
@@ -99,3 +107,4 @@ const PidurangalaRock: React.FC = () => {
 };
 
 export default PidurangalaRock;
+

@@ -4,6 +4,8 @@ import galle1 from '../../img/webp/galle1.webp';
 import galle2 from '../../img/webp/galle2.webp';
 import galle3 from '../../img/webp/galle3.webp';
 import galle4 from '../../img/webp/galle4.webp';
+import DestinationSuggestions from '../../components/DestinationSuggestions';
+import { getRandomSuggestions } from '../../data/destinationsData';
 
 const GalleFort = () => {
   useEffect(() => {
@@ -107,6 +109,12 @@ const GalleFort = () => {
               </p>
             </div>
           </div>
+      {/* Destination Suggestions */}
+      <DestinationSuggestions 
+        currentDestination="GalleFort"
+        suggestions={getRandomSuggestions('/places/galle-fort', 4)}
+      />
+
         </div>
       </section>
 
@@ -116,3 +124,4 @@ const GalleFort = () => {
 };
 
 export default GalleFort;
+

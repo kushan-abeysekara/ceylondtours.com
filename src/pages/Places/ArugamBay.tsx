@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import './Sigiriya.css';
+import DestinationSuggestions from '../../components/DestinationSuggestions';
+import { getRandomSuggestions } from '../../data/destinationsData';
 
 const ArugamBay = () => {
   useEffect(() => {
@@ -103,6 +105,12 @@ const ArugamBay = () => {
               </p>
             </div>
           </div>
+      {/* Destination Suggestions */}
+      <DestinationSuggestions 
+        currentDestination="ArugamBay"
+        suggestions={getRandomSuggestions('/places/arugam-bay', 4)}
+      />
+
         </div>
       </section>
 
@@ -112,3 +120,4 @@ const ArugamBay = () => {
 };
 
 export default ArugamBay;
+

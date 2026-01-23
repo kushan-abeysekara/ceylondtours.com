@@ -4,6 +4,8 @@ import negombo1 from '../../img/webp/negombo1.webp';
 import negombo2 from '../../img/webp/negombo2.webp';
 import negombo3 from '../../img/webp/negombo3.webp';
 import negombo4 from '../../img/webp/negombo4.webp';
+import DestinationSuggestions from '../../components/DestinationSuggestions';
+import { getRandomSuggestions } from '../../data/destinationsData';
 const Negombo: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -89,6 +91,12 @@ const Negombo: React.FC = () => {
               </p>
             </div>
           </div>
+      {/* Destination Suggestions */}
+      <DestinationSuggestions 
+        currentDestination="Negombo"
+        suggestions={getRandomSuggestions('/places/negombo', 4)}
+      />
+
         </div>
       </section>
 
@@ -98,3 +106,4 @@ const Negombo: React.FC = () => {
 };
 
 export default Negombo;
+

@@ -4,6 +4,8 @@ import mirissa1 from '../../img/webp/mirissabeach1.webp';
 import mirissa2 from '../../img/webp/mirissabeach2.webp';
 import mirissa3 from '../../img/webp/mirissabeach3.webp';
 import mirissa4 from '../../img/webp/mirissabeach4.webp';
+import DestinationSuggestions from '../../components/DestinationSuggestions';
+import { getRandomSuggestions } from '../../data/destinationsData';
 
 
 const Mirissa = () => {
@@ -108,6 +110,12 @@ const Mirissa = () => {
               </p>
             </div>
           </div>
+      {/* Destination Suggestions */}
+      <DestinationSuggestions 
+        currentDestination="Mirissa"
+        suggestions={getRandomSuggestions('/places/mirissa', 4)}
+      />
+
         </div>
       </section>
 
@@ -117,3 +125,4 @@ const Mirissa = () => {
 };
 
 export default Mirissa;
+

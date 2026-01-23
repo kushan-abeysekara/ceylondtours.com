@@ -4,6 +4,8 @@ import batticaloa1 from '../../img/webp/batticaloa.webp';
 import batticaloa2 from '../../img/webp/batticaloa2.webp';
 import batticaloa3 from '../../img/webp/batticaloa3.webp';
 import batticaloa4 from '../../img/webp/batticaloa4.webp';
+import DestinationSuggestions from '../../components/DestinationSuggestions';
+import { getRandomSuggestions } from '../../data/destinationsData';
 
 const Batticaloa: React.FC = () => {
   useEffect(() => {
@@ -90,6 +92,12 @@ const Batticaloa: React.FC = () => {
               </p>
             </div>
           </div>
+      {/* Destination Suggestions */}
+      <DestinationSuggestions 
+        currentDestination="Batticaloa"
+        suggestions={getRandomSuggestions('/places/batticaloa', 4)}
+      />
+
         </div>
       </section>
 
@@ -99,3 +107,4 @@ const Batticaloa: React.FC = () => {
 };
 
 export default Batticaloa;
+

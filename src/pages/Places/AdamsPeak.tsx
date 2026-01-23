@@ -4,6 +4,8 @@ import adamspeak1 from '../../img/webp/adamspeak1.webp';
 import adamspeak2 from '../../img/webp/adamspeak2.webp';
 import adamspeak3 from '../../img/webp/adamspeak3.webp';
 import adamspeak4 from '../../img/webp/adamspeak4.webp';
+import DestinationSuggestions from '../../components/DestinationSuggestions';
+import { getRandomSuggestions } from '../../data/destinationsData';
 
 const AdamsPeak = () => {
   useEffect(() => {
@@ -106,6 +108,12 @@ const AdamsPeak = () => {
               </p>
             </div>
           </div>
+      {/* Destination Suggestions */}
+      <DestinationSuggestions 
+        currentDestination="AdamsPeak"
+        suggestions={getRandomSuggestions('/places/adams-peak', 4)}
+      />
+
         </div>
       </section>
 
@@ -115,3 +123,4 @@ const AdamsPeak = () => {
 };
 
 export default AdamsPeak;
+

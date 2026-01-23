@@ -4,6 +4,8 @@ import nuwara1 from '../../img/webp/nuwaraeliya1.webp';
 import nuwara2 from '../../img/webp/nuwaraeliya2.webp';
 import nuwara3 from '../../img/webp/nuwaraeliya3.webp';
 import nuwara4 from '../../img/webp/nuwaraeliya4.webp';
+import DestinationSuggestions from '../../components/DestinationSuggestions';
+import { getRandomSuggestions } from '../../data/destinationsData';
 
 const NuwaraEliya = () => {
   useEffect(() => {
@@ -107,6 +109,12 @@ const NuwaraEliya = () => {
               </p>
             </div>
           </div>
+      {/* Destination Suggestions */}
+      <DestinationSuggestions 
+        currentDestination="NuwaraEliya"
+        suggestions={getRandomSuggestions('/places/nuwara-eliya', 4)}
+      />
+
         </div>
       </section>
 
@@ -116,3 +124,4 @@ const NuwaraEliya = () => {
 };
 
 export default NuwaraEliya;
+

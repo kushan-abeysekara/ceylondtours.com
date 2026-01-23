@@ -4,6 +4,8 @@ import knuckles1 from '../../img/webp/knuckles1.webp';
 import knuckles2 from '../../img/webp/knuckles2.webp';
 import knuckles3 from '../../img/webp/knuckles3.webp';
 import knuckles4 from '../../img/webp/knuckles4.webp';
+import DestinationSuggestions from '../../components/DestinationSuggestions';
+import { getRandomSuggestions } from '../../data/destinationsData';
 
 const KnucklesMountainRange: React.FC = () => {
   useEffect(() => {
@@ -90,6 +92,12 @@ const KnucklesMountainRange: React.FC = () => {
               </p>
             </div>
           </div>
+      {/* Destination Suggestions */}
+      <DestinationSuggestions 
+        currentDestination="KnucklesMountainRange"
+        suggestions={getRandomSuggestions('/places/knuckles-mountain-range', 4)}
+      />
+
         </div>
       </section>
 
@@ -99,3 +107,4 @@ const KnucklesMountainRange: React.FC = () => {
 };
 
 export default KnucklesMountainRange;
+

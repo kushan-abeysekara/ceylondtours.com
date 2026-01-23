@@ -4,6 +4,8 @@ import matara1 from '../../img/webp/matara1.webp';
 import matara2 from '../../img/webp/matara2.webp';
 import matara3 from '../../img/webp/matara3.webp';
 import matara4 from '../../img/webp/matara4.webp';
+import DestinationSuggestions from '../../components/DestinationSuggestions';
+import { getRandomSuggestions } from '../../data/destinationsData';
 
 const Matara: React.FC = () => {
   useEffect(() => {
@@ -90,6 +92,12 @@ const Matara: React.FC = () => {
               </p>
             </div>
           </div>
+      {/* Destination Suggestions */}
+      <DestinationSuggestions 
+        currentDestination="Matara"
+        suggestions={getRandomSuggestions('/places/matara', 4)}
+      />
+
         </div>
       </section>
 
@@ -99,3 +107,4 @@ const Matara: React.FC = () => {
 };
 
 export default Matara;
+

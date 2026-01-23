@@ -4,6 +4,8 @@ import kitulgala1 from '../../img/webp/kithulgala1.webp';
 import kitulgala2 from '../../img/webp/kithulgala2.webp';
 import kitulgala3 from '../../img/webp/kithulgala3.webp';
 import kitulgala4 from '../../img/webp/kithulgala4.webp';
+import DestinationSuggestions from '../../components/DestinationSuggestions';
+import { getRandomSuggestions } from '../../data/destinationsData';
 
 const Kitulgala: React.FC = () => {
   useEffect(() => {
@@ -90,6 +92,12 @@ const Kitulgala: React.FC = () => {
               </p>
             </div>
           </div>
+      {/* Destination Suggestions */}
+      <DestinationSuggestions 
+        currentDestination="Kitulgala"
+        suggestions={getRandomSuggestions('/places/kitulgala', 4)}
+      />
+
         </div>
       </section>
 
@@ -99,3 +107,4 @@ const Kitulgala: React.FC = () => {
 };
 
 export default Kitulgala;
+

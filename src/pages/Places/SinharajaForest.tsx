@@ -4,6 +4,8 @@ import sinharaja1 from '../../img/webp/sinharaja1.webp';
 import sinharaja2 from '../../img/webp/Sinharaja2.webp';
 import sinharaja3 from '../../img/webp/Sinharaja3.webp';
 import sinharaja4 from '../../img/webp/Sinharaja4.webp';
+import DestinationSuggestions from '../../components/DestinationSuggestions';
+import { getRandomSuggestions } from '../../data/destinationsData';
 
 const SinharajaForest: React.FC = () => {
   useEffect(() => {
@@ -90,6 +92,12 @@ const SinharajaForest: React.FC = () => {
               </p>
             </div>
           </div>
+      {/* Destination Suggestions */}
+      <DestinationSuggestions 
+        currentDestination="SinharajaForest"
+        suggestions={getRandomSuggestions('/places/sinharaja-forest', 4)}
+      />
+
         </div>
       </section>
 
@@ -99,3 +107,4 @@ const SinharajaForest: React.FC = () => {
 };
 
 export default SinharajaForest;
+

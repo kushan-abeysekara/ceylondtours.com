@@ -4,6 +4,8 @@ import jaffna1 from '../../img/webp/jaffna1.webp';
 import jaffna2 from '../../img/webp/jaffna2.webp';
 import jaffna3 from '../../img/webp/jaffna3.webp';
 import jaffna4 from '../../img/webp/jaffna4.webp';
+import DestinationSuggestions from '../../components/DestinationSuggestions';
+import { getRandomSuggestions } from '../../data/destinationsData';
 
 const Jaffna: React.FC = () => {
   useEffect(() => {
@@ -90,6 +92,12 @@ const Jaffna: React.FC = () => {
               </p>
             </div>
           </div>
+      {/* Destination Suggestions */}
+      <DestinationSuggestions 
+        currentDestination="Jaffna"
+        suggestions={getRandomSuggestions('/places/jaffna', 4)}
+      />
+
         </div>
       </section>
 
@@ -99,3 +107,4 @@ const Jaffna: React.FC = () => {
 };
 
 export default Jaffna;
+

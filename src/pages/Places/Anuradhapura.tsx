@@ -4,6 +4,8 @@ import anuradhapura1 from '../../img/webp/anuradhapura1.webp';
 import anuradhapura2 from '../../img/webp/anuradhapura2.webp';
 import anuradhapura3 from '../../img/webp/anuradhapura3.webp';
 import anuradhapura4 from '../../img/webp/anuradhapura4.webp';
+import DestinationSuggestions from '../../components/DestinationSuggestions';
+import { getRandomSuggestions } from '../../data/destinationsData';
 
 const Anuradhapura = () => {
   useEffect(() => {
@@ -106,6 +108,12 @@ const Anuradhapura = () => {
               </p>
             </div>
           </div>
+      {/* Destination Suggestions */}
+      <DestinationSuggestions 
+        currentDestination="Anuradhapura"
+        suggestions={getRandomSuggestions('/places/anuradhapura', 4)}
+      />
+
         </div>
       </section>
 
@@ -115,3 +123,4 @@ const Anuradhapura = () => {
 };
 
 export default Anuradhapura;
+

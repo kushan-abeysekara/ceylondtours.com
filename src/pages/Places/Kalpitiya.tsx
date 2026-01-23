@@ -4,6 +4,8 @@ import kalpitiya1 from '../../img/webp/kalpitiya1.webp';
 import kalpitiya2 from '../../img/webp/kalpitiya2.webp';
 import kalpitiya3 from '../../img/webp/kalpitiya3.webp';
 import kalpitiya4 from '../../img/webp/kalpitiya4.webp';
+import DestinationSuggestions from '../../components/DestinationSuggestions';
+import { getRandomSuggestions } from '../../data/destinationsData';
 
 const Kalpitiya: React.FC = () => {
   useEffect(() => {
@@ -90,6 +92,12 @@ const Kalpitiya: React.FC = () => {
               </p>
             </div>
           </div>
+      {/* Destination Suggestions */}
+      <DestinationSuggestions 
+        currentDestination="Kalpitiya"
+        suggestions={getRandomSuggestions('/places/kalpitiya', 4)}
+      />
+
         </div>
       </section>
 
@@ -99,3 +107,4 @@ const Kalpitiya: React.FC = () => {
 };
 
 export default Kalpitiya;
+
