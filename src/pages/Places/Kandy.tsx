@@ -10,7 +10,7 @@ const Kandy = () => {
     <div className="destination-page">
       {/* Hero Section */}
       <section className="dest-hero">
-        <img src={require('../../img/kandy 1.webp')} alt="Kandy" />
+        <img src={require('../../img/webp/slider1.webp')} alt="Kandy" />
         <div className="dest-badge">Kandy</div>
       </section>
 
@@ -19,7 +19,7 @@ const Kandy = () => {
         <div className="dest-container">
           <div className="dest-main-section">
             <div className="dest-left">
-              <img src={require('../../img/kandy 2.webp')} alt="Kandy culture" />
+              <img src={require('../../img/webp/kandy1.webp')} alt="Kandy culture" />
             </div>
             <div className="dest-right">
               <h1 className="dest-title">Discover Kandy</h1>
@@ -95,7 +95,7 @@ const Kandy = () => {
           {/* Ceylon D Tour Section */}
           <div className="dest-main-section" style={{ marginTop: '4rem' }}>
             <div className="dest-left">
-              <img src={require('../../img/kandy 2.webp')} alt="Ceylon D Tour Kandy experience" />
+              <img src={require('../../img/webp/kandy2.webp')} alt="Ceylon D Tour Kandy experience" />
             </div>
             <div className="dest-right">
               <p className="dest-description">

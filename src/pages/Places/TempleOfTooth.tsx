@@ -10,7 +10,7 @@ const TempleOfTooth = () => {
     <div className="destination-page">
       {/* Hero Section */}
       <section className="dest-hero">
-        <img src={require('../../img/Temple of the tooth 1.webp')} alt="Temple of the Tooth Relic" />
+        <img src={require('../../img/webp/templeoftooth1.webp')} alt="Temple of the Tooth Relic" />
         <div className="dest-badge">Temple of the Tooth Relic</div>
       </section>
 

@@ -69,7 +69,7 @@ const Destinations = () => {
         'Personalized cultural and religious tour options',
         'Peaceful, well-organized temple visit experience'
       ],
-      image: require('../img/destination_templetoth relic.webp'),
+      image: require('../img/Temple of the tooth 1.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '1 Days' },
