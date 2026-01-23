@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
 import './Sigiriya.css';
+import matara1 from '../../img/webp/matara1.webp';
+import matara2 from '../../img/webp/matara2.webp';
+import matara3 from '../../img/webp/matara3.webp';
+import matara4 from '../../img/webp/matara4.webp';
 
 const Matara: React.FC = () => {
   useEffect(() => {
@@ -9,7 +13,7 @@ const Matara: React.FC = () => {
   return (
     <div className="destination-page">
       <section className="dest-hero">
-        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1600" alt="Matara" />
+        <img src={matara1} alt="Matara" />
         <div className="dest-badge">Matara</div>
       </section>
 
@@ -18,7 +22,7 @@ const Matara: React.FC = () => {
           <div className="dest-main-section">
             <div className="dest-left">
               <img
-                src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800"
+                src={matara2}
                 alt="Matara Coast"
               />
             </div>
@@ -66,7 +70,7 @@ const Matara: React.FC = () => {
             </div>
             <div className="dest-bottom-right">
               <img
-                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800"
+                src={matara3}
                 alt="Matara Beach"
               />
             </div>
@@ -76,7 +80,7 @@ const Matara: React.FC = () => {
           <div className="dest-main-section" style={{ marginTop: '4rem' }}>
             <div className="dest-left">
               <img
-                src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800"
+                src={matara4}
                 alt="Ceylon D Tour Matara experience"
               />
             </div>
