@@ -10,7 +10,7 @@ const ArugamBay = () => {
     <div className="destination-page">
       {/* Hero Section */}
       <section className="dest-hero">
-        <img src={require('../../img/arugam bay 1.webp')} alt="Arugam Bay" />
+        <img src={require('../../img/webp/arugambay1.webp')} alt="Arugam Bay" />
         <div className="dest-badge">Arugam Bay</div>
       </section>
 
