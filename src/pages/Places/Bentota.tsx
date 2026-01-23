@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
 import './Sigiriya.css';
+import bentota1 from '../../img/webp/bentota1.webp';
+import bentota2 from '../../img/webp/bentota2.webp';
+import bentota3 from '../../img/webp/bentota3.webp';
+import bentota4 from '../../img/webp/bentota4.webp';
 
 const Bentota = () => {
   useEffect(() => {
@@ -10,7 +14,7 @@ const Bentota = () => {
     <div className="destination-page">
       {/* Hero Section */}
       <section className="dest-hero">
-        <img src="https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=1600" alt="Bentota" />
+        <img src={bentota1} alt="Bentota" />
         <div className="dest-badge">Bentota</div>
       </section>
 
@@ -19,7 +23,7 @@ const Bentota = () => {
         <div className="dest-container">
           <div className="dest-main-section">
             <div className="dest-left">
-              <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800" alt="Bentota beach" />
+              <img src={bentota2} alt="Bentota beach" />
             </div>
             <div className="dest-right">
               <h1 className="dest-title">Discover Bentota</h1>
@@ -88,14 +92,14 @@ const Bentota = () => {
               </p>
             </div>
             <div className="dest-bottom-right">
-              <img src="https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=800" alt="Bentota river" />
+              <img src={bentota3}  alt="Bentota river" />
             </div>
           </div>
 
           {/* Ceylon D Tour Section */}
           <div className="dest-main-section" style={{ marginTop: '4rem' }}>
             <div className="dest-left">
-              <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800" alt="Ceylon D Tour Bentota experience" />
+              <img src={bentota4} alt="Ceylon D Tour Bentota experience" />
             </div>
             <div className="dest-right">
               <p className="dest-description">
