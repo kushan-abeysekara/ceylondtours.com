@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
 import './Sigiriya.css';
+import yala1 from '../../img/webp/yala1.webp';
+import yala2 from '../../img/webp/yala2.webp';
+import yala3 from '../../img/webp/yala3.webp';
+import yala4 from '../../img/webp/yala4.webp';
 
 const YalaNationalPark = () => {
   useEffect(() => {
@@ -10,7 +14,7 @@ const YalaNationalPark = () => {
     <div className="destination-page">
       {/* Hero Section */}
       <section className="dest-hero">
-        <img src="https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=1600" alt="Yala National Park" />
+        <img src={yala1} alt="Yala National Park" />
         <div className="dest-badge">Yala National Park</div>
       </section>
 
@@ -19,7 +23,7 @@ const YalaNationalPark = () => {
         <div className="dest-container">
           <div className="dest-main-section">
             <div className="dest-left">
-              <img src="https://images.unsplash.com/photo-1549366021-9f761d450615?w=800" alt="Yala wildlife" />
+              <img src={yala2} alt="Yala wildlife" />
             </div>
             <div className="dest-right">
               <h1 className="dest-title">Discover Yala National Park</h1>
@@ -88,14 +92,14 @@ const YalaNationalPark = () => {
               </p>
             </div>
             <div className="dest-bottom-right">
-              <img src="https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=800" alt="Yala safari" />
+              <img src={yala3} alt="Yala safari" />
             </div>
           </div>
 
           {/* Ceylon D Tour Section */}
           <div className="dest-main-section" style={{ marginTop: '4rem' }}>
             <div className="dest-left">
-              <img src="https://images.unsplash.com/photo-1549366021-9f761d450615?w=800" alt="Ceylon D Tour Yala experience" />
+              <img src={yala4} alt="Ceylon D Tour Yala experience" />
             </div>
             <div className="dest-right">
               <p className="dest-description">
