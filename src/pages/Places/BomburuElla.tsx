@@ -10,7 +10,7 @@ const BomburuElla = () => {
     <div className="destination-page">
       {/* Hero Section */}
       <section className="dest-hero">
-        <img src={require('../../img/bomburu ella 1.webp')} alt="Bomburu Ella" />
+        <img src={require('../../img/bomburu ella hero.jpg')} alt="Bomburu Ella" />
         <div className="dest-badge">Bomburu Ella</div>
       </section>
 
@@ -88,7 +88,7 @@ const BomburuElla = () => {
               </p>
             </div>
             <div className="dest-bottom-right">
-              <img src={require('../../img/Bomburu Ella 2.webp')} alt="Bomburu Ella landscape" />
+              <img src={require('../../img/bomburu ella 2 (2).webp')} alt="Bomburu Ella landscape" />
             </div>
           </div>
 
