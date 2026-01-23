@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
 import './Sigiriya.css';
+import trincomalee1 from '../../img/webp/trincomalee1.webp';
+import trincomalee2 from '../../img/webp/trincomalee2.webp';
+import trincomalee3 from '../../img/webp/trincomalee3.webp';
+import trincomalee4 from '../../img/webp/trincomalee4.webp';
 
 const Trincomalee = () => {
   useEffect(() => {
@@ -10,7 +14,7 @@ const Trincomalee = () => {
     <div className="destination-page">
       {/* Hero Section */}
       <section className="dest-hero">
-        <img src="https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=1600" alt="Trincomalee" />
+        <img src={trincomalee1} alt="Trincomalee" />
         <div className="dest-badge">Trincomalee</div>
       </section>
 
@@ -19,7 +23,7 @@ const Trincomalee = () => {
         <div className="dest-container">
           <div className="dest-main-section">
             <div className="dest-left">
-              <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800" alt="Trincomalee beach" />
+              <img src={trincomalee2} alt="Trincomalee beach" />
             </div>
             <div className="dest-right">
               <h1 className="dest-title">Discover Trincomalee</h1>
@@ -88,14 +92,14 @@ const Trincomalee = () => {
               </p>
             </div>
             <div className="dest-bottom-right">
-              <img src="https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=800" alt="Trincomalee coast" />
+              <img src={trincomalee3} alt="Trincomalee coast" />
             </div>
           </div>
 
           {/* Ceylon D Tour Section */}
           <div className="dest-main-section" style={{ marginTop: '4rem' }}>
             <div className="dest-left">
-              <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800" alt="Ceylon D Tour Trincomalee experience" />
+              <img src={trincomalee4} alt="Ceylon D Tour Trincomalee experience" />
             </div>
             <div className="dest-right">
               <p className="dest-description">
