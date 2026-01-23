@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import './Sigiriya.css';
 import DestinationSuggestions from '../../components/DestinationSuggestions';
 import { getRandomSuggestions } from '../../data/destinationsData';
+import Kandy2 from  '../../img/webp/kandy2.webp';
+import Kandy4 from  '../../img/webp/kandy4.webp';
 
 const TempleOfTooth = () => {
   useEffect(() => {
@@ -89,14 +91,14 @@ const TempleOfTooth = () => {
               </p>
             </div>
             <div className="dest-bottom-right">
-              <img src={require('../../img/temple of the tooth 3.webp')} alt="Temple architecture" />
+              <img src={Kandy2} alt="Temple architecture" />
             </div>
           </div>
 
           {/* Ceylon D Tour Section */}
           <div className="dest-main-section" style={{ marginTop: '4rem' }}>
             <div className="dest-left">
-              <img src={require('../../img/temple of the tooth.webp')} alt="Ceylon D Tour Temple of Tooth experience" />
+              <img src={Kandy4} alt="Ceylon D Tour Temple of Tooth experience" />
             </div>
             <div className="dest-right">
               <p className="dest-description">

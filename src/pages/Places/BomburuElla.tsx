@@ -2,7 +2,8 @@ import React, { useEffect } from 'react';
 import './Sigiriya.css';
 import DestinationSuggestions from '../../components/DestinationSuggestions';
 import { getRandomSuggestions } from '../../data/destinationsData';
-
+import bomburu1 from '../../img/webp/boburuella1.webp';
+import bomburu4 from '../../img/webp/bomburuella4.webp';
 const BomburuElla = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -12,7 +13,7 @@ const BomburuElla = () => {
     <div className="destination-page">
       {/* Hero Section */}
       <section className="dest-hero">
-        <img src={require('../../img/bomburu ella hero.jpg')} alt="Bomburu Ella" />
+        <img src={bomburu1} alt="Bomburu Ella" />
         <div className="dest-badge">Bomburu Ella</div>
       </section>
 
@@ -97,7 +98,7 @@ const BomburuElla = () => {
           {/* Ceylon D Tour Section */}
           <div className="dest-main-section" style={{ marginTop: '4rem' }}>
             <div className="dest-left">
-              <img src={require('../../img/BoburuElla.webp')} alt="Ceylon D Tour Bomburu Ella experience" />
+              <img src={bomburu4} alt="Ceylon D Tour Bomburu Ella experience" />
             </div>
             <div className="dest-right">
               <p className="dest-description">

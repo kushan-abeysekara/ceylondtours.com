@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './Sigiriya.css';
-import badulla1 from '../../img/webp/badulla1.webp';
+import badulla1 from '../../img/webp/ella1.webp';
 import badulla2 from '../../img/webp/badulla2.webp';
 import badulla3 from '../../img/webp/badulla3.webp';
 import badulla4 from '../../img/webp/badulla4.webp';

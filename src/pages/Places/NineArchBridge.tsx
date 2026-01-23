@@ -90,7 +90,7 @@ const NineArchBridge = () => {
               </p>
             </div>
             <div className="dest-bottom-right">
-              <img src={require('../../img/nine arch 1.webp')} alt="Nine Arch Bridge sunset" />
+              <img src={require('../../img/webp/ella3.webp')} alt="Nine Arch Bridge sunset" />
             </div>
           </div>
 
