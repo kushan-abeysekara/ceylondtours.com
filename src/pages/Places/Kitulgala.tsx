@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
 import './Sigiriya.css';
+import kitulgala1 from '../../img/webp/kithulgala1.webp';
+import kitulgala2 from '../../img/webp/kithulgala2.webp';
+import kitulgala3 from '../../img/webp/kithulgala3.webp';
+import kitulgala4 from '../../img/webp/kithulgala4.webp';
 
 const Kitulgala: React.FC = () => {
   useEffect(() => {
@@ -9,7 +13,7 @@ const Kitulgala: React.FC = () => {
   return (
     <div className="destination-page">
       <section className="dest-hero">
-        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1600" alt="Kitulgala" />
+        <img src={kitulgala1} alt="Kitulgala" />
         <div className="dest-badge">Kitulgala</div>
       </section>
 
@@ -18,7 +22,7 @@ const Kitulgala: React.FC = () => {
           <div className="dest-main-section">
             <div className="dest-left">
               <img
-                src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800"
+                src={kitulgala2}
                 alt="Kitulgala River"
               />
             </div>
@@ -66,7 +70,7 @@ const Kitulgala: React.FC = () => {
             </div>
             <div className="dest-bottom-right">
               <img
-                src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800"
+                src={kitulgala3}
                 alt="Kitulgala Adventure"
               />
             </div>
@@ -76,7 +80,7 @@ const Kitulgala: React.FC = () => {
           <div className="dest-main-section" style={{ marginTop: '4rem' }}>
             <div className="dest-left">
               <img
-                src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800"
+                src={kitulgala4}
                 alt="Ceylon D Tour Kitulgala experience"
               />
             </div>
