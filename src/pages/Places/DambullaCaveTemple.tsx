@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
 import './Sigiriya.css';
+import dambulla1 from '../../img/webp/dambulla1.webp';
+import dambulla2 from '../../img/webp/dambulla2.webp';
+import dambulla3 from '../../img/webp/dambulla3.webp';
+import dambulla4 from '../../img/webp/dambulla4.webp';
 
 const DambullaCaveTemple = () => {
   useEffect(() => {
@@ -10,7 +14,7 @@ const DambullaCaveTemple = () => {
     <div className="destination-page">
       {/* Hero Section */}
       <section className="dest-hero">
-        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600" alt="Dambulla Cave Temple" />
+        <img src={dambulla1} alt="Dambulla Cave Temple" />
         <div className="dest-badge">Dambulla Cave Temple</div>
       </section>
 
@@ -19,7 +23,7 @@ const DambullaCaveTemple = () => {
         <div className="dest-container">
           <div className="dest-main-section">
             <div className="dest-left">
-              <img src="https://images.unsplash.com/photo-1588971550723-4c4ae923cdbb?w=800" alt="Dambulla temple interior" />
+              <img src={dambulla2} alt="Dambulla temple interior" />
             </div>
             <div className="dest-right">
               <h1 className="dest-title">Discover Dambulla Cave Temple</h1>
@@ -88,14 +92,14 @@ const DambullaCaveTemple = () => {
               </p>
             </div>
             <div className="dest-bottom-right">
-              <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800" alt="Dambulla cave" />
+              <img src={dambulla3} alt="Dambulla cave" />
             </div>
           </div>
 
           {/* Ceylon D Tour Section */}
           <div className="dest-main-section" style={{ marginTop: '4rem' }}>
             <div className="dest-left">
-              <img src="https://images.unsplash.com/photo-1588971550723-4c4ae923cdbb?w=800" alt="Ceylon D Tour Dambulla experience" />
+              <img src={dambulla4} alt="Ceylon D Tour Dambulla experience" />
             </div>
             <div className="dest-right">
               <p className="dest-description">
