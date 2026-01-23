@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react';
 import './Sigiriya.css';
-
+import negombo1 from '../../img/webp/negombo1.webp';
+import negombo2 from '../../img/webp/negombo2.webp';
+import negombo3 from '../../img/webp/negombo3.webp';
+import negombo4 from '../../img/webp/negombo4.webp';
 const Negombo: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -9,7 +12,7 @@ const Negombo: React.FC = () => {
   return (
     <div className="destination-page">
       <section className="dest-hero">
-        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1600" alt="Negombo" />
+        <img src={negombo1} alt="Negombo" />
         <div className="dest-badge">Negombo</div>
       </section>
 
@@ -18,7 +21,7 @@ const Negombo: React.FC = () => {
           <div className="dest-main-section">
             <div className="dest-left">
               <img
-                src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800"
+                src={negombo2}
                 alt="Negombo Beach"
               />
             </div>
@@ -66,7 +69,7 @@ const Negombo: React.FC = () => {
             </div>
             <div className="dest-bottom-right">
               <img
-                src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?w=800"
+                src={negombo3}
                 alt="Negombo Market"
               />
             </div>
@@ -76,7 +79,7 @@ const Negombo: React.FC = () => {
           <div className="dest-main-section" style={{ marginTop: '4rem' }}>
             <div className="dest-left">
               <img
-                src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800"
+                src={negombo4}
                 alt="Ceylon D Tour Negombo experience"
               />
             </div>
