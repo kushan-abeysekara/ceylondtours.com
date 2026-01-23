@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
 import './Sigiriya.css';
+import batticaloa1 from '../../img/webp/batticaloa.webp';
+import batticaloa2 from '../../img/webp/batticaloa2.webp';
+import batticaloa3 from '../../img/webp/batticaloa3.webp';
+import batticaloa4 from '../../img/webp/batticaloa4.webp';
 
 const Batticaloa: React.FC = () => {
   useEffect(() => {
@@ -9,7 +13,7 @@ const Batticaloa: React.FC = () => {
   return (
     <div className="destination-page">
       <section className="dest-hero">
-        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1600" alt="Batticaloa" />
+        <img src={batticaloa1} alt="Batticaloa" />
         <div className="dest-badge">Batticaloa</div>
       </section>
 
@@ -18,7 +22,7 @@ const Batticaloa: React.FC = () => {
           <div className="dest-main-section">
             <div className="dest-left">
               <img
-                src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800"
+                src={batticaloa2}
                 alt="Batticaloa Lagoon"
               />
             </div>
@@ -66,7 +70,7 @@ const Batticaloa: React.FC = () => {
             </div>
             <div className="dest-bottom-right">
               <img
-                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800"
+                src={batticaloa3}
                 alt="Batticaloa Beach"
               />
             </div>
@@ -76,7 +80,7 @@ const Batticaloa: React.FC = () => {
           <div className="dest-main-section" style={{ marginTop: '4rem' }}>
             <div className="dest-left">
               <img
-                src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800"
+                src={batticaloa4}
                 alt="Ceylon D Tour Batticaloa experience"
               />
             </div>
