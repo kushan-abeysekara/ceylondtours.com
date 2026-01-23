@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
 import './Sigiriya.css';
+import wilpattu1 from '../../img/webp/wilapaththu1.webp';
+import wilpattu2 from '../../img/webp/wilapaththu2.webp';
+import wilpattu3 from '../../img/webp/wilapaththu3.webp';
+import wilpattu4 from '../../img/webp/wilapaththu4.webp';
 
 const WilpattuNationalPark: React.FC = () => {
   useEffect(() => {
@@ -9,7 +13,7 @@ const WilpattuNationalPark: React.FC = () => {
   return (
     <div className="destination-page">
       <section className="dest-hero">
-        <img src="https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=1600" alt="Wilpattu National Park" />
+        <img src={wilpattu1} alt="Wilpattu National Park" />
         <div className="dest-badge">Wilpattu National Park</div>
       </section>
 
@@ -18,7 +22,7 @@ const WilpattuNationalPark: React.FC = () => {
           <div className="dest-main-section">
             <div className="dest-left">
               <img
-                src="https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=800"
+                src={wilpattu2}
                 alt="Wilpattu Leopard"
               />
             </div>
@@ -66,7 +70,7 @@ const WilpattuNationalPark: React.FC = () => {
             </div>
             <div className="dest-bottom-right">
               <img
-                src="https://images.unsplash.com/photo-1551799651-48e8ad90065b?w=800"
+                src={wilpattu3}
                 alt="Wilpattu Wildlife"
               />
             </div>
@@ -76,7 +80,7 @@ const WilpattuNationalPark: React.FC = () => {
           <div className="dest-main-section" style={{ marginTop: '4rem' }}>
             <div className="dest-left">
               <img
-                src="https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=800"
+                src={wilpattu4}
                 alt="Ceylon D Tour Wilpattu experience"
               />
             </div>
