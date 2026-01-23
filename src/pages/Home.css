@@ -89,7 +89,7 @@
   padding: 1.5rem 2rem;
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
   max-width: 900px;
   position: absolute;
@@ -179,6 +179,62 @@
   width: 1px;
   height: 40px;
   background: #e0e0e0;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.whatsapp-btn {
+  background: #25D366;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.whatsapp-btn:hover {
+  background: #128C7E;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+}
+
+.whatsapp-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.book-now-btn {
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.book-now-btn:hover {
+  background: #333;
+  transform: translateY(-2px);
 }
 
 .search-button {
