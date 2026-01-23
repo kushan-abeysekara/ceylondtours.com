@@ -20,7 +20,19 @@ const Gallery = () => {
     { src: require('../img/Memory5.jpg'), category: 'memories', title: 'Explore More' },
     { src: require('../img/happyTravelers5.jpg'), category: 'travelers', title: 'Happy Moments' },
     { src: require('../img/Memory6.jpg'), category: 'memories', title: 'Dream Destination' },
-    { src: require('../img/happyTravelers6.jpg'), category: 'travelers', title: 'Travel Stories' }
+    { src: require('../img/happyTravelers6.jpg'), category: 'travelers', title: 'Travel Stories' },
+    { src: require('../img/gallery1.jpg'), category: 'memories', title: 'Wanderlust' },
+    { src: require('../img/gallery2.jpg'), category: 'travelers', title: 'Travel Buddies' },
+    { src: require('../img/gallery3.jpg'), category: 'memories', title: 'Nature\'s Beauty' },
+    { src: require('../img/gallery4.jpg'), category: 'travelers', title: 'Joyful Adventures' },
+    { src: require('../img/gallery5.jpg'), category: 'memories', title: 'Captivating Scenes' },
+    { src: require('../img/gallery6.jpg'), category: 'travelers', title: 'Happy Explorers' },
+    { src: require('../img/gallery7.jpg'), category: 'memories', title: 'Wanderlust' },
+    { src: require('../img/gallery8.jpg'), category: 'travelers', title: 'Travel Buddies' },
+    { src: require('../img/gallery9.jpg'), category: 'memories', title: 'Nature\'s Beauty' },
+    { src: require('../img/gallery10.jpg'), category: 'travelers', title: 'Joyful Adventures' },
+    { src: require('../img/gallery11.jpg'), category: 'memories', title: 'Captivating Scenes' },
+    { src: require('../img/gallery12.jpg'), category: 'travelers', title: 'Happy Explorers' },
   ];
 
   const openLightbox = (image: string) => {
@@ -55,7 +67,7 @@ const Gallery = () => {
             {galleryImages.map((image, index) => (
               <div 
                 key={index} 
-                className={`gallery-item gallery-item-${(index % 5) + 1}`}
+                className="gallery-item"
                 onClick={() => openLightbox(image.src)}
               >
                 <img src={image.src} alt={image.title} />
