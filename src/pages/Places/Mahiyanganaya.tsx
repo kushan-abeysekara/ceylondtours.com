@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
 import './Sigiriya.css';
+import mahiyanganaya1 from '../../img/webp/mahiyanganaya1.webp'; 
+import mahiyanganaya2 from '../../img/webp/mahiyanganaya2.webp';
+import mahiyanganaya3 from '../../img/webp/mahiyanganaya3.webp';
+import mahiyanganaya4 from '../../img/webp/mahiyanganaya4.webp';
 
 const Mahiyanganaya: React.FC = () => {
   useEffect(() => {
@@ -9,7 +13,7 @@ const Mahiyanganaya: React.FC = () => {
   return (
     <div className="destination-page">
       <section className="dest-hero">
-        <img src="https://images.unsplash.com/photo-1548013146-72479768bada?w=1600" alt="Mahiyanganaya" />
+        <img src={mahiyanganaya1} alt="Mahiyanganaya" />
         <div className="dest-badge">Mahiyanganaya</div>
       </section>
 
@@ -18,7 +22,7 @@ const Mahiyanganaya: React.FC = () => {
           <div className="dest-main-section">
             <div className="dest-left">
               <img
-                src="https://images.unsplash.com/photo-1548013146-72479768bada?w=800"
+                src={mahiyanganaya2}
                 alt="Mahiyanganaya Temple"
               />
             </div>
@@ -66,7 +70,7 @@ const Mahiyanganaya: React.FC = () => {
             </div>
             <div className="dest-bottom-right">
               <img
-                src="https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?w=800"
+                src={mahiyanganaya3}
                 alt="Mahiyanganaya Culture"
               />
             </div>
@@ -76,7 +80,7 @@ const Mahiyanganaya: React.FC = () => {
           <div className="dest-main-section" style={{ marginTop: '4rem' }}>
             <div className="dest-left">
               <img
-                src="https://images.unsplash.com/photo-1548013146-72479768bada?w=800"
+                src={mahiyanganaya4}
                 alt="Ceylon D Tour Mahiyanganaya experience"
               />
             </div>
