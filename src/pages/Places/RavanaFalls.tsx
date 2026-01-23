@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react';
 import './Sigiriya.css';
-
+import ravana1 from '../../img/webp/ravanaella1.webp';
+import ravana2 from '../../img/webp/ravanaella2.webp';
+import ravana3 from '../../img/webp/ravanaella3.webp';
+import ravana4 from '../../img/webp/ravanaella4.webp';
 const RavanaFalls: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -9,7 +12,7 @@ const RavanaFalls: React.FC = () => {
   return (
     <div className="destination-page">
       <section className="dest-hero">
-        <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=1600" alt="Ravana Falls" />
+        <img src={ravana1} alt="Ravana Falls" />
         <div className="dest-badge">Ravana Falls</div>
       </section>
 
@@ -18,7 +21,7 @@ const RavanaFalls: React.FC = () => {
           <div className="dest-main-section">
             <div className="dest-left">
               <img
-                src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=800"
+                src={ravana2}
                 alt="Ravana Falls"
               />
             </div>
@@ -66,7 +69,7 @@ const RavanaFalls: React.FC = () => {
             </div>
             <div className="dest-bottom-right">
               <img
-                src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=800"
+                src={ravana3}
                 alt="Ravana Falls View"
               />
             </div>
@@ -76,7 +79,7 @@ const RavanaFalls: React.FC = () => {
           <div className="dest-main-section" style={{ marginTop: '4rem' }}>
             <div className="dest-left">
               <img
-                src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=800"
+                src={ravana4}
                 alt="Ceylon D Tour Ravana Falls experience"
               />
             </div>
