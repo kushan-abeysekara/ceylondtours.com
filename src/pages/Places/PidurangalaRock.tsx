@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
 import './Sigiriya.css';
+import pidurangala1 from '../../img/webp/pidurangala1.webp';
+import pidurangala2 from '../../img/webp/pidurangala2.webp';
+import pidurangala3 from '../../img/webp/pidurangala3.webp';
+import pidurangala4 from '../../img/webp/pidurangala4.webp';
 
 const PidurangalaRock: React.FC = () => {
   useEffect(() => {
@@ -9,7 +13,7 @@ const PidurangalaRock: React.FC = () => {
   return (
     <div className="destination-page">
       <section className="dest-hero">
-        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600" alt="Pidurangala Rock" />
+        <img src={pidurangala1} alt="Pidurangala Rock" />
         <div className="dest-badge">Pidurangala Rock</div>
       </section>
 
@@ -18,7 +22,7 @@ const PidurangalaRock: React.FC = () => {
           <div className="dest-main-section">
             <div className="dest-left">
               <img
-                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800"
+                src={pidurangala2}
                 alt="Pidurangala Rock"
               />
             </div>
@@ -66,7 +70,7 @@ const PidurangalaRock: React.FC = () => {
             </div>
             <div className="dest-bottom-right">
               <img
-                src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800"
+                src={pidurangala3}
                 alt="Pidurangala View"
               />
             </div>
@@ -76,7 +80,7 @@ const PidurangalaRock: React.FC = () => {
           <div className="dest-main-section" style={{ marginTop: '4rem' }}>
             <div className="dest-left">
               <img
-                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800"
+                src={pidurangala4}
                 alt="Ceylon D Tour Pidurangala experience"
               />
             </div>
