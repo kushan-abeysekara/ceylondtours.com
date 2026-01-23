@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
 import './Sigiriya.css';
+import kataragama1 from '../../img/Kataragama1.webp';
+import kataragama2 from '../../img/kataragama2.webp';
+import kataragama3 from '../../img/kataragama3.webp';
+import kataragama4 from '../../img/kataragama4.webp';
 
 const Kataragama: React.FC = () => {
   useEffect(() => {
@@ -9,7 +13,7 @@ const Kataragama: React.FC = () => {
   return (
     <div className="destination-page">
       <section className="dest-hero">
-        <img src="https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?w=1600" alt="Kataragama" />
+        <img src={kataragama1} alt="Kataragama" />
         <div className="dest-badge">Kataragama</div>
       </section>
 
@@ -18,7 +22,7 @@ const Kataragama: React.FC = () => {
           <div className="dest-main-section">
             <div className="dest-left">
               <img
-                src="https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?w=800"
+                src={kataragama2}
                 alt="Kataragama Temple"
               />
             </div>
@@ -66,7 +70,7 @@ const Kataragama: React.FC = () => {
             </div>
             <div className="dest-bottom-right">
               <img
-                src="https://images.unsplash.com/photo-1548013146-72479768bada?w=800"
+                src={kataragama3}
                 alt="Kataragama Rituals"
               />
             </div>
@@ -76,7 +80,7 @@ const Kataragama: React.FC = () => {
           <div className="dest-main-section" style={{ marginTop: '4rem' }}>
             <div className="dest-left">
               <img
-                src="https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?w=800"
+                src={kataragama4}
                 alt="Ceylon D Tour Kataragama experience"
               />
             </div>

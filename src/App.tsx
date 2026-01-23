@@ -45,7 +45,7 @@ import Badulla from './pages/Places/Badulla';
 import Hatton from './pages/Places/Hatton';
 import Matara from './pages/Places/Matara';
 import Hambantota from './pages/Places/Hambantota';
-import Kataragama from './pages/Places/Kataragama';
+import Kataragama from './pages/Places/kataragama';
 import Colombo from './pages/Places/Colombo';
 
 // Import components

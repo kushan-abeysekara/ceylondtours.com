@@ -409,7 +409,7 @@ const Destinations = () => {
         'Professional guides',
         'Exciting and smooth travel experience'
       ],
-      image: require('../img/destination_kithulgala.webp'),
+      image: require('../img/destination_kithulgala.jpg'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },
@@ -630,7 +630,7 @@ const Destinations = () => {
         'Peaceful spiritual atmosphere',
         'Comfortable arrangements'
       ],
-      image: require('../img/destination_kataragama.webp'),
+      image: require('../img/kataragama3.webp'),
       icons: [
         { icon: '🚗', label: 'Land Trip' },
         { icon: '📅', label: '2 Days' },

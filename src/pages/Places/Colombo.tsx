@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
 import './Sigiriya.css';
+import colombo1 from '../../img/colombo1.webp';
+import colombo2 from '../../img/colombo2.webp';
+import colombo3 from '../../img/colombo3.webp';
+import colombo4 from '../../img/colombo4.webp';
 
 const Colombo: React.FC = () => {
   useEffect(() => {
@@ -9,7 +13,7 @@ const Colombo: React.FC = () => {
   return (
     <div className="destination-page">
       <section className="dest-hero">
-        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600" alt="Colombo" />
+        <img src={colombo1} alt="Colombo" />
         <div className="dest-badge">Colombo</div>
       </section>
 
@@ -18,7 +22,7 @@ const Colombo: React.FC = () => {
           <div className="dest-main-section">
             <div className="dest-left">
               <img
-                src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800"
+                src={colombo3}
                 alt="Colombo City"
               />
             </div>
@@ -66,7 +70,7 @@ const Colombo: React.FC = () => {
             </div>
             <div className="dest-bottom-right">
               <img
-                src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800"
+                src={colombo2}
                 alt="Colombo Skyline"
               />
             </div>
@@ -76,7 +80,7 @@ const Colombo: React.FC = () => {
           <div className="dest-main-section" style={{ marginTop: '4rem' }}>
             <div className="dest-left">
               <img
-                src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800"
+                src={colombo4}
                 alt="Ceylon D Tour Colombo experience"
               />
             </div>

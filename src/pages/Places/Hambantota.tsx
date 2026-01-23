@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
 import './Sigiriya.css';
+import hambantota1 from '../../img/webp/hambanthota1.webp';
+import hambantota2 from '../../img/webp/hambanthota2.webp';
+import hambantota3 from '../../img/webp/hambanthota3.webp';
+import hambantota4 from '../../img/webp/hambanthota4.webp'; 
 
 const Hambantota: React.FC = () => {
   useEffect(() => {
@@ -9,7 +13,7 @@ const Hambantota: React.FC = () => {
   return (
     <div className="destination-page">
       <section className="dest-hero">
-        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600" alt="Hambantota" />
+        <img src={hambantota1} alt="Hambantota" />
         <div className="dest-badge">Hambantota</div>
       </section>
 
@@ -18,7 +22,7 @@ const Hambantota: React.FC = () => {
           <div className="dest-main-section">
             <div className="dest-left">
               <img
-                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800"
+                src={hambantota2}
                 alt="Hambantota"
               />
             </div>
@@ -66,7 +70,7 @@ const Hambantota: React.FC = () => {
             </div>
             <div className="dest-bottom-right">
               <img
-                src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800"
+                src={hambantota3}
                 alt="Hambantota Development"
               />
             </div>
@@ -76,7 +80,7 @@ const Hambantota: React.FC = () => {
           <div className="dest-main-section" style={{ marginTop: '4rem' }}>
             <div className="dest-left">
               <img
-                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800"
+                src={hambantota4}
                 alt="Ceylon D Tour Hambantota experience"
               />
             </div>
