@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
 import './Sigiriya.css';
+import nuwara1 from '../../img/webp/nuwaraeliya1.webp';
+import nuwara2 from '../../img/webp/nuwaraeliya2.webp';
+import nuwara3 from '../../img/webp/nuwaraeliya3.webp';
+import nuwara4 from '../../img/webp/nuwaraeliya4.webp';
 
 const NuwaraEliya = () => {
   useEffect(() => {
@@ -10,7 +14,7 @@ const NuwaraEliya = () => {
     <div className="destination-page">
       {/* Hero Section */}
       <section className="dest-hero">
-        <img src={require('../../img/nuwra eliya 1.webp')} alt="Nuwara Eliya" />
+        <img src={nuwara1} alt="Nuwara Eliya" />
         <div className="dest-badge">Nuwara Eliya</div>
       </section>
 
@@ -19,7 +23,7 @@ const NuwaraEliya = () => {
         <div className="dest-container">
           <div className="dest-main-section">
             <div className="dest-left">
-              <img src={require('../../img/nuwra eliya 3.webp')} alt="Nuwara Eliya tea gardens" />
+              <img src={nuwara2} alt="Nuwara Eliya tea gardens" />
             </div>
             <div className="dest-right">
               <h1 className="dest-title">Discover Nuwara Eliya</h1>
@@ -88,14 +92,14 @@ const NuwaraEliya = () => {
               </p>
             </div>
             <div className="dest-bottom-right">
-              <img src={require('../../img/nuwra eliya 2.webp')} alt="Nuwara Eliya landscape" />
+              <img src={nuwara3} alt="Nuwara Eliya landscape" />
             </div>
           </div>
 
           {/* Ceylon D Tour Section */}
           <div className="dest-main-section" style={{ marginTop: '4rem' }}>
             <div className="dest-left">
-              <img src={require('../../img/nuwra eliya 3.webp')} alt="Ceylon D Tour Nuwara Eliya experience" />
+              <img src={nuwara4} alt="Ceylon D Tour Nuwara Eliya experience" />
             </div>
             <div className="dest-right">
               <p className="dest-description">

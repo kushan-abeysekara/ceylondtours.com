@@ -1,5 +1,10 @@
 import React, { useEffect } from 'react';
 import './Sigiriya.css';
+import kandy1 from '../../img/webp/kandy1.webp';
+import kandy2 from '../../img/webp/kandy2.webp';
+import kandy3 from '../../img/webp/kandy3.webp';
+import kandy4 from '../../img/webp/kandy4.webp';
+import kandy from '../../img/webp/slider1.webp';
 
 const Kandy = () => {
   useEffect(() => {
@@ -10,7 +15,7 @@ const Kandy = () => {
     <div className="destination-page">
       {/* Hero Section */}
       <section className="dest-hero">
-        <img src={require('../../img/webp/slider1.webp')} alt="Kandy" />
+        <img src={kandy} alt="Kandy" />
         <div className="dest-badge">Kandy</div>
       </section>
 
@@ -19,7 +24,7 @@ const Kandy = () => {
         <div className="dest-container">
           <div className="dest-main-section">
             <div className="dest-left">
-              <img src={require('../../img/webp/kandy1.webp')} alt="Kandy culture" />
+              <img src={kandy2} alt="Kandy culture" />
             </div>
             <div className="dest-right">
               <h1 className="dest-title">Discover Kandy</h1>
@@ -88,14 +93,14 @@ const Kandy = () => {
               </p>
             </div>
             <div className="dest-bottom-right">
-              <img src={require('../../img/kandy 3.webp')} alt="Kandy city" />
+              <img src={kandy3} alt="Kandy city" />
             </div>
           </div>
 
           {/* Ceylon D Tour Section */}
           <div className="dest-main-section" style={{ marginTop: '4rem' }}>
             <div className="dest-left">
-              <img src={require('../../img/webp/kandy2.webp')} alt="Ceylon D Tour Kandy experience" />
+              <img src={kandy4} alt="Ceylon D Tour Kandy experience" />
             </div>
             <div className="dest-right">
               <p className="dest-description">

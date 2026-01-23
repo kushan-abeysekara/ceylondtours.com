@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
 import './Sigiriya.css';
+import ella1 from '../../img/webp/ella1.webp';
+import ella2 from '../../img/webp/ella2.webp';
+import ella3 from '../../img/webp/ella3.webp';
+import ella4 from '../../img/webp/ella4.webp';
 
 const Ella = () => {
   useEffect(() => {
@@ -10,7 +14,7 @@ const Ella = () => {
     <div className="destination-page">
       {/* Hero Section */}
       <section className="dest-hero">
-        <img src={require('../../img/ella 1.webp')} alt="Ella" />
+        <img src={ella1} alt="Ella" />
         <div className="dest-badge">Ella</div>
       </section>
 
@@ -19,7 +23,7 @@ const Ella = () => {
         <div className="dest-container">
           <div className="dest-main-section">
             <div className="dest-left">
-              <img src={require('../../img/ella 2.webp')} alt="Ella mountains" />
+              <img src={ella2} alt="Ella mountains" />
             </div>
             <div className="dest-right">
               <h1 className="dest-title">Discover Ella</h1>
@@ -88,14 +92,14 @@ const Ella = () => {
               </p>
             </div>
             <div className="dest-bottom-right">
-              <img src={require('../../img/ella 3.webp')} alt="Ella landscape" />
+              <img src={ella3} alt="Ella landscape" />
             </div>
           </div>
 
           {/* Ceylon D Tour Section */}
           <div className="dest-main-section" style={{ marginTop: '4rem' }}>
             <div className="dest-left">
-              <img src={require('../../img/ella 2.webp')} alt="Ceylon D Tour Ella experience" />
+              <img src={ella4} alt="Ceylon D Tour Ella experience" />
             </div>
             <div className="dest-right">
               <p className="dest-description">
