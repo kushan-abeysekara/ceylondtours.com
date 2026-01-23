@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react';
 import './Sigiriya.css';
-
+import udawalawe1 from '../../img/webp/udawalawa1.webp';
+import udawalawe2 from '../../img/webp/udawalawa2.webp';
+import udawalawe3 from '../../img/webp/udawalawa3.webp';
+import udawalawe4 from '../../img/webp/udawalawa4.webp';
 const UdawalaweNationalPark: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -9,7 +12,7 @@ const UdawalaweNationalPark: React.FC = () => {
   return (
     <div className="destination-page">
       <section className="dest-hero">
-        <img src="https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=1600" alt="Udawalawe National Park" />
+        <img src={udawalawe1} alt="Udawalawe National Park" />
         <div className="dest-badge">Udawalawe National Park</div>
       </section>
 
@@ -18,7 +21,7 @@ const UdawalaweNationalPark: React.FC = () => {
           <div className="dest-main-section">
             <div className="dest-left">
               <img
-                src="https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=800"
+                src={udawalawe2}
                 alt="Udawalawe Elephants"
               />
             </div>
@@ -66,7 +69,7 @@ const UdawalaweNationalPark: React.FC = () => {
             </div>
             <div className="dest-bottom-right">
               <img
-                src="https://images.unsplash.com/photo-1551799651-48e8ad90065b?w=800"
+                src={udawalawe3}
                 alt="Udawalawe Wildlife"
               />
             </div>
@@ -76,7 +79,7 @@ const UdawalaweNationalPark: React.FC = () => {
           <div className="dest-main-section" style={{ marginTop: '4rem' }}>
             <div className="dest-left">
               <img
-                src="https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=800"
+                src={udawalawe4}
                 alt="Ceylon D Tour Udawalawe experience"
               />
             </div>
