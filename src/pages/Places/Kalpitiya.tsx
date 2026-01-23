@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
 import './Sigiriya.css';
+import kalpitiya1 from '../../img/webp/kalpitiya1.webp';
+import kalpitiya2 from '../../img/webp/kalpitiya2.webp';
+import kalpitiya3 from '../../img/webp/kalpitiya3.webp';
+import kalpitiya4 from '../../img/webp/kalpitiya4.webp';
 
 const Kalpitiya: React.FC = () => {
   useEffect(() => {
@@ -9,7 +13,7 @@ const Kalpitiya: React.FC = () => {
   return (
     <div className="destination-page">
       <section className="dest-hero">
-        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1600" alt="Kalpitiya" />
+        <img src={kalpitiya1} alt="Kalpitiya" />
         <div className="dest-badge">Kalpitiya</div>
       </section>
 
@@ -18,7 +22,7 @@ const Kalpitiya: React.FC = () => {
           <div className="dest-main-section">
             <div className="dest-left">
               <img
-                src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800"
+                src={kalpitiya2}
                 alt="Kalpitiya Coast"
               />
             </div>
@@ -66,7 +70,7 @@ const Kalpitiya: React.FC = () => {
             </div>
             <div className="dest-bottom-right">
               <img
-                src="https://images.unsplash.com/photo-1530541930197-ff16ac917b0e?w=800"
+                src={kalpitiya3}
                 alt="Kalpitiya Dolphins"
               />
             </div>
@@ -76,7 +80,7 @@ const Kalpitiya: React.FC = () => {
           <div className="dest-main-section" style={{ marginTop: '4rem' }}>
             <div className="dest-left">
               <img
-                src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800"
+                src={kalpitiya4}
                 alt="Ceylon D Tour Kalpitiya experience"
               />
             </div>
