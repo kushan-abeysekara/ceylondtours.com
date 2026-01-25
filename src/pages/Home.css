@@ -102,11 +102,26 @@
   display: flex;
   align-items: center;
   gap: 0.8rem;
-  flex: 1;
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.search-field:first-child {
+  justify-content: flex-end;
+}
+
+.search-field:first-child .search-input-group {
+  align-items: flex-end;
+}
+
+.search-field:first-child .search-input-group label,
+.search-field:first-child .search-input-group input,
+.search-field:first-child .search-input-group input::placeholder {
+  text-align: right;
 }
 
 .search-field:last-child {
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .search-icon-svg {
