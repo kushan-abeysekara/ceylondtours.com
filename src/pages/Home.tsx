@@ -10,6 +10,10 @@ import { link } from 'node:fs';
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [currentCardPair, setCurrentCardPair] = useState(0);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
+  const testimonialRef = React.useRef<HTMLDivElement>(null);
 
   const heroImages = [
     require('../img/slider1.jpg'),
@@ -194,6 +198,38 @@ const Home = () => {
     }
   ];
 
+  // Mouse drag handlers for testimonials
+  const handleMouseDown = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (testimonialRef.current) {
+      setIsDragging(true);
+      setStartX(e.pageX - testimonialRef.current.offsetLeft);
+      setScrollLeft(testimonialRef.current.scrollLeft);
+      testimonialRef.current.style.cursor = 'grabbing';
+    }
+  };
+
+  const handleMouseLeave = () => {
+    setIsDragging(false);
+    if (testimonialRef.current) {
+      testimonialRef.current.style.cursor = 'grab';
+    }
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+    if (testimonialRef.current) {
+      testimonialRef.current.style.cursor = 'grab';
+    }
+  };
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!isDragging || !testimonialRef.current) return;
+    e.preventDefault();
+    const x = e.pageX - testimonialRef.current.offsetLeft;
+    const walk = (x - startX) * 2; // Scroll speed multiplier
+    testimonialRef.current.scrollLeft = scrollLeft - walk;
+  };
+
   return (
     <div className="home">
       {/* Hero Section */}
@@ -325,7 +361,14 @@ const Home = () => {
         <div className="container">
           <h2 className="section-title">What our clients say about us</h2>
           
-          <div className="testimonials-carousel">
+          <div 
+            className="testimonials-carousel"
+            ref={testimonialRef}
+            onMouseDown={handleMouseDown}
+            onMouseLeave={handleMouseLeave}
+            onMouseUp={handleMouseUp}
+            onMouseMove={handleMouseMove}
+          >
             <div className="testimonials-track">
               {[...testimonials, ...testimonials, ...testimonials].map((testimonial, index) => (
                 <div key={`testimonial-${index}`} className="testimonial-slide">

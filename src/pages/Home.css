@@ -400,9 +400,37 @@
 .testimonials-carousel {
   position: relative;
   width: 100%;
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
   margin-top: 3rem;
   padding: 0 1rem 2rem 1rem;
+  cursor: grab;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e0 #f8f9fa;
+}
+
+.testimonials-carousel::-webkit-scrollbar {
+  height: 8px;
+}
+
+.testimonials-carousel::-webkit-scrollbar-track {
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+.testimonials-carousel::-webkit-scrollbar-thumb {
+  background: #cbd5e0;
+  border-radius: 10px;
+}
+
+.testimonials-carousel::-webkit-scrollbar-thumb:hover {
+  background: #a0aec0;
+}
+
+.testimonials-carousel:active {
+  cursor: grabbing;
+  scroll-behavior: auto;
 }
 
 .testimonials-track {
@@ -412,6 +440,10 @@
   animation: scroll-left 120s linear infinite;
 }
 
+.testimonials-carousel:hover .testimonials-track {
+  animation-play-state: paused;
+}
+
 @keyframes scroll-left {
   0% {
     transform: translateX(0);
@@ -419,10 +451,6 @@
   100% {
     transform: translateX(calc(-10 * (380px + 1.5rem)));
   }
-}
-
-.testimonials-track:hover {
-  animation-play-state: paused;
 }
 
 .testimonial-slide {
