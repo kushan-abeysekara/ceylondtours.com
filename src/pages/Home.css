@@ -86,12 +86,12 @@
 .search-card {
   background: white;
   border-radius: 16px;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 1.5rem 1.5rem 0.5rem;
   display: flex;
   align-items: center;
   gap: 1.5rem;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
-  max-width: 900px;
+  max-width: 750px;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -665,11 +665,36 @@
     transform: translateX(-50%);
     max-width: 90%;
     width: 100%;
-    margin: 0;
+    margin: 1rem auto;
   }
   
   .search-field {
     width: 100%;
+    justify-content: center;
+  }
+  
+  .search-field:first-child,
+  .search-field:last-child {
+    justify-content: center;
+  }
+  
+  .search-field:first-child .search-input-group {
+    align-items: center;
+  }
+  
+  .search-field:first-child .search-input-group label,
+  .search-field:first-child .search-input-group input,
+  .search-field:first-child .search-input-group input::placeholder {
+    text-align: center;
+  }
+  
+  .search-input-group {
+    align-items: center;
+    text-align: center;
+  }
+  
+  .search-input-group input {
+    text-align: center;
   }
   
   .search-divider {
@@ -677,7 +702,14 @@
     height: 1px;
   }
   
-  .search-button {
+  .navbar-actions {
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .whatsapp-btn,
+  .book-now-btn {
     width: 100%;
     justify-content: center;
   }
