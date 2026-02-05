@@ -230,6 +230,26 @@ const Home = () => {
     testimonialRef.current.scrollLeft = scrollLeft - walk;
   };
 
+  // Touch event handlers for mobile
+  const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
+    if (testimonialRef.current) {
+      setIsDragging(true);
+      setStartX(e.touches[0].pageX - testimonialRef.current.offsetLeft);
+      setScrollLeft(testimonialRef.current.scrollLeft);
+    }
+  };
+
+  const handleTouchEnd = () => {
+    setIsDragging(false);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
+    if (!isDragging || !testimonialRef.current) return;
+    const x = e.touches[0].pageX - testimonialRef.current.offsetLeft;
+    const walk = (x - startX) * 2; // Scroll speed multiplier
+    testimonialRef.current.scrollLeft = scrollLeft - walk;
+  };
+
   return (
     <div className="home">
       {/* Hero Section */}
@@ -368,6 +388,9 @@ const Home = () => {
             onMouseLeave={handleMouseLeave}
             onMouseUp={handleMouseUp}
             onMouseMove={handleMouseMove}
+            onTouchStart={handleTouchStart}
+            onTouchEnd={handleTouchEnd}
+            onTouchMove={handleTouchMove}
           >
             <div className="testimonials-track">
               {[...testimonials, ...testimonials, ...testimonials].map((testimonial, index) => (

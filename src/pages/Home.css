@@ -1,5 +1,6 @@
 .home {
   min-height: 100vh;
+  position: relative;
 }
 
 /* Hero Section */
@@ -706,6 +707,7 @@
   .testimonial-slide {
     min-width: calc(100% - 2rem);
     max-width: calc(100% - 2rem);
+    scroll-snap-align: center;
   }
   
   .testimonials-track {
@@ -715,7 +717,15 @@
   
   .testimonials-carousel {
     padding: 0 1rem 1rem 1rem;
-    overflow: visible;
+    overflow-x: scroll;
+    overflow-y: visible;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .testimonials-carousel:hover .testimonials-track,
+  .testimonials-carousel:active .testimonials-track {
+    animation-play-state: paused;
   }
   
   .testimonials-section {
