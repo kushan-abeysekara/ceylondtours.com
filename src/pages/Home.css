@@ -196,13 +196,13 @@
   background: #e0e0e0;
 }
 
-.navbar-actions {
+.search-card .navbar-actions {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.whatsapp-btn {
+.search-card .whatsapp-btn {
   background: #25D366;
   color: white;
   border: none;
@@ -219,18 +219,18 @@
   font-size: 0.9rem;
 }
 
-.whatsapp-btn:hover {
+.search-card .whatsapp-btn:hover {
   background: #128C7E;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
 }
 
-.whatsapp-btn svg {
+.search-card .whatsapp-btn svg {
   width: 20px;
   height: 20px;
 }
 
-.book-now-btn {
+.search-card .book-now-btn {
   background: #1a1a1a;
   color: white;
   border: none;
@@ -247,7 +247,7 @@
   font-size: 0.9rem;
 }
 
-.book-now-btn:hover {
+.search-card .book-now-btn:hover {
   background: #333;
   transform: translateY(-2px);
 }
@@ -702,14 +702,14 @@
     height: 1px;
   }
   
-  .navbar-actions {
+  .search-card .navbar-actions {
     width: 100%;
     flex-direction: column;
     gap: 1rem;
   }
   
-  .whatsapp-btn,
-  .book-now-btn {
+  .search-card .whatsapp-btn,
+  .search-card .book-now-btn {
     width: 100%;
     justify-content: center;
   }
