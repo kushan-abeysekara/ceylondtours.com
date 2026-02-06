@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Sigiriya.css';
 import yala1 from '../../img/webp/yala1.webp';
 import yala2 from '../../img/webp/yala2.webp';
@@ -109,16 +109,14 @@ const YalaNationalPark = () => {
               </p>
             </div>
           </div>
-      {/* Destination Suggestions */}
-      <DestinationSuggestions 
-        currentDestination="YalaNationalPark"
-        suggestions={getRandomSuggestions('/places/yala-national-park', 4)}
-      />
 
-        </div>
+          {/* Destination Suggestions */}
+          <DestinationSuggestions 
+            currentDestination="YalaNationalPark"
+            suggestions={getRandomSuggestions('/places/yala-national-park', 4)}
+          />
+        </div> {/* End of dest-container */}
       </section>
-
-    
     </div>
   );
 };

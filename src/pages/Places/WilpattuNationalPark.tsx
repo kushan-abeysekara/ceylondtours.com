@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Sigiriya.css';
 import wilpattu1 from '../../img/webp/wilapaththu1.webp';
 import wilpattu2 from '../../img/webp/wilapaththu2.webp';
@@ -92,16 +92,14 @@ const WilpattuNationalPark: React.FC = () => {
               </p>
             </div>
           </div>
-      {/* Destination Suggestions */}
-      <DestinationSuggestions 
-        currentDestination="WilpattuNationalPark"
-        suggestions={getRandomSuggestions('/places/wilpattu-national-park', 4)}
-      />
 
-        </div>
+          {/* Destination Suggestions */}
+          <DestinationSuggestions 
+            currentDestination="WilpattuNationalPark"
+            suggestions={getRandomSuggestions('/places/wilpattu-national-park', 4)}
+          />
+        </div> {/* End of dest-container */}
       </section>
-
-    
     </div>
   );
 };

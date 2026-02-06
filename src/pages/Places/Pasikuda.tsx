@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Sigiriya.css';
 import pasikuda1 from '../../img/webp/pasikuda1.webp';
 import pasikuda2 from '../../img/webp/pasikuda2.webp';
@@ -92,16 +92,14 @@ const Pasikuda: React.FC = () => {
               </p>
             </div>
           </div>
-      {/* Destination Suggestions */}
-      <DestinationSuggestions 
-        currentDestination="Pasikuda"
-        suggestions={getRandomSuggestions('/places/pasikuda', 4)}
-      />
 
-        </div>
+          {/* Destination Suggestions */}
+          <DestinationSuggestions 
+            currentDestination="Pasikuda"
+            suggestions={getRandomSuggestions('/places/pasikuda', 4)}
+          />
+        </div> {/* End of dest-container */}
       </section>
-
-    
     </div>
   );
 };

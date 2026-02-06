@@ -1,8 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Destinations.css';
 import DestinationDetail from '../components/DestinationDetail';
+import SearchBar from '../components/SearchBar';
 
 const Destinations = () => {
+  const contentRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     // Scroll to top when component mounts
     window.scrollTo(0, 0);
@@ -659,21 +662,29 @@ const Destinations = () => {
 
   return (
     <div className="destinations-page">
-      {/* Hero Section */}
-      <section className="destinations-hero">
-        <div className="destinations-hero-overlay">
-          <h1 className="destinations-hero-title">Destinations</h1>
-        </div>
-      </section>
+      <SearchBar 
+        contentRef={contentRef} 
+        placeholder="Search destinations, places, experiences..."
+        buttonPosition="bottom-right"
+      />
+      
+      <div ref={contentRef}>
+        {/* Hero Section */}
+        <section className="destinations-hero">
+          <div className="destinations-hero-overlay">
+            <h1 className="destinations-hero-title">Destinations</h1>
+          </div>
+        </section>
 
-      {/* Destinations List */}
-      <section className="destinations-list">
-        <div className="destinations-container">
-          {destinations.map(destination => (
-            <DestinationDetail key={destination.id} {...destination} />
-          ))}
-        </div>
-      </section>
+        {/* Destinations List */}
+        <section className="destinations-list">
+          <div className="destinations-container">
+            {destinations.map(destination => (
+              <DestinationDetail key={destination.id} {...destination} />
+            ))}
+          </div>
+        </section>
+      </div>
     </div>
   );
 };

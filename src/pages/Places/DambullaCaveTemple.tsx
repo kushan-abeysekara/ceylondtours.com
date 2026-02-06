@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Sigiriya.css';
 import dambulla1 from '../../img/webp/dambulla1.webp';
 import dambulla2 from '../../img/webp/dambulla2.webp';
@@ -109,16 +109,14 @@ const DambullaCaveTemple = () => {
               </p>
             </div>
           </div>
-      {/* Destination Suggestions */}
-      <DestinationSuggestions 
-        currentDestination="DambullaCaveTemple"
-        suggestions={getRandomSuggestions('/places/dambulla-cave-temple', 4)}
-      />
 
-        </div>
+          {/* Destination Suggestions */}
+          <DestinationSuggestions 
+            currentDestination="DambullaCaveTemple"
+            suggestions={getRandomSuggestions('/places/dambulla-cave-temple', 4)}
+          />
+        </div> {/* End of dest-container */}
       </section>
-
-    
     </div>
   );
 };

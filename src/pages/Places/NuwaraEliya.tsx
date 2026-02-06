@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Sigiriya.css';
 import nuwara1 from '../../img/webp/nuwaraeliya1.webp';
 import nuwara2 from '../../img/webp/nuwaraeliya2.webp';
@@ -109,16 +109,14 @@ const NuwaraEliya = () => {
               </p>
             </div>
           </div>
-      {/* Destination Suggestions */}
-      <DestinationSuggestions 
-        currentDestination="NuwaraEliya"
-        suggestions={getRandomSuggestions('/places/nuwara-eliya', 4)}
-      />
 
-        </div>
+          {/* Destination Suggestions */}
+          <DestinationSuggestions 
+            currentDestination="NuwaraEliya"
+            suggestions={getRandomSuggestions('/places/nuwara-eliya', 4)}
+          />
+        </div> {/* End of dest-container */}
       </section>
-
-    
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Sigiriya.css';
 import negombo1 from '../../img/webp/negombo1.webp';
 import negombo2 from '../../img/webp/negombo2.webp';
@@ -91,16 +91,14 @@ const Negombo: React.FC = () => {
               </p>
             </div>
           </div>
-      {/* Destination Suggestions */}
-      <DestinationSuggestions 
-        currentDestination="Negombo"
-        suggestions={getRandomSuggestions('/places/negombo', 4)}
-      />
 
-        </div>
+          {/* Destination Suggestions */}
+          <DestinationSuggestions 
+            currentDestination="Negombo"
+            suggestions={getRandomSuggestions('/places/negombo', 4)}
+          />
+        </div> {/* End of dest-container */}
       </section>
-
-    
     </div>
   );
 };

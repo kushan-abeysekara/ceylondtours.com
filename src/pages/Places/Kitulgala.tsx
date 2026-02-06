@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Sigiriya.css';
 import kitulgala1 from '../../img/webp/kithulgala1.webp';
 import kitulgala2 from '../../img/webp/kithulgala2.webp';
@@ -92,16 +92,14 @@ const Kitulgala: React.FC = () => {
               </p>
             </div>
           </div>
-      {/* Destination Suggestions */}
-      <DestinationSuggestions 
-        currentDestination="Kitulgala"
-        suggestions={getRandomSuggestions('/places/kitulgala', 4)}
-      />
 
-        </div>
+          {/* Destination Suggestions */}
+          <DestinationSuggestions 
+            currentDestination="Kitulgala"
+            suggestions={getRandomSuggestions('/places/kitulgala', 4)}
+          />
+        </div> {/* End of dest-container */}
       </section>
-
-    
     </div>
   );
 };

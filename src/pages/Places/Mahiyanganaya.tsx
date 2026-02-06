@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Sigiriya.css';
 import mahiyanganaya1 from '../../img/webp/mahiyanganaya1.webp'; 
 import mahiyanganaya2 from '../../img/webp/mahiyanganaya2.webp';
@@ -97,11 +97,8 @@ const Mahiyanganaya: React.FC = () => {
         currentDestination="Mahiyanganaya"
         suggestions={getRandomSuggestions('/places/mahiyanganaya', 4)}
       />
-
-        </div>
+        </div> {/* End of dest-container */}
       </section>
-
-    
     </div>
   );
 };

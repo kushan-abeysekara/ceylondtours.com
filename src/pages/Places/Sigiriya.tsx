@@ -1,15 +1,21 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Sigiriya.css';
 import DestinationSuggestions from '../../components/DestinationSuggestions';
 import { getRandomSuggestions } from '../../data/destinationsData';
+import SearchBar from '../../components/SearchBar';
 
 const Sigiriya = () => {
+  const contentRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="destination-page">
+      <SearchBar contentRef={contentRef} placeholder="Search Sigiriya information..." />
+      
+      <div ref={contentRef}>
       {/* Hero Section */}
       <section className="dest-hero">
         <img src={require('../../img/sigiriya_head.webp')} alt="Sigiriya" />
@@ -114,6 +120,7 @@ const Sigiriya = () => {
         suggestions={getRandomSuggestions('/places/sigiriya', 4)}
       />
   
+      </div>
     </div>
   );
 };

@@ -1,8 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './Contact.css';
 import ContactInfoCard from '../components/ContactInfoCard';
+import SearchBar from '../components/SearchBar';
 
 const Contact = () => {
+  const contentRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     // Scroll to top when component mounts
     window.scrollTo(0, 0);
@@ -71,8 +74,15 @@ const Contact = () => {
 
   return (
     <div className="contact">
-      {/* Hero Section */}
-      <section className="contact-hero">
+      <SearchBar 
+        contentRef={contentRef} 
+        placeholder="Search contact info, locations..."
+        buttonPosition="bottom-right"
+      />
+      
+      <div ref={contentRef}>
+        {/* Hero Section */}
+        <section className="contact-hero">
         <div className="contact-hero-overlay">
           <h1 className="contact-hero-title">Contact Us</h1>
         </div>
@@ -220,6 +230,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
+      </div>
     </div>
   );
 };

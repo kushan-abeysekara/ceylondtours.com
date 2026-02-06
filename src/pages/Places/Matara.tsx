@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Sigiriya.css';
 import matara1 from '../../img/webp/matara1.webp';
 import matara2 from '../../img/webp/matara2.webp';
@@ -92,16 +92,14 @@ const Matara: React.FC = () => {
               </p>
             </div>
           </div>
-      {/* Destination Suggestions */}
-      <DestinationSuggestions 
-        currentDestination="Matara"
-        suggestions={getRandomSuggestions('/places/matara', 4)}
-      />
 
-        </div>
+          {/* Destination Suggestions */}
+          <DestinationSuggestions 
+            currentDestination="Matara"
+            suggestions={getRandomSuggestions('/places/matara', 4)}
+          />
+        </div> {/* End of dest-container */}
       </section>
-
-    
     </div>
   );
 };

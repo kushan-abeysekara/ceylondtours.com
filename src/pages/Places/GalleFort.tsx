@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Sigiriya.css';
 import galle1 from '../../img/webp/galle1.webp';
 import galle2 from '../../img/webp/galle2.webp';
@@ -109,16 +109,14 @@ const GalleFort = () => {
               </p>
             </div>
           </div>
-      {/* Destination Suggestions */}
-      <DestinationSuggestions 
-        currentDestination="GalleFort"
-        suggestions={getRandomSuggestions('/places/galle-fort', 4)}
-      />
 
-        </div>
+          {/* Destination Suggestions */}
+          <DestinationSuggestions 
+            currentDestination="GalleFort"
+            suggestions={getRandomSuggestions('/places/galle-fort', 4)}
+          />
+        </div> {/* End of dest-container */}
       </section>
-
-    
     </div>
   );
 };

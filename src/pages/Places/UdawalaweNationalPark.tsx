@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Sigiriya.css';
 import udawalawe1 from '../../img/webp/udawalawa1.webp';
 import udawalawe2 from '../../img/webp/udawalawa2.webp';
@@ -91,16 +91,14 @@ const UdawalaweNationalPark: React.FC = () => {
               </p>
             </div>
           </div>
-      {/* Destination Suggestions */}
-      <DestinationSuggestions 
-        currentDestination="UdawalaweNationalPark"
-        suggestions={getRandomSuggestions('/places/udawalawe-national-park', 4)}
-      />
 
-        </div>
+          {/* Destination Suggestions */}
+          <DestinationSuggestions 
+            currentDestination="UdawalaweNationalPark"
+            suggestions={getRandomSuggestions('/places/udawalawe-national-park', 4)}
+          />
+        </div> {/* End of dest-container */}
       </section>
-
-    
     </div>
   );
 };

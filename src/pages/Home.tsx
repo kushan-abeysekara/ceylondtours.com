@@ -5,6 +5,7 @@ import DestinationCard from '../components/DestinationCard';
 import TestimonialCard from '../components/TestimonialCard';
 import FeatureCard from '../components/FeatureCard';
 import MemoriesSection from '../components/MemoriesSection';
+import SearchBar from '../components/SearchBar';
 import { link } from 'node:fs';
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
   const testimonialRef = React.useRef<HTMLDivElement>(null);
+  const contentRef = React.useRef<HTMLDivElement>(null);
 
   const heroImages = [
     require('../img/slider1.jpg'),
@@ -252,8 +254,17 @@ const Home = () => {
 
   return (
     <div className="home">
-      {/* Hero Section */}
-      <section className="hero">
+      {/* Search Bar Component */}
+      <SearchBar 
+        contentRef={contentRef} 
+        placeholder="Search destinations, places, testimonials..."
+        buttonPosition="bottom-right"
+      />
+
+      {/* Main Content Wrapper */}
+      <div ref={contentRef}>
+        {/* Hero Section */}
+        <section className="hero">
         <div className="hero-slideshow">
           {heroImages.map((image, index) => (
             <div
@@ -415,6 +426,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      </div> {/* End of contentRef */}
     </div>
   );
 };

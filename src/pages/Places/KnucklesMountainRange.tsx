@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Sigiriya.css';
 import knuckles1 from '../../img/webp/knuckles1.webp';
 import knuckles2 from '../../img/webp/knuckles2.webp';
@@ -92,16 +92,14 @@ const KnucklesMountainRange: React.FC = () => {
               </p>
             </div>
           </div>
-      {/* Destination Suggestions */}
-      <DestinationSuggestions 
-        currentDestination="KnucklesMountainRange"
-        suggestions={getRandomSuggestions('/places/knuckles-mountain-range', 4)}
-      />
 
-        </div>
+          {/* Destination Suggestions */}
+          <DestinationSuggestions 
+            currentDestination="KnucklesMountainRange"
+            suggestions={getRandomSuggestions('/places/knuckles-mountain-range', 4)}
+          />
+        </div> {/* End of dest-container */}
       </section>
-
-    
     </div>
   );
 };

@@ -1,11 +1,14 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './About.css';
 import ServiceCard from '../components/ServiceCard';
 import TourStats from '../components/TourStats';
 import FAQAccordion from '../components/FAQAccordion';
 import StatsCounter from '../components/StatsCounter';
+import SearchBar from '../components/SearchBar';
 
 const About = () => {
+  const contentRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     // Scroll to top when component mounts
     window.scrollTo(0, 0);
@@ -96,8 +99,15 @@ const About = () => {
 
   return (
     <div className="about">
-      {/* Hero Section */}
-      <section className="about-hero">
+      <SearchBar 
+        contentRef={contentRef} 
+        placeholder="Search about us, services, FAQs..."
+        buttonPosition="bottom-right"
+      />
+      
+      <div ref={contentRef}>
+        {/* Hero Section */}
+        <section className="about-hero">
         <div className="about-hero-overlay">
           <h1 className="about-hero-title">About Us</h1>
         </div>
@@ -236,6 +246,7 @@ const About = () => {
           </div>
         </div>
       </section>
+      </div>
     </div>
   );
 };

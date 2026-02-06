@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Sigiriya.css';
 import kandy1 from '../../img/webp/kandy1.webp';
 import kandy2 from '../../img/webp/kandy2.webp';
@@ -7,14 +7,20 @@ import kandy4 from '../../img/webp/kandy4.webp';
 import kandy from '../../img/webp/slider1.webp';
 import DestinationSuggestions from '../../components/DestinationSuggestions';
 import { getRandomSuggestions } from '../../data/destinationsData';
+import SearchBar from '../../components/SearchBar';
 
 const Kandy = () => {
+  const contentRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="destination-page">
+      <SearchBar contentRef={contentRef} placeholder="Search Kandy information..." />
+      
+      <div ref={contentRef}>
       {/* Hero Section */}
       <section className="dest-hero">
         <img src={kandy} alt="Kandy" />
@@ -119,7 +125,7 @@ const Kandy = () => {
         </div>
       </section>
 
-    
+      </div> {/* End of contentRef */}
     </div>
   );
 };

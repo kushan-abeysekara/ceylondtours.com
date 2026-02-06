@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Sigiriya.css';
 import polonnaruwa1 from '../../img/webp/polonnaruwa1.webp';
 import polonnaruwa2 from '../../img/webp/polonnaruwa2.webp';
@@ -112,11 +112,8 @@ const Polonnaruwa = () => {
         currentDestination="Polonnaruwa"
         suggestions={getRandomSuggestions('/places/polonnaruwa', 4)}
       />
-
-        </div>
+        </div> {/* End of dest-container */}
       </section>
-
-    
     </div>
   );
 };

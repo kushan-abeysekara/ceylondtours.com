@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Sigiriya.css';
 import trincomalee1 from '../../img/webp/trincomalee1.webp';
 import trincomalee2 from '../../img/webp/trincomalee2.webp';
@@ -109,16 +109,14 @@ const Trincomalee = () => {
               </p>
             </div>
           </div>
-      {/* Destination Suggestions */}
-      <DestinationSuggestions 
-        currentDestination="Trincomalee"
-        suggestions={getRandomSuggestions('/places/trincomalee', 4)}
-      />
 
-        </div>
+          {/* Destination Suggestions */}
+          <DestinationSuggestions 
+            currentDestination="Trincomalee"
+            suggestions={getRandomSuggestions('/places/trincomalee', 4)}
+          />
+        </div> {/* End of dest-container */}
       </section>
-
-    
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Sigiriya.css';
 import sinharaja1 from '../../img/webp/sinharaja1.webp';
 import sinharaja2 from '../../img/webp/Sinharaja2.webp';
@@ -92,16 +92,14 @@ const SinharajaForest: React.FC = () => {
               </p>
             </div>
           </div>
-      {/* Destination Suggestions */}
-      <DestinationSuggestions 
-        currentDestination="SinharajaForest"
-        suggestions={getRandomSuggestions('/places/sinharaja-forest', 4)}
-      />
 
-        </div>
+          {/* Destination Suggestions */}
+          <DestinationSuggestions 
+            currentDestination="SinharajaForest"
+            suggestions={getRandomSuggestions('/places/sinharaja-forest', 4)}
+          />
+        </div> {/* End of dest-container */}
       </section>
-
-    
     </div>
   );
 };

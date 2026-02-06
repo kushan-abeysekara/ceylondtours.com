@@ -1,7 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import './Gallery.css';
+import SearchBar from '../components/SearchBar';
 
 const Gallery = () => {
+  const contentRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -45,8 +48,15 @@ const Gallery = () => {
 
   return (
     <div className="gallery">
-      {/* Hero Section */}
-      <section className="gallery-hero">
+      <SearchBar 
+        contentRef={contentRef} 
+        placeholder="Search gallery images..."
+        buttonPosition="bottom-right"
+      />
+      
+      <div ref={contentRef}>
+        {/* Hero Section */}
+        <section className="gallery-hero">
         <div className="gallery-hero-overlay">
           <h1 className="gallery-hero-title">Memories & Happy Travelers</h1>
         </div>
@@ -92,6 +102,7 @@ const Gallery = () => {
           </div>
         </div>
       )}
+      </div>
     </div>
   );
 };

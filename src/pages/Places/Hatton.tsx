@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Sigiriya.css';
 import hatton1 from '../../img/webp/hatton1.webp';
 import hatton2 from '../../img/webp/hatton2.webp';
@@ -92,16 +92,14 @@ const Hatton: React.FC = () => {
               </p>
             </div>
           </div>
-      {/* Destination Suggestions */}
-      <DestinationSuggestions 
-        currentDestination="Hatton"
-        suggestions={getRandomSuggestions('/places/hatton', 4)}
-      />
 
-        </div>
+          {/* Destination Suggestions */}
+          <DestinationSuggestions 
+            currentDestination="Hatton"
+            suggestions={getRandomSuggestions('/places/hatton', 4)}
+          />
+        </div> {/* End of dest-container */}
       </section>
-
-    
     </div>
   );
 };

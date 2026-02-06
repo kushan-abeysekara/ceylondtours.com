@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Sigiriya.css';
 import horton1 from '../../img/webp/hortan1.webp';
 import horton2 from '../../img/webp/hortan2.webp';
@@ -108,16 +108,14 @@ const HortonPlains = () => {
               </p>
             </div>
           </div>
-      {/* Destination Suggestions */}
-      <DestinationSuggestions 
-        currentDestination="HortonPlains"
-        suggestions={getRandomSuggestions('/places/horton-plains', 4)}
-      />
 
-        </div>
+          {/* Destination Suggestions */}
+          <DestinationSuggestions 
+            currentDestination="HortonPlains"
+            suggestions={getRandomSuggestions('/places/horton-plains', 4)}
+          />
+        </div> {/* End of dest-container */}
       </section>
-
-    
     </div>
   );
 };

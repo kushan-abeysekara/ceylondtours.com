@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Sigiriya.css';
 import kataragama1 from '../../img/Kataragama1.webp';
 import DestinationSuggestions from '../../components/DestinationSuggestions';
@@ -92,15 +92,14 @@ const Kataragama: React.FC = () => {
               </p>
             </div>
           </div>
+
+          {/* Destination Suggestions */}
+          <DestinationSuggestions 
+            currentDestination="Kataragama"
+            suggestions={getRandomSuggestions('/places/kataragama', 4)}
+          />
         </div>
       </section>
-
-      {/* Destination Suggestions */}
-      <DestinationSuggestions 
-        currentDestination="Kataragama"
-        suggestions={getRandomSuggestions('/places/kataragama', 4)}
-      />
-    
     </div>
   );
 };

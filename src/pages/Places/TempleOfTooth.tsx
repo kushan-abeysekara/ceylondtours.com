@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Sigiriya.css';
 import DestinationSuggestions from '../../components/DestinationSuggestions';
 import { getRandomSuggestions } from '../../data/destinationsData';
@@ -111,11 +111,8 @@ const TempleOfTooth = () => {
         currentDestination="TempleOfTooth"
         suggestions={getRandomSuggestions('/places/temple-of-tooth', 4)}
       />
-
-        </div>
+        </div> {/* End of dest-container */}
       </section>
-
-      
     </div>
   );
 };

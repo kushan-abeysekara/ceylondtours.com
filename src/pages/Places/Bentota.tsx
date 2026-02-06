@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Sigiriya.css';
 import bentota1 from '../../img/webp/bentota1.webp';
 import bentota2 from '../../img/webp/bentota2.webp';
@@ -109,16 +109,14 @@ const Bentota = () => {
               </p>
             </div>
           </div>
-      {/* Destination Suggestions */}
-      <DestinationSuggestions 
-        currentDestination="Bentota"
-        suggestions={getRandomSuggestions('/places/bentota', 4)}
-      />
 
-        </div>
+          {/* Destination Suggestions */}
+          <DestinationSuggestions 
+            currentDestination="Bentota"
+            suggestions={getRandomSuggestions('/places/bentota', 4)}
+          />
+        </div> {/* End of dest-container */}
       </section>
-
-    
     </div>
   );
 };

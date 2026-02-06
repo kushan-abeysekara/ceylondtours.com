@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Sigiriya.css';
 import adamspeak1 from '../../img/webp/adamspeak1.webp';
 import adamspeak2 from '../../img/webp/adamspeak2.webp';
@@ -108,16 +108,14 @@ const AdamsPeak = () => {
               </p>
             </div>
           </div>
-      {/* Destination Suggestions */}
-      <DestinationSuggestions 
-        currentDestination="AdamsPeak"
-        suggestions={getRandomSuggestions('/places/adams-peak', 4)}
-      />
 
-        </div>
+          {/* Destination Suggestions */}
+          <DestinationSuggestions 
+            currentDestination="AdamsPeak"
+            suggestions={getRandomSuggestions('/places/adams-peak', 4)}
+          />
+        </div> {/* End of dest-container */}
       </section>
-
-    
     </div>
   );
 };

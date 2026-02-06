@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Sigiriya.css';
 import anuradhapura1 from '../../img/webp/anuradhapura1.webp';
 import anuradhapura2 from '../../img/webp/anuradhapura2.webp';
@@ -108,16 +108,14 @@ const Anuradhapura = () => {
               </p>
             </div>
           </div>
-      {/* Destination Suggestions */}
-      <DestinationSuggestions 
-        currentDestination="Anuradhapura"
-        suggestions={getRandomSuggestions('/places/anuradhapura', 4)}
-      />
 
-        </div>
+          {/* Destination Suggestions */}
+          <DestinationSuggestions 
+            currentDestination="Anuradhapura"
+            suggestions={getRandomSuggestions('/places/anuradhapura', 4)}
+          />
+        </div> {/* End of dest-container */}
       </section>
-
-    
     </div>
   );
 };

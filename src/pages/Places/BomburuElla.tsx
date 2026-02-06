@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Sigiriya.css';
 import DestinationSuggestions from '../../components/DestinationSuggestions';
 import { getRandomSuggestions } from '../../data/destinationsData';
 import bomburu1 from '../../img/webp/boburuella1.webp';
 import bomburu4 from '../../img/webp/bomburuella4.webp';
+
 const BomburuElla = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -106,16 +107,14 @@ const BomburuElla = () => {
               </p>
             </div>
           </div>
-      {/* Destination Suggestions */}
-      <DestinationSuggestions 
-        currentDestination="BomburuElla"
-        suggestions={getRandomSuggestions('/places/bomburu-ella', 4)}
-      />
 
+          {/* Destination Suggestions */}
+          <DestinationSuggestions 
+            currentDestination="BomburuElla"
+            suggestions={getRandomSuggestions('/places/bomburu-ella', 4)}
+          />
         </div>
       </section>
-
-      
     </div>
   );
 };

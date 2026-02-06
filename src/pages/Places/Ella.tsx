@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Sigiriya.css';
 import ella1 from '../../img/webp/ella1.webp';
 import ella2 from '../../img/webp/ella2.webp';
@@ -6,14 +6,20 @@ import ella3 from '../../img/webp/ella3.webp';
 import ella4 from '../../img/webp/ella4.webp';
 import DestinationSuggestions from '../../components/DestinationSuggestions';
 import { getRandomSuggestions } from '../../data/destinationsData';
+import SearchBar from '../../components/SearchBar';
 
 const Ella = () => {
+  const contentRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="destination-page">
+      <SearchBar contentRef={contentRef} placeholder="Search Ella information..." />
+      
+      <div ref={contentRef}>
       {/* Hero Section */}
       <section className="dest-hero">
         <img src={ella1} alt="Ella" />
@@ -118,7 +124,7 @@ const Ella = () => {
         </div>
       </section>
 
-    
+      </div> {/* End of contentRef */}
     </div>
   );
 };
