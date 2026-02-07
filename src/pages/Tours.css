@@ -1,6 +1,21 @@
 .tours {
   min-height: 80vh;
   padding: 2rem;
+  position: relative;
+}
+
+.tours::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/wallpaper2.webp');
+  background-repeat: repeat;
+  opacity: 0.08;
+  z-index: -1;
+  pointer-events: none;
 }
 
 .tours-container {

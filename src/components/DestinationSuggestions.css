@@ -1,6 +1,6 @@
 .destination-suggestions {
   padding: 4rem 2rem;
-  background: linear-gradient(to bottom, #ffffff 0%, #f8fafc 100%);
+  background: transparent;
 }
 
 .suggestions-container {
