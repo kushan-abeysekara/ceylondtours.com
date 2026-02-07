@@ -667,6 +667,10 @@
     max-width: 90%;
     width: 100%;
     margin: 1rem auto;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
   }
   
   .search-field {
@@ -790,6 +794,10 @@
   .search-card {
     padding: 1rem;
     max-width: 95%;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
   }
   
   .section-title {
