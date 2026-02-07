@@ -6,14 +6,20 @@ import nuwara3 from '../../img/webp/nuwaraeliya3.webp';
 import nuwara4 from '../../img/webp/nuwaraeliya4.webp';
 import DestinationSuggestions from '../../components/DestinationSuggestions';
 import { getRandomSuggestions } from '../../data/destinationsData';
+import SearchBar from '../../components/SearchBar';
 
 const NuwaraEliya = () => {
+  const contentRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="destination-page">
+      <SearchBar contentRef={contentRef} placeholder="Search Nuwara Eliya information..." />
+      
+      <div ref={contentRef}>
       {/* Hero Section */}
       <section className="dest-hero">
         <img src={nuwara1} alt="Nuwara Eliya" />
@@ -117,6 +123,7 @@ const NuwaraEliya = () => {
           />
         </div> {/* End of dest-container */}
       </section>
+      </div>
     </div>
   );
 };

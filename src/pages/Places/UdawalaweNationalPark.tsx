@@ -6,13 +6,19 @@ import udawalawe3 from '../../img/webp/udawalawa3.webp';
 import udawalawe4 from '../../img/webp/udawalawa4.webp';
 import DestinationSuggestions from '../../components/DestinationSuggestions';
 import { getRandomSuggestions } from '../../data/destinationsData';
+import SearchBar from '../../components/SearchBar';
 const UdawalaweNationalPark: React.FC = () => {
+  const contentRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="destination-page">
+      <SearchBar contentRef={contentRef} placeholder="Search Udawalawe National Park information..." />
+      
+      <div ref={contentRef}>
       <section className="dest-hero">
         <img src={udawalawe1} alt="Udawalawe National Park" />
         <div className="dest-badge">Udawalawe National Park</div>
@@ -99,6 +105,7 @@ const UdawalaweNationalPark: React.FC = () => {
           />
         </div> {/* End of dest-container */}
       </section>
+      </div>
     </div>
   );
 };

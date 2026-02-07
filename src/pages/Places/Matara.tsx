@@ -6,14 +6,20 @@ import matara3 from '../../img/webp/matara3.webp';
 import matara4 from '../../img/webp/matara4.webp';
 import DestinationSuggestions from '../../components/DestinationSuggestions';
 import { getRandomSuggestions } from '../../data/destinationsData';
+import SearchBar from '../../components/SearchBar';
 
 const Matara: React.FC = () => {
+  const contentRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="destination-page">
+      <SearchBar contentRef={contentRef} placeholder="Search Matara information..." />
+      
+      <div ref={contentRef}>
       <section className="dest-hero">
         <img src={matara1} alt="Matara" />
         <div className="dest-badge">Matara</div>
@@ -100,6 +106,7 @@ const Matara: React.FC = () => {
           />
         </div> {/* End of dest-container */}
       </section>
+      </div>
     </div>
   );
 };

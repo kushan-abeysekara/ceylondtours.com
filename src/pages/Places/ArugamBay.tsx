@@ -2,14 +2,20 @@ import React, { useEffect, useRef } from 'react';
 import './Sigiriya.css';
 import DestinationSuggestions from '../../components/DestinationSuggestions';
 import { getRandomSuggestions } from '../../data/destinationsData';
+import SearchBar from '../../components/SearchBar';
 
 const ArugamBay = () => {
+  const contentRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="destination-page">
+      <SearchBar contentRef={contentRef} placeholder="Search Arugam Bay information..." />
+      
+      <div ref={contentRef}>
       {/* Hero Section */}
       <section className="dest-hero">
         <img src={require('../../img/webp/arugambay1.webp')} alt="Arugam Bay" />
@@ -113,6 +119,7 @@ const ArugamBay = () => {
           />
         </div> {/* End of dest-container */}
       </section>
+      </div>
     </div>
   );
 };

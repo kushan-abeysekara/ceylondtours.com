@@ -6,14 +6,20 @@ import kalpitiya3 from '../../img/webp/kalpitiya3.webp';
 import kalpitiya4 from '../../img/webp/kalpitiya4.webp';
 import DestinationSuggestions from '../../components/DestinationSuggestions';
 import { getRandomSuggestions } from '../../data/destinationsData';
+import SearchBar from '../../components/SearchBar';
 
 const Kalpitiya: React.FC = () => {
+  const contentRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="destination-page">
+      <SearchBar contentRef={contentRef} placeholder="Search Kalpitiya information..." />
+      
+      <div ref={contentRef}>
       <section className="dest-hero">
         <img src={kalpitiya1} alt="Kalpitiya" />
         <div className="dest-badge">Kalpitiya</div>
@@ -100,6 +106,7 @@ const Kalpitiya: React.FC = () => {
           />
         </div> {/* End of dest-container */}
       </section>
+      </div>
     </div>
   );
 };

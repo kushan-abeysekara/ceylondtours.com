@@ -6,14 +6,20 @@ import trincomalee3 from '../../img/webp/trincomalee3.webp';
 import trincomalee4 from '../../img/webp/trincomalee4.webp';
 import DestinationSuggestions from '../../components/DestinationSuggestions';
 import { getRandomSuggestions } from '../../data/destinationsData';
+import SearchBar from '../../components/SearchBar';
 
 const Trincomalee = () => {
+  const contentRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="destination-page">
+      <SearchBar contentRef={contentRef} placeholder="Search Trincomalee information..." />
+      
+      <div ref={contentRef}>
       {/* Hero Section */}
       <section className="dest-hero">
         <img src={trincomalee1} alt="Trincomalee" />
@@ -117,6 +123,7 @@ const Trincomalee = () => {
           />
         </div> {/* End of dest-container */}
       </section>
+      </div>
     </div>
   );
 };

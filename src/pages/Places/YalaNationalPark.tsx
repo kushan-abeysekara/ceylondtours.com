@@ -6,14 +6,20 @@ import yala3 from '../../img/webp/yala3.webp';
 import yala4 from '../../img/webp/yala4.webp';
 import DestinationSuggestions from '../../components/DestinationSuggestions';
 import { getRandomSuggestions } from '../../data/destinationsData';
+import SearchBar from '../../components/SearchBar';
 
 const YalaNationalPark = () => {
+  const contentRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="destination-page">
+      <SearchBar contentRef={contentRef} placeholder="Search Yala National Park information..." />
+      
+      <div ref={contentRef}>
       {/* Hero Section */}
       <section className="dest-hero">
         <img src={yala1} alt="Yala National Park" />
@@ -117,6 +123,7 @@ const YalaNationalPark = () => {
           />
         </div> {/* End of dest-container */}
       </section>
+      </div>
     </div>
   );
 };

@@ -6,13 +6,19 @@ import negombo3 from '../../img/webp/negombo3.webp';
 import negombo4 from '../../img/webp/negombo4.webp';
 import DestinationSuggestions from '../../components/DestinationSuggestions';
 import { getRandomSuggestions } from '../../data/destinationsData';
+import SearchBar from '../../components/SearchBar';
 const Negombo: React.FC = () => {
+  const contentRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="destination-page">
+      <SearchBar contentRef={contentRef} placeholder="Search Negombo information..." />
+      
+      <div ref={contentRef}>
       <section className="dest-hero">
         <img src={negombo1} alt="Negombo" />
         <div className="dest-badge">Negombo</div>
@@ -99,6 +105,7 @@ const Negombo: React.FC = () => {
           />
         </div> {/* End of dest-container */}
       </section>
+      </div>
     </div>
   );
 };

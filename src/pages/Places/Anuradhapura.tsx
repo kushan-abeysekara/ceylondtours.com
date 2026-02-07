@@ -6,14 +6,20 @@ import anuradhapura3 from '../../img/webp/anuradhapura3.webp';
 import anuradhapura4 from '../../img/webp/anuradhapura4.webp';
 import DestinationSuggestions from '../../components/DestinationSuggestions';
 import { getRandomSuggestions } from '../../data/destinationsData';
+import SearchBar from '../../components/SearchBar';
 
 const Anuradhapura = () => {
+  const contentRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="destination-page">
+      <SearchBar contentRef={contentRef} placeholder="Search Anuradhapura information..." />
+      
+      <div ref={contentRef}>
       {/* Hero Section */}
       <section className="dest-hero">
         <img src={anuradhapura1} alt="Anuradhapura" />
@@ -116,6 +122,7 @@ const Anuradhapura = () => {
           />
         </div> {/* End of dest-container */}
       </section>
+      </div>
     </div>
   );
 };

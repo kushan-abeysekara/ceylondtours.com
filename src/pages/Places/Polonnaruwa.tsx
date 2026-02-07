@@ -6,13 +6,19 @@ import polonnaruwa3 from '../../img/webp/polonnaruwa3.webp';
 import polonnaruwa4 from '../../img/webp/polonnaruwa4.webp';
 import DestinationSuggestions from '../../components/DestinationSuggestions';
 import { getRandomSuggestions } from '../../data/destinationsData';
+import SearchBar from '../../components/SearchBar';
 const Polonnaruwa = () => {
+  const contentRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="destination-page">
+      <SearchBar contentRef={contentRef} placeholder="Search Polonnaruwa information..." />
+      
+      <div ref={contentRef}>
       {/* Hero Section */}
       <section className="dest-hero">
         <img src={polonnaruwa1} alt="Polonnaruwa" />
@@ -114,6 +120,7 @@ const Polonnaruwa = () => {
       />
         </div> {/* End of dest-container */}
       </section>
+      </div>
     </div>
   );
 };

@@ -14,6 +14,7 @@ const Home = () => {
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const testimonialRef = React.useRef<HTMLDivElement>(null);
   const contentRef = React.useRef<HTMLDivElement>(null);
 
@@ -24,18 +25,35 @@ const Home = () => {
     require('../img/slider4.jpg')
   ];
 
+  const heroImagesMobile = [
+    require('../img/slider1_m.jpg'),
+    require('../img/slider2.webp'),
+    require('../img/slider3.jpg'),
+    require('../img/slider4.jpg')
+  ];
+
+  const currentHeroImages = isMobile ? heroImagesMobile : heroImages;
+
   useEffect(() => {
     // Scroll to top when component mounts
     window.scrollTo(0, 0);
+
+    // Handle window resize for mobile detection
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % heroImages.length);
+      setCurrentSlide((prev) => (prev + 1) % currentHeroImages.length);
     }, 5000);
 
     return () => clearInterval(timer);
-  }, [heroImages.length]);
+  }, [currentHeroImages.length]);
 
   const popularDestinations = [
     { 
@@ -266,7 +284,7 @@ const Home = () => {
         {/* Hero Section */}
         <section className="hero">
         <div className="hero-slideshow">
-          {heroImages.map((image, index) => (
+          {currentHeroImages.map((image, index) => (
             <div
               key={index}
               className={`hero-slide ${index === currentSlide ? 'active' : ''}`}

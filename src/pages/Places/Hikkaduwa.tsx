@@ -6,14 +6,20 @@ import hikkaduwa3 from '../../img/webp/hikkaduwa3.webp';
 import hikkaduwa4 from '../../img/webp/hikkaduwa4.webp';
 import DestinationSuggestions from '../../components/DestinationSuggestions';
 import { getRandomSuggestions } from '../../data/destinationsData';
+import SearchBar from '../../components/SearchBar';
 
 const Hikkaduwa: React.FC = () => {
+  const contentRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="destination-page">
+      <SearchBar contentRef={contentRef} placeholder="Search Hikkaduwa information..." />
+      
+      <div ref={contentRef}>
       {/* Hero Section */}
       <section className="dest-hero">
         <img src={hikkaduwa1} alt="Hikkaduwa" />
@@ -117,6 +123,7 @@ const Hikkaduwa: React.FC = () => {
           />
         </div> {/* End of dest-container */}
       </section>
+      </div>
     </div>
   );
 };

@@ -6,14 +6,20 @@ import hambantota3 from '../../img/webp/hambanthota3.webp';
 import hambantota4 from '../../img/webp/hambanthota4.webp';
 import DestinationSuggestions from '../../components/DestinationSuggestions';
 import { getRandomSuggestions } from '../../data/destinationsData';
+import SearchBar from '../../components/SearchBar';
 
 const Hambantota: React.FC = () => {
+  const contentRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="destination-page">
+      <SearchBar contentRef={contentRef} placeholder="Search Hambantota information..." />
+      
+      <div ref={contentRef}>
       <section className="dest-hero">
         <img src={hambantota1} alt="Hambantota" />
         <div className="dest-badge">Hambantota</div>
@@ -100,6 +106,7 @@ const Hambantota: React.FC = () => {
           />
         </div> {/* End of dest-container */}
       </section>
+      </div>
     </div>
   );
 };

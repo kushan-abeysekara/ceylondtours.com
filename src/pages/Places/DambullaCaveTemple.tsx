@@ -6,14 +6,20 @@ import dambulla3 from '../../img/webp/dambulla3.webp';
 import dambulla4 from '../../img/webp/dambulla4.webp';
 import DestinationSuggestions from '../../components/DestinationSuggestions';
 import { getRandomSuggestions } from '../../data/destinationsData';
+import SearchBar from '../../components/SearchBar';
 
 const DambullaCaveTemple = () => {
+  const contentRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="destination-page">
+      <SearchBar contentRef={contentRef} placeholder="Search Dambulla Cave Temple information..." />
+      
+      <div ref={contentRef}>
       {/* Hero Section */}
       <section className="dest-hero">
         <img src={dambulla1} alt="Dambulla Cave Temple" />
@@ -117,6 +123,7 @@ const DambullaCaveTemple = () => {
           />
         </div> {/* End of dest-container */}
       </section>
+      </div>
     </div>
   );
 };

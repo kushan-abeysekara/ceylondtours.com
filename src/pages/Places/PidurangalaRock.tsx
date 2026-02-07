@@ -6,14 +6,20 @@ import pidurangala3 from '../../img/webp/pidurangala3.webp';
 import pidurangala4 from '../../img/webp/pidurangala4.webp';
 import DestinationSuggestions from '../../components/DestinationSuggestions';
 import { getRandomSuggestions } from '../../data/destinationsData';
+import SearchBar from '../../components/SearchBar';
 
 const PidurangalaRock: React.FC = () => {
+  const contentRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="destination-page">
+      <SearchBar contentRef={contentRef} placeholder="Search Pidurangala Rock information..." />
+      
+      <div ref={contentRef}>
       <section className="dest-hero">
         <img src={pidurangala1} alt="Pidurangala Rock" />
         <div className="dest-badge">Pidurangala Rock</div>
@@ -100,6 +106,7 @@ const PidurangalaRock: React.FC = () => {
           />
         </div> {/* End of dest-container */}
       </section>
+      </div>
     </div>
   );
 };

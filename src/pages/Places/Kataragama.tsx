@@ -6,14 +6,20 @@ import { getRandomSuggestions } from '../../data/destinationsData';
 import kataragama2 from '../../img/kataragama2.webp';
 import kataragama3 from '../../img/kataragama3.webp';
 import kataragama4 from '../../img/kataragama4.webp';
+import SearchBar from '../../components/SearchBar';
 
 const Kataragama: React.FC = () => {
+  const contentRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="destination-page">
+      <SearchBar contentRef={contentRef} placeholder="Search Kataragama information..." />
+      
+      <div ref={contentRef}>
       <section className="dest-hero">
         <img src={kataragama1} alt="Kataragama" />
         <div className="dest-badge">Kataragama</div>
@@ -100,6 +106,7 @@ const Kataragama: React.FC = () => {
           />
         </div>
       </section>
+      </div>
     </div>
   );
 };

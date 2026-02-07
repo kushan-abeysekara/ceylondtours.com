@@ -6,14 +6,20 @@ import knuckles3 from '../../img/webp/knuckles3.webp';
 import knuckles4 from '../../img/webp/knuckles4.webp';
 import DestinationSuggestions from '../../components/DestinationSuggestions';
 import { getRandomSuggestions } from '../../data/destinationsData';
+import SearchBar from '../../components/SearchBar';
 
 const KnucklesMountainRange: React.FC = () => {
+  const contentRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="destination-page">
+      <SearchBar contentRef={contentRef} placeholder="Search Knuckles Mountain Range information..." />
+      
+      <div ref={contentRef}>
       <section className="dest-hero">
         <img src={knuckles1} alt="Knuckles Mountain Range" />
         <div className="dest-badge">Knuckles Mountain Range</div>
@@ -100,6 +106,7 @@ const KnucklesMountainRange: React.FC = () => {
           />
         </div> {/* End of dest-container */}
       </section>
+      </div>
     </div>
   );
 };

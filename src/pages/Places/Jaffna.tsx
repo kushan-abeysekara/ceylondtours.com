@@ -6,14 +6,20 @@ import jaffna3 from '../../img/webp/jaffna3.webp';
 import jaffna4 from '../../img/webp/jaffna4.webp';
 import DestinationSuggestions from '../../components/DestinationSuggestions';
 import { getRandomSuggestions } from '../../data/destinationsData';
+import SearchBar from '../../components/SearchBar';
 
 const Jaffna: React.FC = () => {
+  const contentRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="destination-page">
+      <SearchBar contentRef={contentRef} placeholder="Search Jaffna information..." />
+      
+      <div ref={contentRef}>
       <section className="dest-hero">
         <img src={jaffna1} alt="Jaffna" />
         <div className="dest-badge">Jaffna</div>
@@ -100,6 +106,7 @@ const Jaffna: React.FC = () => {
           />
         </div> {/* End of dest-container */}
       </section>
+      </div>
     </div>
   );
 };

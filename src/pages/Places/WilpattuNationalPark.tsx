@@ -6,14 +6,20 @@ import wilpattu3 from '../../img/webp/wilapaththu3.webp';
 import wilpattu4 from '../../img/webp/wilapaththu4.webp';
 import DestinationSuggestions from '../../components/DestinationSuggestions';
 import { getRandomSuggestions } from '../../data/destinationsData';
+import SearchBar from '../../components/SearchBar';
 
 const WilpattuNationalPark: React.FC = () => {
+  const contentRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="destination-page">
+      <SearchBar contentRef={contentRef} placeholder="Search Wilpattu National Park information..." />
+      
+      <div ref={contentRef}>
       <section className="dest-hero">
         <img src={wilpattu1} alt="Wilpattu National Park" />
         <div className="dest-badge">Wilpattu National Park</div>
@@ -100,6 +106,7 @@ const WilpattuNationalPark: React.FC = () => {
           />
         </div> {/* End of dest-container */}
       </section>
+      </div>
     </div>
   );
 };

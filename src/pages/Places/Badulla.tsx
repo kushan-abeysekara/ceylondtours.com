@@ -6,14 +6,20 @@ import badulla3 from '../../img/webp/badulla3.webp';
 import badulla4 from '../../img/webp/badulla4.webp';
 import DestinationSuggestions from '../../components/DestinationSuggestions';
 import { getRandomSuggestions } from '../../data/destinationsData';
+import SearchBar from '../../components/SearchBar';
 
 const Badulla: React.FC = () => {
+  const contentRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="destination-page">
+      <SearchBar contentRef={contentRef} placeholder="Search Badulla information..." />
+      
+      <div ref={contentRef}>
       <section className="dest-hero">
         <img src={badulla1} alt="Badulla" />
         <div className="dest-badge">Badulla</div>
@@ -100,6 +106,7 @@ const Badulla: React.FC = () => {
           />
         </div> {/* End of dest-container */}
       </section>
+      </div>
     </div>
   );
 };

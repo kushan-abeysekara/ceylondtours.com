@@ -6,14 +6,20 @@ import sinharaja3 from '../../img/webp/Sinharaja3.webp';
 import sinharaja4 from '../../img/webp/Sinharaja4.webp';
 import DestinationSuggestions from '../../components/DestinationSuggestions';
 import { getRandomSuggestions } from '../../data/destinationsData';
+import SearchBar from '../../components/SearchBar';
 
 const SinharajaForest: React.FC = () => {
+  const contentRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="destination-page">
+      <SearchBar contentRef={contentRef} placeholder="Search Sinharaja Forest information..." />
+      
+      <div ref={contentRef}>
       <section className="dest-hero">
         <img src={sinharaja1} alt="Sinharaja Forest" />
         <div className="dest-badge">Sinharaja Forest</div>
@@ -100,6 +106,7 @@ const SinharajaForest: React.FC = () => {
           />
         </div> {/* End of dest-container */}
       </section>
+      </div>
     </div>
   );
 };

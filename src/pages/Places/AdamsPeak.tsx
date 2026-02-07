@@ -6,14 +6,20 @@ import adamspeak3 from '../../img/webp/adamspeak3.webp';
 import adamspeak4 from '../../img/webp/adamspeak4.webp';
 import DestinationSuggestions from '../../components/DestinationSuggestions';
 import { getRandomSuggestions } from '../../data/destinationsData';
+import SearchBar from '../../components/SearchBar';
 
 const AdamsPeak = () => {
+  const contentRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="destination-page">
+      <SearchBar contentRef={contentRef} placeholder="Search Adam's Peak information..." />
+      
+      <div ref={contentRef}>
       {/* Hero Section */}
       <section className="dest-hero">
         <img src={adamspeak1} alt="Adam's Peak" />
@@ -116,6 +122,7 @@ const AdamsPeak = () => {
           />
         </div> {/* End of dest-container */}
       </section>
+      </div>
     </div>
   );
 };

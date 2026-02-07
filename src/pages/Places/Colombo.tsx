@@ -6,14 +6,20 @@ import colombo3 from '../../img/colombo3.webp';
 import colombo4 from '../../img/colombo4.webp';
 import DestinationSuggestions from '../../components/DestinationSuggestions';
 import { getRandomSuggestions } from '../../data/destinationsData';
+import SearchBar from '../../components/SearchBar';
 
 const Colombo: React.FC = () => {
+  const contentRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="destination-page">
+      <SearchBar contentRef={contentRef} placeholder="Search Colombo information..." />
+      
+      <div ref={contentRef}>
       <section className="dest-hero">
         <img src={colombo1} alt="Colombo" />
         <div className="dest-badge">Colombo</div>
@@ -100,6 +106,7 @@ const Colombo: React.FC = () => {
           />
         </div> {/* End of dest-container */}
       </section>
+      </div>
     </div>
   );
 };

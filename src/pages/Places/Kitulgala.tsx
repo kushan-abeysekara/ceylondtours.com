@@ -6,14 +6,20 @@ import kitulgala3 from '../../img/webp/kithulgala3.webp';
 import kitulgala4 from '../../img/webp/kithulgala4.webp';
 import DestinationSuggestions from '../../components/DestinationSuggestions';
 import { getRandomSuggestions } from '../../data/destinationsData';
+import SearchBar from '../../components/SearchBar';
 
 const Kitulgala: React.FC = () => {
+  const contentRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="destination-page">
+      <SearchBar contentRef={contentRef} placeholder="Search Kitulgala information..." />
+      
+      <div ref={contentRef}>
       <section className="dest-hero">
         <img src={kitulgala1} alt="Kitulgala" />
         <div className="dest-badge">Kitulgala</div>
@@ -100,6 +106,7 @@ const Kitulgala: React.FC = () => {
           />
         </div> {/* End of dest-container */}
       </section>
+      </div>
     </div>
   );
 };

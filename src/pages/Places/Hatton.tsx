@@ -6,14 +6,20 @@ import hatton3 from '../../img/webp/hatton3.webp';
 import hatton4 from '../../img/webp/hatton4.webp';
 import DestinationSuggestions from '../../components/DestinationSuggestions';
 import { getRandomSuggestions } from '../../data/destinationsData';
+import SearchBar from '../../components/SearchBar';
 
 const Hatton: React.FC = () => {
+  const contentRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="destination-page">
+      <SearchBar contentRef={contentRef} placeholder="Search Hatton information..." />
+      
+      <div ref={contentRef}>
       <section className="dest-hero">
         <img src={hatton1} alt="Hatton" />
         <div className="dest-badge">Hatton</div>
@@ -100,6 +106,7 @@ const Hatton: React.FC = () => {
           />
         </div> {/* End of dest-container */}
       </section>
+      </div>
     </div>
   );
 };

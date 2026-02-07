@@ -4,14 +4,20 @@ import DestinationSuggestions from '../../components/DestinationSuggestions';
 import { getRandomSuggestions } from '../../data/destinationsData';
 import Kandy2 from  '../../img/webp/kandy2.webp';
 import Kandy4 from  '../../img/webp/kandy4.webp';
+import SearchBar from '../../components/SearchBar';
 
 const TempleOfTooth = () => {
+  const contentRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="destination-page">
+      <SearchBar contentRef={contentRef} placeholder="Search Temple of the Tooth Relic information..." />
+      
+      <div ref={contentRef}>
       {/* Hero Section */}
       <section className="dest-hero">
         <img src={require('../../img/webp/templeoftooth1.webp')} alt="Temple of the Tooth Relic" />
@@ -106,13 +112,14 @@ const TempleOfTooth = () => {
               </p>
             </div>
           </div>
-      {/* Destination Suggestions */}
-      <DestinationSuggestions 
-        currentDestination="TempleOfTooth"
-        suggestions={getRandomSuggestions('/places/temple-of-tooth', 4)}
-      />
+          {/* Destination Suggestions */}
+          <DestinationSuggestions 
+            currentDestination="TempleOfTooth"
+            suggestions={getRandomSuggestions('/places/temple-of-tooth', 4)}
+          />
         </div> {/* End of dest-container */}
       </section>
+      </div>
     </div>
   );
 };

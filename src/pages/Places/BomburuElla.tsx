@@ -4,14 +4,20 @@ import DestinationSuggestions from '../../components/DestinationSuggestions';
 import { getRandomSuggestions } from '../../data/destinationsData';
 import bomburu1 from '../../img/webp/boburuella1.webp';
 import bomburu4 from '../../img/webp/bomburuella4.webp';
+import SearchBar from '../../components/SearchBar';
 
 const BomburuElla = () => {
+  const contentRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="destination-page">
+      <SearchBar contentRef={contentRef} placeholder="Search Bomburu Ella information..." />
+      
+      <div ref={contentRef}>
       {/* Hero Section */}
       <section className="dest-hero">
         <img src={bomburu1} alt="Bomburu Ella" />
@@ -113,8 +119,9 @@ const BomburuElla = () => {
             currentDestination="BomburuElla"
             suggestions={getRandomSuggestions('/places/bomburu-ella', 4)}
           />
-        </div>
+        </div> {/* End of dest-container */}
       </section>
+      </div>
     </div>
   );
 };

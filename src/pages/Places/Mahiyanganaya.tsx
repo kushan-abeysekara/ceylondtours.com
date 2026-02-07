@@ -6,14 +6,20 @@ import mahiyanganaya3 from '../../img/webp/mahiyanganaya3.webp';
 import mahiyanganaya4 from '../../img/webp/mahiyanganaya4.webp';
 import DestinationSuggestions from '../../components/DestinationSuggestions';
 import { getRandomSuggestions } from '../../data/destinationsData';
+import SearchBar from '../../components/SearchBar';
 
 const Mahiyanganaya: React.FC = () => {
+  const contentRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="destination-page">
+      <SearchBar contentRef={contentRef} placeholder="Search Mahiyanganaya information..." />
+      
+      <div ref={contentRef}>
       <section className="dest-hero">
         <img src={mahiyanganaya1} alt="Mahiyanganaya" />
         <div className="dest-badge">Mahiyanganaya</div>
@@ -99,6 +105,7 @@ const Mahiyanganaya: React.FC = () => {
       />
         </div> {/* End of dest-container */}
       </section>
+      </div>
     </div>
   );
 };

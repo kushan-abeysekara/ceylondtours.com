@@ -6,14 +6,20 @@ import pasikuda3 from '../../img/webp/pasikuda3.webp';
 import pasikuda4 from '../../img/webp/pasikuda4.webp';
 import DestinationSuggestions from '../../components/DestinationSuggestions';
 import { getRandomSuggestions } from '../../data/destinationsData';
+import SearchBar from '../../components/SearchBar';
 
 const Pasikuda: React.FC = () => {
+  const contentRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="destination-page">
+      <SearchBar contentRef={contentRef} placeholder="Search Pasikuda information..." />
+      
+      <div ref={contentRef}>
       <section className="dest-hero">
         <img src={pasikuda1} alt="Pasikuda" />
         <div className="dest-badge">Pasikuda</div>
@@ -100,6 +106,7 @@ const Pasikuda: React.FC = () => {
           />
         </div> {/* End of dest-container */}
       </section>
+      </div>
     </div>
   );
 };
