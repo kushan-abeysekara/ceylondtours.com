@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './MemoriesSection.css';
 
 const MemoriesSection = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
   const imageSet1 = [
     require('../img/Memory1.jpg'),
     require('../img/Memory2.jpg'),
@@ -49,6 +51,20 @@ const MemoriesSection = () => {
           Real experiences from real travelers exploring Sri Lanka, capturing 
           timeless memories, unforgettable adventures, and unforgettable moments with us.
         </p>
+
+        <div className="memories-video-wrapper">
+          <video
+            ref={videoRef}
+            className="memories-video"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+          >
+            <source src={require('../img/memories-video.mp4')} type="video/mp4" />
+          </video>
+        </div>
         
         <div className="memories-grid">
           {memories.map((memory, index) => (
