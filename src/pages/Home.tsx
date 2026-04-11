@@ -22,14 +22,22 @@ const Home = () => {
     require('../img/slider1.jpg'),
     require('../img/slider2.webp'),
     require('../img/slider3.jpg'),
-    require('../img/slider4.jpg')
+    require('../img/slider4.jpg'),
+    require('../img/Mirissa.jpg'),
+    require('../img/sigiriya 3.webp'),
+    require('../img/Contactsus.jpg'),
+    require('../img/colombo1.webp')
   ];
 
   const heroImagesMobile = [
     require('../img/slider1_m.jpg'),
     require('../img/slider2.webp'),
     require('../img/slider3.jpg'),
-    require('../img/slider4.jpg')
+    require('../img/slider4.jpg'),
+    require('../img/Mirissa.jpg'),
+    require('../img/sigiriya 3.webp'),
+    require('../img/Contactsus.jpg'),
+    require('../img/colombo1.webp')
   ];
 
   const currentHeroImages = isMobile ? heroImagesMobile : heroImages;

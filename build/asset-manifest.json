@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.1ef66a14.css",
-    "main.js": "/static/js/main.c8cde81f.js",
+    "main.js": "/static/js/main.e3a46191.js",
     "static/media/colombo4.webp": "/static/media/colombo4.d95d102eda2af9a7dab4.webp",
+    "static/media/memories-video.mp4": "/static/media/memories-video.89b6ec97feda0683b509.mp4",
     "static/media/colombo3.webp": "/static/media/colombo3.a92b0be5bb6c0fb1ef7b.webp",
     "static/media/destination_ella.webp": "/static/media/destination_ella.a042e41abf279516bcd3.webp",
     "static/media/badulla3.webp": "/static/media/badulla3.6ee4a1d8e9f5a8a0fc00.webp",
@@ -14,7 +15,6 @@
     "static/media/wilapaththu2.webp": "/static/media/wilapaththu2.c5e25b450ef0d92e232e.webp",
     "static/media/batticaloa4.webp": "/static/media/batticaloa4.fd85669322ba60b57b15.webp",
     "static/media/pidurangala2.webp": "/static/media/pidurangala2.2cc5a9ecf497b8ee9151.webp",
-    "static/media/memories-video.mp4": "/static/media/memories-video.cfb0581e1e37eeace3cb.mp4",
     "static/media/bomuru-ella 3.jpg": "/static/media/bomuru-ella 3.a946c9f1df56c694a241.jpg",
     "static/media/destination_NineArch.webp": "/static/media/destination_NineArch.30a07600a354cafdfe1a.webp",
     "static/media/ella1.webp": "/static/media/ella1.30a07600a354cafdfe1a.webp",
@@ -163,6 +163,7 @@
     "static/media/destination_pasikuda.webp": "/static/media/destination_pasikuda.5e89543094a1e6d1330d.webp",
     "static/media/sigiriya 3.webp": "/static/media/sigiriya 3.2ab69ff376554cfc1924.webp",
     "static/media/anuradhapura2.webp": "/static/media/anuradhapura2.84cd7514403eb8ee31e4.webp",
+    "static/media/Mirissa.jpg": "/static/media/Mirissa.14b4b38856a9af742534.jpg",
     "static/media/dambulla4.webp": "/static/media/dambulla4.1833366255e27e7ca72d.webp",
     "static/media/Ella.jpg": "/static/media/Ella.ff2abd99ea3978300b6c.jpg",
     "static/media/hikkaduwa3.webp": "/static/media/hikkaduwa3.5e6e5bf1bc559b70a08e.webp",
@@ -253,10 +254,10 @@
     "static/media/abouticon3.png": "/static/media/abouticon3.7f20bbd95a34d8259ed1.png",
     "index.html": "/index.html",
     "main.1ef66a14.css.map": "/static/css/main.1ef66a14.css.map",
-    "main.c8cde81f.js.map": "/static/js/main.c8cde81f.js.map"
+    "main.e3a46191.js.map": "/static/js/main.e3a46191.js.map"
   },
   "entrypoints": [
     "static/css/main.1ef66a14.css",
-    "static/js/main.c8cde81f.js"
+    "static/js/main.e3a46191.js"
   ]
 }
