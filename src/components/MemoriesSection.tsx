@@ -5,12 +5,12 @@ const MemoriesSection = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   const imageSet1 = [
+    require('../img/gallery-cooking2.jpg'),
     require('../img/Memory1.jpg'),
     require('../img/Memory2.jpg'),
     require('../img/Memory3.jpg'),
     require('../img/Memory4.jpg'),
-    require('../img/Memory5.jpg'),
-    require('../img/Memory6.jpg')
+    require('../img/Memory5.jpg')
   ];
 
   const imageSet2 = [

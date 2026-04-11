@@ -1,9 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.1ef66a14.css",
-    "main.js": "/static/js/main.90aa91bb.js",
+    "main.js": "/static/js/main.c8cde81f.js",
     "static/media/colombo4.webp": "/static/media/colombo4.d95d102eda2af9a7dab4.webp",
-    "static/media/memories-video.mp4": "/static/media/memories-video.89b6ec97feda0683b509.mp4",
     "static/media/colombo3.webp": "/static/media/colombo3.a92b0be5bb6c0fb1ef7b.webp",
     "static/media/destination_ella.webp": "/static/media/destination_ella.a042e41abf279516bcd3.webp",
     "static/media/badulla3.webp": "/static/media/badulla3.6ee4a1d8e9f5a8a0fc00.webp",
@@ -15,6 +14,7 @@
     "static/media/wilapaththu2.webp": "/static/media/wilapaththu2.c5e25b450ef0d92e232e.webp",
     "static/media/batticaloa4.webp": "/static/media/batticaloa4.fd85669322ba60b57b15.webp",
     "static/media/pidurangala2.webp": "/static/media/pidurangala2.2cc5a9ecf497b8ee9151.webp",
+    "static/media/memories-video.mp4": "/static/media/memories-video.cfb0581e1e37eeace3cb.mp4",
     "static/media/bomuru-ella 3.jpg": "/static/media/bomuru-ella 3.a946c9f1df56c694a241.jpg",
     "static/media/destination_NineArch.webp": "/static/media/destination_NineArch.30a07600a354cafdfe1a.webp",
     "static/media/ella1.webp": "/static/media/ella1.30a07600a354cafdfe1a.webp",
@@ -134,9 +134,11 @@
     "static/media/kandy 3.webp": "/static/media/kandy 3.226a58162388255eec54.webp",
     "static/media/trincomalee2.webp": "/static/media/trincomalee2.ec2b786ee22c3c55c5b3.webp",
     "static/media/kithulgala2.webp": "/static/media/kithulgala2.3d63ed674aaa06b450d0.webp",
+    "static/media/gallery-cooking1.jpg": "/static/media/gallery-cooking1.60ba8caf742b3def4850.jpg",
     "static/media/bomburu 1.webp": "/static/media/bomburu 1.6809b8875f45abd62e35.webp",
     "static/media/anuradhapura1.webp": "/static/media/anuradhapura1.38f2a60880a8533eed31.webp",
     "static/media/sigiriya 2.webp": "/static/media/sigiriya 2.dd565479b1ad0caa8cf1.webp",
+    "static/media/gallery-cooking2.jpg": "/static/media/gallery-cooking2.499237704890e2d9fd17.jpg",
     "static/media/bentota3.webp": "/static/media/bentota3.93baec04b16621d69801.webp",
     "static/media/galle3.webp": "/static/media/galle3.69faf4fdc05d4edde305.webp",
     "static/media/nine arch 1.webp": "/static/media/nine arch 1.8353c4f407c1a88ddbb0.webp",
@@ -251,10 +253,10 @@
     "static/media/abouticon3.png": "/static/media/abouticon3.7f20bbd95a34d8259ed1.png",
     "index.html": "/index.html",
     "main.1ef66a14.css.map": "/static/css/main.1ef66a14.css.map",
-    "main.90aa91bb.js.map": "/static/js/main.90aa91bb.js.map"
+    "main.c8cde81f.js.map": "/static/js/main.c8cde81f.js.map"
   },
   "entrypoints": [
     "static/css/main.1ef66a14.css",
-    "static/js/main.90aa91bb.js"
+    "static/js/main.c8cde81f.js"
   ]
 }

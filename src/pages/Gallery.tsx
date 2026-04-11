@@ -12,6 +12,8 @@ const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const galleryImages = [
+    { src: require('../img/gallery-cooking1.jpg'), category: 'memories', title: 'Cooking Experience' },
+    { src: require('../img/gallery-cooking2.jpg'), category: 'memories', title: 'Family Cooking Class' },
     { src: require('../img/Memory1.jpg'), category: 'memories', title: 'Beautiful Moments' },
     { src: require('../img/happyTravelers1.jpg'), category: 'travelers', title: 'Happy Travelers' },
     { src: require('../img/Memory2.jpg'), category: 'memories', title: 'Adventure Time' },
